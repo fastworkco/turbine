@@ -1,5 +1,5 @@
 {
-	"name": "blueprint-ui",
+	"name": "@fastwork/blueprint",
 	"version": "0.0.1",
 	"description": "Blueprint UI",
 	"main": "index.js",
