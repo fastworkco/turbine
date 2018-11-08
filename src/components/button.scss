@@ -1,0 +1,32 @@
+@mixin base-button($color: $color-primary) {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0.75rem 1rem;
+
+	font-weight: $font-weight-bold;
+	font-size: 1rem;
+	line-height: 100%;
+
+	color: $color-light;
+	background-color: $color;
+
+	border: none;
+	border-radius: 2px;
+
+	transition: all 0.16s ease-in-out;
+	user-select: none;
+	cursor: pointer;
+	outline: none;
+
+	&:focus {
+		@include focused-shadow($color);
+	}
+}
+
+.bp-button {
+	@include base-button($color-primary);
+}
