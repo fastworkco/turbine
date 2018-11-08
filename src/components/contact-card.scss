@@ -1,0 +1,38 @@
+.contact-card {
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	grid-template-rows: repeat(3, max-content);
+	grid-template-areas:
+		"avatar name         date"
+		"avatar message      notification"
+		"avatar product-name status"
+		"avatar .            .";
+
+	> [grid-area="avatar"] {
+		grid-area: avatar;
+	}
+
+	> .name {
+		grid-area: name;
+	}
+
+	> .message {
+		grid-area: message;
+	}
+
+	> .product-name {
+		grid-area: product-name;
+	}
+
+	> .date {
+		grid-area: date;
+	}
+
+	> .notification {
+		grid-area: notification;
+	}
+
+	> .status {
+		grid-area: status;
+	}
+}

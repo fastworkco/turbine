@@ -1,6 +1,9 @@
+@import 'settings';
 @import 'variables';
 @import 'reset';
 
 @import 'mixins/shadow';
 
-@import 'components/button';
+@import 'elements/button';
+
+@import 'components/contact-card';

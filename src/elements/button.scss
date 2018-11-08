@@ -1,0 +1,56 @@
+@mixin base-button($color: $color-primary) {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 40px;
+	padding: 0.5rem 1rem;
+
+	font-weight: $font-weight-bold;
+	font-size: 1rem;
+	line-height: 100%;
+
+	color: $color-light;
+	background-color: $color;
+
+	border: none;
+	border-radius: 2px;
+
+	transition: all $timing-normal ease-in-out;
+	user-select: none;
+	cursor: pointer;
+	outline: none;
+
+	&:focus {
+		@include focused-shadow($color);
+	}
+
+	&:hover {
+		background-color: darken($color, 5%);
+	}
+
+	&[disabled],
+	&.-disabled {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+}
+
+$components-colors: (
+	'accent': $color-accent,
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning': $color-warning,
+	'info': $color-info,
+);
+
+.#{$prefix}button {
+	@include base-button();
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			@include base-button($value);
+		}
+	}
+}
