@@ -5,27 +5,43 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<section class="lo-12 _gg-16px _pd-32px">
-			<button class="bp-button">
-				Button
-			</button>
-			<button class="bp-button" disabled>
-				Button
-			</button>
-			<button class="bp-button -accent">
-				Button
-			</button>
-			<div class="contact-card">
-				<div grid-area="avatar">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar">
+		<div id="app">
+			<section class="lo-12 _gg-16px _pd-32px">
+				<button class="bp-button">
+					Button
+				</button>
+				<button class="bp-button" disabled>
+					Button
+				</button>
+				<button class="bp-button -accent">
+					Button
+				</button>
+			</section>
+
+			<section class="lo-12 _gg-16px _pd-32px">
+				<h3>contact-card</h3>
+				<div>
+					<div v-for="card in 5" class="contact-card">
+						<div class="avatar">
+							<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="_w-48px _h-48px _bdrd-max">
+						</div>
+						<div class="name">name</div>
+						<div class="message">message</div>
+						<div class="product-name">product-name</div>
+						<div class="date">12 Nov</div>
+						<div class="notification">notification</div>
+						<div class="status">status</div>
+					</div>
 				</div>
-				<div class="name">name</div>
-				<div class="message">message</div>
-				<div class="product-name">product-name</div>
-				<div class="date">date</div>
-				<div class="notification">notification</div>
-				<div class="status">status</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+		const app = new Vue({
+			el: '#app',
+		})
+	</script>
 </html>
