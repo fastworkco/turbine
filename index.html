@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="dist/pinwheel.css">
-		<link rel="stylesheet" href="https://unpkg.com/biomatic@0.3.7/dist/biomatic.lite.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/biomatic@0.3.7/dist/biomatic.min.css">
 		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
 		<style>
 			.blank {
@@ -10,72 +10,45 @@
 				border: 1px dashed gray;
 				border-radius: 3px;
 			}
+			hr {
+				margin: 0px;
+			}
+			section {
+				padding: 24px;
+				background-color: white;
+				border-bottom: 1px solid var(--color-gray-200);
+			}
 		</style>
 	</head>
 	<body style="background-color: #f2f2f2">
 		<div id="app">
-			<div class="_tal-ct _mgt-64px _mgbt-32px">
+			<section class="_tal-ct _pdt-64px _pdbt-32px">
 				<h1>Pinwheel UI – Editor Draft 1</h1>
-			</div>
+			</section>
 
-			<br>
-			<hr>
-			<br>
-
-			<section class="_pdh-24px">
+			<section>
 				<h3>Table of contents 🍭</h3>
 				<br>
 				<br>
 				<h5>Elements</h5>
-				<ul>
-					<li><a href="#avatar">Avatar</a></li>
-					<li><a href="#button">Button</a></li>
-					<li><a href="#status-badge">Status badge</a></li>
+				<ul class="_lh-150pct">
+					<li><a href="#avatar" class="bio-link">Avatar</a></li>
+					<li><a href="#button" class="bio-link">Button</a></li>
+					<li><a href="#status-badge" class="bio-link">Status badge</a></li>
 				</ul>
 				<h5>Components</h5>
-				<ul>
-					<li><a href="#message">Message</a></li>
-					<li><a href="#quick-action">Quick action</a></li>
+				<ul class="_lh-150pct">
+					<li><a href="#message" class="bio-link">Message</a></li>
+					<li><a href="#quick-action" class="bio-link">Quick action</a></li>
 				</ul>
 				<h5>Utilities</h5>
-				<ul>
-					<li><a href="#corner-badge-wrapper">Corner badge wrapper</a></li>
+				<ul class="_lh-150pct">
+					<li><a href="#corner-badge-wrapper" class="bio-link">Corner badge wrapper</a></li>
 				</ul>
 			</section>
 
-			<br>
-			<hr>
-			<br>
-
-			<!-- Corner Badge -->
-			<section id="corner-badge-wrapper" class="_pdh-24px">
-				<h3>Corner badge wrapper</h3>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="corner-badge-wrapper">
-						<div class="blank"></div>
-					</div>
-					<div class="corner-badge-wrapper" data-text="Text">
-						<div class="blank"></div>
-					</div>
-					<div class="corner-badge-wrapper" data-text="19m">
-						<div class="blank"></div>
-					</div>
-					<div class="corner-badge-wrapper" data-position="top">
-						<div class="blank"></div>
-					</div>
-					<div class="corner-badge-wrapper" data-text="19m" data-position="top">
-						<div class="blank"></div>
-					</div>
-				</div>
-			</section>
-
-			<br>
-			<hr>
-			<br>
-
 			<!-- Avatar -->
-			<section id="avatar" class="_pdh-24px">
+			<section id="avatar">
 				<h3>Avatar</h3>
 				<br>
 				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
@@ -98,14 +71,11 @@
 						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -tiny">
 					</div>
 				</div>
+				<br>
+				<script src="https://gist.github.com/BioMaRu/8b6036a6ed0669b1fbd036fd3d933163.js"></script>
 			</section>
 
-			<br>
-			<hr>
-			<br>
-
-			<!-- Button -->
-			<section id="button" class="_pdh-24px">
+			<section id="button">
 				<h3>Button</h3>
 				<br>
 				<div class="lo-4 _gg-16px">
@@ -133,13 +103,13 @@
 				</div>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="pw-button-secondary">
+					<button class="pw-button-secondary -negative">
 						<i class="fa fa-times"></i> &nbsp;&nbsp; Button
 					</button>
-					<button class="pw-button-secondary" disabled>
+					<button class="pw-button-secondary -negative" disabled>
 						Disabled
 					</button>
-					<button class="pw-button-secondary -loading" disabled>
+					<button class="pw-button-secondary -negative -loading" disabled>
 						Loading
 					</button>
 				</div>
@@ -155,15 +125,34 @@
 						Loading
 					</button>
 				</div>
+				<br>
+				<script src="https://gist.github.com/BioMaRu/9a1b2dca3d1a756a5c8d4ce4ca02daaf.js"></script>
 			</section>
 
-			<br>
-			<hr>
-			<br>
+			<section id="status-badge">
+				<h3">Status Badge</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<div class="pw-status-badge">
+						รอรีวิว
+					</div>
+					<div class="pw-status-badge -positive">
+						สำเร็จ
+					</div>
+					<div class="pw-status-badge -negative">
+						ยกเลิก
+					</div>
+					<div class="pw-status-badge -gray">
+						สำเร็จ
+					</div>
+					<div class="pw-status-badge -warning">
+						รอชำระ
+					</div>
+				</div>
+			</section>
 
-			<!-- Message -->
-			<section class="_pdh-24px">
-				<h3 id="message">Message</h3>
+			<section id="message">
+				<h3>Message</h3>
 				<br>
 				<div class="lo-6 _alit-st _gg-16px">
 					<div class="pw-message -positive">
@@ -202,38 +191,8 @@
 					</div>
 				</div>
 			</section>
-			<br>
-			<hr>
-			<br>
 
-			<!-- Status Badge -->
-			<section id="status-badge class="_pdh-24px">
-				<h3">Status Badge</h3>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="pw-status-badge">
-						รอรีวิว
-					</div>
-					<div class="pw-status-badge -positive">
-						สำเร็จ
-					</div>
-					<div class="pw-status-badge -negative">
-						ยกเลิก
-					</div>
-					<div class="pw-status-badge -gray">
-						สำเร็จ
-					</div>
-					<div class="pw-status-badge -warning">
-						รอชำระ
-					</div>
-				</div>
-			</section>
-			<br>
-			<hr>
-			<br>
-
-			<!-- Quick Action -->
-			<section id="quick-action" class="_pdh-24px">
+			<section id="quick-action">
 				<h3>Quick Action</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
@@ -243,12 +202,9 @@
 				</div>
 			</section>
 
-			<br>
-			<hr>
-			<br>
-
-			<section id="contact-card" class="lo-12 _gg-16px _pdh-32px">
+			<section id="contact-card">
 				<h3>contact-card</h3>
+				<br>
 				<div>
 					<div v-for="card in 5" class="contact-card">
 						<div class="avatar">
@@ -262,6 +218,31 @@
 						<div class="status">status</div>
 					</div>
 				</div>
+			</section>
+
+			<!-- Corner Badge -->
+			<section id="corner-badge-wrapper">
+				<h3>Corner badge wrapper</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<div class="corner-badge-wrapper">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-text="Text">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-text="19m">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-position="top">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-text="19m" data-position="top">
+						<div class="blank"></div>
+					</div>
+				</div>
+				<br>
+				<script src="https://gist.github.com/BioMaRu/87ae4c0cf85e35513c64262ca1e33e89.js"></script>
 			</section>
 		</div>
 	</body>
