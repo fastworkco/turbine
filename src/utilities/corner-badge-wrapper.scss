@@ -39,4 +39,12 @@
 			font-weight: $font-weight-black;
 		}
 	}
+
+	&[data-position="top"] {
+		&:after {
+			top: 0;
+			bottom: auto;
+			right: 0;
+		}
+	}
 }

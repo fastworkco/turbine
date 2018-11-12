@@ -30,16 +30,16 @@
 				<ul>
 					<li><a href="#avatar">Avatar</a></li>
 					<li><a href="#button">Button</a></li>
-					<li><a href="#status-badge">Status Badge</a></li>
+					<li><a href="#status-badge">Status badge</a></li>
 				</ul>
 				<h5>Components</h5>
 				<ul>
 					<li><a href="#message">Message</a></li>
-					<li><a href="#quick-action">Quick Action</a></li>
+					<li><a href="#quick-action">Quick action</a></li>
 				</ul>
 				<h5>Utilities</h5>
 				<ul>
-					<!-- <li><a href="#message">Message</a></li> -->
+					<li><a href="#corner-badge-wrapper">Corner badge wrapper</a></li>
 				</ul>
 			</section>
 
@@ -48,8 +48,8 @@
 			<br>
 
 			<!-- Corner Badge -->
-			<section class="_pdh-24px">
-				<h3 id="button">Corner badge wrapper</h3>
+			<section id="corner-badge-wrapper" class="_pdh-24px">
+				<h3>Corner badge wrapper</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="corner-badge-wrapper">
@@ -61,6 +61,12 @@
 					<div class="corner-badge-wrapper" data-text="19m">
 						<div class="blank"></div>
 					</div>
+					<div class="corner-badge-wrapper" data-position="top">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-text="19m" data-position="top">
+						<div class="blank"></div>
+					</div>
 				</div>
 			</section>
 
@@ -69,8 +75,8 @@
 			<br>
 
 			<!-- Avatar -->
-			<section class="_pdh-24px">
-				<h3 id="avatar">Avatar</h3>
+			<section id="avatar" class="_pdh-24px">
+				<h3>Avatar</h3>
 				<br>
 				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
@@ -85,7 +91,7 @@
 					<div class="corner-badge-wrapper">
 						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
 					</div>
-					<div class="corner-badge-wrapper">
+					<div class="corner-badge-wrapper" data-position="top">
 						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -small">
 					</div>
 					<div class="corner-badge-wrapper">
@@ -99,8 +105,8 @@
 			<br>
 
 			<!-- Button -->
-			<section class="_pdh-24px">
-				<h3 id="button">Button</h3>
+			<section id="button" class="_pdh-24px">
+				<h3>Button</h3>
 				<br>
 				<div class="lo-4 _gg-16px">
 					<button class="pw-button">
@@ -201,8 +207,8 @@
 			<br>
 
 			<!-- Status Badge -->
-			<section class="_pdh-24px">
-				<h3 id="status-badge">Status Badge</h3>
+			<section id="status-badge class="_pdh-24px">
+				<h3">Status Badge</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="pw-status-badge">
@@ -227,8 +233,8 @@
 			<br>
 
 			<!-- Quick Action -->
-			<section class="_pdh-24px">
-				<h3 id="quick-action">Quick Action</h3>
+			<section id="quick-action" class="_pdh-24px">
+				<h3>Quick Action</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="pw-quick-action">
@@ -236,11 +242,12 @@
 					</div>
 				</div>
 			</section>
+
 			<br>
 			<hr>
 			<br>
 
-			<section class="lo-12 _gg-16px _pdh-32px">
+			<section id="contact-card" class="lo-12 _gg-16px _pdh-32px">
 				<h3>contact-card</h3>
 				<div>
 					<div v-for="card in 5" class="contact-card">
