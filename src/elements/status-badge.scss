@@ -1,0 +1,36 @@
+%base-status-badge {
+	background-color: black;
+}
+
+@mixin make-status-badge($color: $color-primary) {
+	display: inline-block;
+
+	padding: 0.25rem 0.75rem;
+
+	font-size: $font-size-tiny;
+	font-weight: $font-weight-bold;
+
+	color: white;
+	background-color: $color;
+
+	border-radius: 0.2rem;
+}
+
+$components-colors: (
+	'accent'  : $color-accent,
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning' : $color-warning,
+	'info'    : $color-info,
+	'gray'    : $color-gray-200,
+) !default;
+
+.#{$prefix}status-badge {
+	@include make-status-badge();
+
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			@include make-status-badge($value);
+		}
+	}
+}
