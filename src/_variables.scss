@@ -13,9 +13,9 @@ $color-gray-200: hsl(210, 10%, 91%) !default;
 $color-gray-100: hsl(210, 10%, 97%) !default;
 
 $color-positive: hsl(150, 80%, 45%) !default;
-$color-warning: hsl(40, 90%, 60%) !default;
+$color-warning: hsl(48, 88%, 49%) !default;
 $color-info: hsl(200, 100%, 65%) !default;
-$color-negative: hsl(0, 100%, 65%) !default;
+$color-negative: hsl(8, 78%, 61%) !default;
 
 $color-white: hsl(0, 255%, 100%) !default;
 $color-light: hsla(0, 255%, 100%, 0.92) !default;
@@ -35,9 +35,9 @@ $color-black: hsl(0, 0%, 0%) !default;
     --color-gray-200: hsl(210, 10%, 91%);
     --color-gray-100: hsl(210, 10%, 97%);
     --color-positive: hsl(150, 81%, 45%);
-    --color-warning: hsl(40, 90%, 60%);
+    --color-warning: hsl(48, 88%, 49%);
     --color-info: hsl(200, 100%, 65%);
-    --color-negative: hsl(0, 100%, 65%);
+    --color-negative: hsl(8, 78%, 61%);
     --color-white: hsl(0, 255%, 100%);
     --color-light: hsla(0, 255%, 100%, 0.92);
     --color-dark: hsla(231, 10%, 18%, 0.98);
@@ -62,3 +62,8 @@ $timing-faster:  120ms;
 $timing-normal:  160ms;
 $timing-slower:  240ms;
 $timing-slowest: 480ms;
+
+// Line Height
+$line-height-none: 1;
+$line-height-normal: 1.15;
+$line-height-paragraph: 1.5;
