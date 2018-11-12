@@ -1,7 +1,7 @@
 {
-	"name": "@fastwork/blueprint",
+	"name": "@fastwork/pinwheel",
 	"version": "0.0.1",
-	"description": "Blueprint UI",
+	"description": "Pinwheel",
 	"main": "index.js",
 	"directories": {
 		"src": "src"
