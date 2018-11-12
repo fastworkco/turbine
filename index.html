@@ -2,7 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="dist/blueprint.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/biomatic@0.3.7/dist/biomatic.lite.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
 	</head>
 	<body style="background-color: #f2f2f2">
 		<div id="app">
@@ -36,49 +36,49 @@
 				<h3 id="button">Button</h3>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="bp-button">
+					<button class="pw-button">
 						Button
 					</button>
-					<button class="bp-button" disabled>
+					<button class="pw-button" disabled>
 						Disabled
 					</button>
-					<button class="bp-button -loading">
+					<button class="pw-button -loading">
 						Loading
 					</button>
 				</div>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="bp-button -positive">
+					<button class="pw-button -positive">
 						Button
 					</button>
-					<button class="bp-button -positive" disabled>
-						Disabled
+					<button class="pw-button -positive" disabled>
+						<i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Disabled
 					</button>
-					<button class="bp-button -positive -loading">
+					<button class="pw-button -positive -loading">
 						Loading
 					</button>
 				</div>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="bp-button-secondary">
-						Button
+					<button class="pw-button-secondary">
+						<i class="fa fa-times"></i> &nbsp;&nbsp; Button
 					</button>
-					<button class="bp-button-secondary" disabled>
+					<button class="pw-button-secondary" disabled>
 						Disabled
 					</button>
-					<button class="bp-button-secondary -loading">
+					<button class="pw-button-secondary -loading" disabled>
 						Loading
 					</button>
 				</div>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="bp-button-secondary -warning">
+					<button class="pw-button-secondary -warning">
 						Button
 					</button>
-					<button class="bp-button-secondary -warning" disabled>
+					<button class="pw-button-secondary -warning" disabled>
 						Disabled
 					</button>
-					<button class="bp-button-secondary -warning -loading">
+					<button class="pw-button-secondary -warning -loading">
 						Loading
 					</button>
 				</div>
@@ -88,7 +88,21 @@
 			<hr>
 			<br>
 
-			<section class="lo-12 _gg-16px _pd-32px">
+			<!-- Message -->
+			<section class="_pdh-24px">
+				<h3>Message</h3>
+				<br>
+				<div class="lo-6 _gg-16px">
+					<div class="pw-message">
+						ASDSDSDSD
+					</div>
+				</div>
+			</section>
+			<br>
+			<hr>
+			<br>
+
+			<section class="lo-12 _gg-16px _pdh-32px">
 				<h3>contact-card</h3>
 				<div>
 					<div v-for="card in 5" class="contact-card">

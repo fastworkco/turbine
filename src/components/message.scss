@@ -1,0 +1,34 @@
+$components-colors: (
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning' : $color-warning,
+	'info'    : $color-info,
+) !default;
+
+.#{$prefix}message {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-template-areas:
+		"icon content";
+
+	padding: 1rem;
+	border-radius: 2px;
+	color: $color-primary;
+	background-color: mix($color-primary, white, 17%);
+
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			color: $value;
+			background-color: mix($value, white, 17%);
+			border-left: 4px solid $value;
+		}
+	};
+
+	>.icon {
+		grid-area: icon;
+	}
+
+	>.content {
+		grid-area: content;
+	}
+}

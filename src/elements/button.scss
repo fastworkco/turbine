@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: center;
 
-	min-height: 40px;
+	min-height: 2.5rem;
 	padding: 0.5rem 1rem;
 
 	font-weight: $font-weight-bold;
@@ -29,8 +29,8 @@
 			height: 1rem;
 			width: 1rem;
 			border: 2px solid;
-			border-radius: 9999px;
-			animation: spinAround 500ms infinite linear;
+			border-radius: 999px;
+			animation: spinAround $timing-slowest infinite linear;
 		}
 	}
 
@@ -52,7 +52,7 @@
 	}
 
 	&:hover {
-		background-color: darken($color, 5%);
+		background-color: mix($color, black, 90%);
 	}
 
 	&.-loading {
@@ -65,7 +65,7 @@
 	}
 }
 
-@mixin make-outline-button($color: $color-primary) {
+@mixin make-secondary-button($color: $color-primary) {
 	@extend %base-button;
 
 	color: $color-light;
@@ -100,7 +100,7 @@ $components-colors: (
 	'negative': $color-negative,
 	'warning' : $color-warning,
 	'info'    : $color-info,
-);
+) !default;
 
 .#{$prefix}button {
 	@include make-button();
@@ -113,14 +113,14 @@ $components-colors: (
 }
 
 .#{$prefix}button-secondary {
-	@include make-outline-button();
+	@include make-secondary-button();
 
-	background-color: white;
 	color: $color-primary;
+	background-color: white;
 
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			@include make-outline-button($value);
+			@include make-secondary-button($value);
 
 			background-color: white;
 			color: $value;
