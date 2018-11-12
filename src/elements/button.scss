@@ -13,7 +13,7 @@
 	line-height: 100%;
 
 	border: none;
-	border-radius: 999px;
+	border-radius: $border-radius-max;
 
 	transition: all $timing-normal ease-in-out;
 	user-select: none;

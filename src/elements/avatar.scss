@@ -1,0 +1,22 @@
+%base-avatar {
+	width: 3rem;
+	height: 3rem;
+
+	border-radius: $border-radius-max;
+
+	object-fit: cover;
+
+	&.-small {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	&.-tiny {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+.#{$prefix}avatar {
+	@extend %base-avatar;
+}

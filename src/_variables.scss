@@ -12,7 +12,7 @@ $color-gray-300: hsl(210, 10%, 83%) !default;
 $color-gray-200: hsl(210, 10%, 91%) !default;
 $color-gray-100: hsl(210, 10%, 97%) !default;
 
-$color-positive: hsl(150, 80%, 45%) !default;
+$color-positive: hsl(150, 81%, 45%) !default;
 $color-warning: hsl(48, 88%, 49%) !default;
 $color-info: hsl(200, 100%, 65%) !default;
 $color-negative: hsl(8, 78%, 61%) !default;
@@ -67,3 +67,5 @@ $timing-slowest: 480ms;
 $line-height-none: 1;
 $line-height-normal: 1.15;
 $line-height-paragraph: 1.5;
+
+$border-radius-max: 999px;
