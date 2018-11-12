@@ -100,7 +100,7 @@ $components-colors: (
 	'negative': $color-negative,
 	'warning' : $color-warning,
 	'info'    : $color-info,
-) !default;
+);
 
 .#{$prefix}button {
 	@include make-button();
