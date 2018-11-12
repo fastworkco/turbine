@@ -1,4 +1,4 @@
-@mixin base-button($color: $color-primary) {
+%base-button {
 	position: relative;
 
 	display: flex;
@@ -12,16 +12,26 @@
 	font-size: 1rem;
 	line-height: 100%;
 
-	color: $color-light;
-	background-color: $color;
-
 	border: none;
-	border-radius: 2px;
+	border-radius: 999px;
 
 	transition: all $timing-normal ease-in-out;
 	user-select: none;
 	cursor: pointer;
 	outline: none;
+
+	&[disabled],
+	&.-disabled {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+}
+
+@mixin make-button($color: $color-primary) {
+	@extend %base-button;
+
+	color: $color-light;
+	background-color: $color;
 
 	&:focus {
 		@include focused-shadow($color);
@@ -31,26 +41,105 @@
 		background-color: darken($color, 5%);
 	}
 
-	&[disabled],
-	&.-disabled {
-		opacity: .5;
-		cursor: not-allowed;
+	&.-loading {
+		color: transparent;
+
+		&:after {
+			content: "";
+			position: absolute;
+			height: 1rem;
+			width: 1rem;
+			animation: spinAround 500ms infinite linear;
+			border: 2px solid;
+			border-radius: 9999px;
+			border-right-color: $color-light;
+			border-top-color: $color-light;
+		}
+
+		&.-outline,
+		&.-flat {
+			&:after {
+				border-right-color: $color-primary;
+				border-top-color: $color-primary;
+			}
+		}
 	}
 }
 
+@mixin make-outline-button($color: $color-primary) {
+	@extend %base-button;
+
+	color: $color-light;
+	background-color: $color;
+
+	&:focus {
+		@include focused-shadow($color);
+	}
+
+	&:hover {
+		background-color: $color-gray-100;
+	}
+
+	&.-loading {
+		color: transparent;
+
+		&:after {
+			content: "";
+			position: absolute;
+			height: 1rem;
+			width: 1rem;
+			animation: spinAround 500ms infinite linear;
+			border: 2px solid;
+			border-radius: 9999px;
+			border-right-color: $color;
+			border-top-color: $color;
+		}
+
+		&.-outline,
+		&.-flat {
+			&:after {
+				border-right-color: $color-primary;
+				border-top-color: $color-primary;
+			}
+		}
+	}
+}
+
+@keyframes spinAround {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(359deg); }
+}
+
 $components-colors: (
-	'accent': $color-accent,
+	'accent'  : $color-accent,
 	'positive': $color-positive,
 	'negative': $color-negative,
-	'warning': $color-warning,
-	'info': $color-info,
+	'warning' : $color-warning,
+	'info'    : $color-info,
 );
 
 .#{$prefix}button {
-	@include base-button();
+	@include make-button();
+
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			@include base-button($value);
+			@include make-button($value);
+		}
+	}
+}
+
+.#{$prefix}button-secondary {
+	@include make-outline-button();
+
+	background-color: white;
+	color: $color-primary;
+
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			@include make-outline-button($value);
+
+			background-color: white;
+			color: $value;
 		}
 	}
 }
