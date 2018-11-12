@@ -1,8 +1,16 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="dist/blueprint.min.css">
+		<link rel="stylesheet" href="dist/pinwheel.css">
 		<link rel="stylesheet" href="https://unpkg.com/biomatic@0.3.7/dist/biomatic.lite.min.css">
 		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
+		<style>
+			.blank {
+				width: 3rem;
+				height: 3rem;
+				border: 1px dashed gray;
+				border-radius: 3px;
+			}
+		</style>
 	</head>
 	<body style="background-color: #f2f2f2">
 		<div id="app">
@@ -27,11 +35,33 @@
 				<h5>Components</h5>
 				<ul>
 					<li><a href="#message">Message</a></li>
+					<li><a href="#quick-action">Quick Action</a></li>
 				</ul>
 				<h5>Utilities</h5>
 				<ul>
 					<!-- <li><a href="#message">Message</a></li> -->
 				</ul>
+			</section>
+
+			<br>
+			<hr>
+			<br>
+
+			<!-- Corner Badge -->
+			<section class="_pdh-24px">
+				<h3 id="button">Corner badge wrapper</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<div class="corner-badge-wrapper">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-text="Text">
+						<div class="blank"></div>
+					</div>
+					<div class="corner-badge-wrapper" data-text="19m">
+						<div class="blank"></div>
+					</div>
+				</div>
 			</section>
 
 			<br>
@@ -46,14 +76,20 @@
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -small">
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -tiny">
-					<div class="notification-badge" data-notification="19m">
+					<div class="corner-badge-wrapper" data-text="19m">
 						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
 					</div>
-					<div class="notification-badge">
+					<div class="corner-badge-wrapper" data-text="Hello">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
+					</div>
+					<div class="corner-badge-wrapper">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
+					</div>
+					<div class="corner-badge-wrapper">
 						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -small">
 					</div>
-					<div class="notification-badge" data-notification="Hello">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
+					<div class="corner-badge-wrapper">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -tiny">
 					</div>
 				</div>
 			</section>
@@ -183,6 +219,20 @@
 					</div>
 					<div class="pw-status-badge -warning">
 						รอชำระ
+					</div>
+				</div>
+			</section>
+			<br>
+			<hr>
+			<br>
+
+			<!-- Quick Action -->
+			<section class="_pdh-24px">
+				<h3 id="quick-action">Quick Action</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<div class="pw-quick-action">
+						dsdsds
 					</div>
 				</div>
 			</section>

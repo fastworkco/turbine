@@ -1,5 +1,6 @@
-.notification-badge {
+.corner-badge-wrapper {
 	position: relative;
+	display: inline-block;
 
 	&:after {
 		content: '';
@@ -22,9 +23,9 @@
 		transform: translate3d(20%, 0, 0);
 	}
 
-	&[data-notification] {
+	&[data-text] {
 		&:after {
-			content: attr(data-notification);
+			content: attr(data-text);
 
 			bottom: 0;
 			right: 0;
