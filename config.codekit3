@@ -362,6 +362,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/utilities/notification-badge.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/utilities/notification-badge.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/yarn.lock": {
 		"cB": 0,
 		"ft": 8192,

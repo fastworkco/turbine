@@ -1,0 +1,41 @@
+.notification-badge {
+	position: relative;
+
+	&:after {
+		content: '';
+
+		width: 0.75rem;
+		height: 0.75rem;
+
+		position: absolute;
+		display: flex;
+		align-items: center;
+
+		bottom: 0;
+		right: 0;
+
+		color: white;
+		background-color: $color-positive;
+		border: 1px solid white;
+		border-radius: $border-radius-max;
+
+		transform: translate3d(20%, 0, 0);
+	}
+
+	&[data-notification] {
+		&:after {
+			content: attr(data-notification);
+
+			bottom: 0;
+			right: 0;
+			width: auto;
+			height: auto;
+
+			padding: 0.1rem 0.2rem;
+
+			font-size: 0.5rem;
+			line-height: 1;
+			font-weight: $font-weight-black;
+		}
+	}
+}
