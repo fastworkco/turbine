@@ -2,7 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="https://unpkg.com/biomatic@0.3.7/dist/biomatic.min.css">
 		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
-		<link rel="stylesheet" href="dist/pinwheel.css">
+		<link rel="stylesheet" href="dist/turbine.css">
 		<style>
 			.blank {
 				width: 3rem;
@@ -22,8 +22,13 @@
 	</head>
 	<body>
 		<div>
-			<section class="_tal-ct _pdt-64px _pdbt-32px">
-				<h1>Pinwheel UI – Editor Draft 1</h1>
+			<section class="_tal-ct _pdt-64px _pdbt-128px">
+				<h1>Turbine UI – Editor Draft 1</h1>
+				<br>
+				<code>https://unpkg.com/@fastwork/turbine@0.0.1/dist/turbine.css</code>
+				<br>
+				<br>
+				<code>yarn add @fastwork/turbine</code>
 			</section>
 
 			<section>
@@ -51,23 +56,23 @@
 				<h3>Avatar</h3>
 				<br>
 				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -small">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -tiny">
-					<div class="corner-badge-wrapper" data-text="19m">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
+					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
+					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
+					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
+					<div class="tb-corner-badge-wrapper" data-text="19m">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
 					</div>
-					<div class="corner-badge-wrapper" data-text="Hello">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
+					<div class="tb-corner-badge-wrapper" data-text="Hello">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
 					</div>
-					<div class="corner-badge-wrapper">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar">
+					<div class="tb-corner-badge-wrapper">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
 					</div>
-					<div class="corner-badge-wrapper" data-position="top">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -small">
+					<div class="tb-corner-badge-wrapper" data-position="top">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
 					</div>
-					<div class="corner-badge-wrapper">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="pw-avatar -tiny">
+					<div class="tb-corner-badge-wrapper">
+						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
 					</div>
 				</div>
 				<br>
@@ -78,49 +83,49 @@
 				<h3>Button</h3>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<a href="#" class="pw-button">
+					<button class="tb-button">
+						Button
+					</button>
+					<button class="tb-button" disabled>
+						Disabled
+					</button>
+					<button class="tb-button -loading">
+						Loading
+					</button>
+				</div>
+				<br>
+				<div class="lo-4 _gg-16px">
+					<a href="#" class="tb-button -positive">
 						I am href link
 					</a>
-					<button class="pw-button" disabled>
-						Disabled
-					</button>
-					<button class="pw-button -loading">
-						Loading
-					</button>
-				</div>
-				<br>
-				<div class="lo-4 _gg-16px">
-					<button class="pw-button -positive">
-						Button
-					</button>
-					<button class="pw-button -positive" disabled>
+					<button class="tb-button -positive" disabled>
 						<i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Disabled
 					</button>
-					<button class="pw-button -positive -loading">
+					<button class="tb-button -positive -loading">
 						Loading
 					</button>
 				</div>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<a href class="pw-button-secondary -negative">
-						<i class="fa fa-times"></i> &nbsp;&nbsp; I am href link
+					<button href class="tb-button-secondary -negative">
+						<i class="fa fa-times"></i> &nbsp;&nbsp; Button
+					</button>
+					<button class="tb-button-secondary -negative" disabled>
+						Disabled
+					</button>
+					<button class="tb-button-secondary -negative -loading" disabled>
+						Loading
+					</button>
+				</div>
+				<br>
+				<div class="lo-4 _gg-16px">
+					<a href="#" class="tb-button-secondary -warning">
+						I am href link
 					</a>
-					<button class="pw-button-secondary -negative" disabled>
+					<button class="tb-button-secondary -warning" disabled>
 						Disabled
 					</button>
-					<button class="pw-button-secondary -negative -loading" disabled>
-						Loading
-					</button>
-				</div>
-				<br>
-				<div class="lo-4 _gg-16px">
-					<button class="pw-button-secondary -warning">
-						Button
-					</button>
-					<button class="pw-button-secondary -warning" disabled>
-						Disabled
-					</button>
-					<button class="pw-button-secondary -warning -loading">
+					<button class="tb-button-secondary -warning -loading">
 						Loading
 					</button>
 				</div>
@@ -132,19 +137,19 @@
 				<h3>Status Badge</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="pw-status-badge">
+					<div class="tb-status-badge">
 						รอรีวิว
 					</div>
-					<div class="pw-status-badge -positive">
+					<div class="tb-status-badge -positive">
 						ทำงาน
 					</div>
-					<div class="pw-status-badge -negative">
+					<div class="tb-status-badge -negative">
 						ยกเลิก
 					</div>
-					<div class="pw-status-badge -gray">
+					<div class="tb-status-badge -gray">
 						สำเร็จ
 					</div>
-					<div class="pw-status-badge -warning">
+					<div class="tb-status-badge -warning">
 						รอชำระ
 					</div>
 				</div>
@@ -156,27 +161,27 @@
 				<h3>Message</h3>
 				<br>
 				<div class="lo-6 _alit-st _gg-16px">
-					<div class="pw-message -positive">
+					<div class="tb-message -positive">
 						<div class="icon"><i class="far fa-sync-alt"></i></div>
 						<p class="content">
 							Use our CDN to to deliver
 							a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
 						</p>
 					</div>
-					<div class="pw-message -positive">
+					<div class="tb-message -positive">
 						<p class="content">
 							Use our CDN to to deliver
 							a cached version of Font Awesome to your project without managingfiles.
 						</p>
 					</div>
-					<div class="pw-message -negative">
+					<div class="tb-message -negative">
 						<div class="icon"><i class="far fa-sync-alt"></i></div>
 						<p class="content">
 							Use our CDN to to deliver
 							a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
 						</p>
 					</div>
-					<div class="pw-message -warning">
+					<div class="tb-message -warning">
 						<div class="icon"><i class="far fa-sync-alt"></i></div>
 						<p class="content">
 							Use our CDN to to deliver
@@ -192,7 +197,7 @@
 				<h3>Quick Action</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="pw-quick-action">
+					<div class="tb-quick-action">
 						dsdsds
 					</div>
 				</div>
@@ -221,19 +226,19 @@
 				<h3>Corner badge wrapper</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="corner-badge-wrapper">
+					<div class="tb-corner-badge-wrapper">
 						<div class="blank"></div>
 					</div>
-					<div class="corner-badge-wrapper" data-text="Text">
+					<div class="tb-corner-badge-wrapper" data-text="Text">
 						<div class="blank"></div>
 					</div>
-					<div class="corner-badge-wrapper" data-text="19m">
+					<div class="tb-corner-badge-wrapper" data-text="19m">
 						<div class="blank"></div>
 					</div>
-					<div class="corner-badge-wrapper" data-position="top">
+					<div class="tb-corner-badge-wrapper" data-position="top">
 						<div class="blank"></div>
 					</div>
-					<div class="corner-badge-wrapper" data-text="19m" data-position="top">
+					<div class="tb-corner-badge-wrapper" data-text="19m" data-position="top">
 						<div class="blank"></div>
 					</div>
 				</div>

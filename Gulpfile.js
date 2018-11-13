@@ -6,7 +6,7 @@ const rename = require('gulp-rename')
 gulp.task('default', function() {
   const outputConfigs = {
     src: './src/main.scss',
-    basename: 'blueprint'
+    basename: 'turbine'
   }
   generateCSS(outputConfigs)
 })
@@ -19,7 +19,7 @@ function generateCSS({ src = '', basename = '' }) {
     .pipe(
       rename({
         basename,
-        suffix: '.min',
+        suffix: '',
         extname: '.css'
       })
     )

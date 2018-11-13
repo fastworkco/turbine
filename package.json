@@ -1,7 +1,7 @@
 {
-	"name": "@fastwork/pinwheel",
-	"version": "0.0.2",
-	"description": "Pinwheel",
+	"name": "@fastwork/turbine",
+	"version": "0.0.3",
+	"description": "Turbine UI",
 	"main": "index.js",
 	"directories": {
 		"src": "src"
