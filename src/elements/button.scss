@@ -73,8 +73,10 @@
 @mixin make-secondary-button($color: $color-primary) {
 	@extend %base-button;
 
-	color: $color-light;
-	background-color: $color;
+	color: $color;
+	background-color: white;
+
+	border: 1px solid $color;
 
 	&:focus {
 		@include focused-shadow($color);
@@ -120,14 +122,9 @@ $components-colors: (
 .#{$prefix}button-secondary {
 	@include make-secondary-button();
 
-	color: $color-primary;
-	background-color: white;
-
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
 			@include make-secondary-button($value);
-
-			background-color: white;
 			color: $value;
 		}
 	}
