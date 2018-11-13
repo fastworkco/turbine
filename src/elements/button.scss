@@ -20,6 +20,11 @@
 	cursor: pointer;
 	outline: none;
 
+	&.-small {
+		min-height: 1.875rem;
+		font-size: $font-size-small;
+	}
+
 	&.-loading {
 		color: transparent;
 
