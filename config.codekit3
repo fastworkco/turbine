@@ -290,7 +290,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/contact-card.scss": {
+	"/src/components/contact-list-item.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -298,7 +298,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/contact-card.css",
+		"oAP": "/src/components/contact-list-item.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -362,7 +362,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/src/elements/notification-badge.css",
 		"oF": 0,
 		"oS": 0,
@@ -403,6 +403,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/src/mixins/_shadow.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/mixins/_text-oveflow.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/mixins/_text-oveflow.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -1,0 +1,31 @@
+@mixin make-notification-badge($color: $color-primary) {
+	display: inline-block;
+
+	padding: 0.1875rem 0.5rem;
+
+	font-size: $font-size-tiny;
+	font-weight: $font-weight-bold;
+
+	color: white;
+	background-color: $color;
+
+	border-radius: $border-radius-max;
+}
+
+$components-colors: (
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning' : $color-warning,
+	'info'    : $color-info,
+	'gray'    : $color-gray-300,
+);
+
+.#{$prefix}notification-badge {
+	@include make-notification-badge();
+
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			@include make-notification-badge($value);
+		}
+	}
+}

@@ -3,12 +3,14 @@
 @import 'reset';
 
 @import 'mixins/shadow';
+@import 'mixins/text-oveflow';
 
 @import 'elements/avatar';
 @import 'elements/button';
+@import 'elements/notification-badge';
 @import 'elements/status-badge';
 
-@import 'components/contact-card';
+@import 'components/contact-list-item';
 @import 'components/message';
 @import 'components/quick-action';
 

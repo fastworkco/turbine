@@ -39,10 +39,12 @@
 				<ul class="_lh-150pct">
 					<li><a href="#avatar" class="bio-link">Avatar</a></li>
 					<li><a href="#button" class="bio-link">Button</a></li>
+					<li><a href="#notification-badge" class="bio-link">Notification badge</a></li>
 					<li><a href="#status-badge" class="bio-link">Status badge</a></li>
 				</ul>
 				<h5>Components</h5>
 				<ul class="_lh-150pct">
+					<li><a href="#contact-list-item" class="bio-link">Contact list item</a></li>
 					<li><a href="#message" class="bio-link">Message</a></li>
 					<li><a href="#quick-action" class="bio-link">Quick action</a></li>
 				</ul>
@@ -146,6 +148,24 @@
 			</section>
 
 			<section id="status-badge">
+				<h3>Notification Badge</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<span class="tb-notification-badge">
+						1
+					</span>
+					<span class="tb-notification-badge -negative">
+						12
+					</span>
+					<span class="tb-notification-badge -negative">
+						99+
+					</span>
+				</div>
+				<br>
+				<script src="https://gist.github.com/BioMaRu/bf78601c77244e4c1d0b70aaebebc1e0.js"></script>
+			</section>
+
+			<section id="status-badge">
 				<h3>Status Badge</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
@@ -215,22 +235,55 @@
 				</div>
 			</section>
 
-			<section id="contact-card">
-				<h3>contact-card</h3>
+			<section id="contact-list-item" style="background-color: hsl(250, 27%, 96%);">
+				<h3>Contact list item</h3>
 				<br>
-				<!-- <div id="app">
-					<div v-for="card in 5" class="contact-card">
+				<div style="width: 380px">
+					<div class="tb-contact-list-item">
 						<div class="avatar">
-							<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="_w-48px _h-48px _bdrd-max">
+							<div class="tb-corner-badge-wrapper" data-text="19m">
+								<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
+							</div>
 						</div>
-						<div class="name">name</div>
-						<div class="message">message</div>
-						<div class="product-name">product-name</div>
+						<div class="name">biomaru</div>
+						<div class="message">ฉันต้องการทำงานร่วมกับคุณ ขอทราบรายละเอียดงาน</div>
+						<div class="product-name">รับออกแบบโลโก้สไตล์โมเดิ้นน</div>
 						<div class="date">12 Nov</div>
-						<div class="notification">notification</div>
-						<div class="status">status</div>
+						<div class="notification">
+							<span class="tb-notification-badge -negative">
+								99+
+							</span>
+						</div>
+						<div class="status">
+							<div class="tb-status-badge -positive">
+								สำเร็จ
+							</div>
+						</div>
 					</div>
-				</div> -->
+					<div class="tb-contact-list-item -active">
+						<div class="avatar">
+							<div class="tb-corner-badge-wrapper" data-text="19m">
+								<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
+							</div>
+						</div>
+						<div class="name">biomaru</div>
+						<div class="message">ฉันต้องการทำงานร่วมกับคุณ ขอทราบรายละเอียดงาน</div>
+						<div class="product-name">รับออกแบบโลโก้สไตล์โมเดิ้นน</div>
+						<div class="date">12 Nov</div>
+						<div class="notification">
+							<span class="tb-notification-badge -negative">
+								99+
+							</span>
+						</div>
+						<div class="status">
+							<div class="tb-status-badge -positive">
+								สำเร็จ
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<script src="https://gist.github.com/BioMaRu/99341657add84e3f60c79a6acec17b04.js"></script>
 			</section>
 
 			<!-- Corner Badge -->

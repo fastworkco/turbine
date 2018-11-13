@@ -1,15 +1,14 @@
-.contact-card {
+.#{$prefix}contact-list-item {
 	display: grid;
-	grid-column-gap: 12px;
+	grid-column-gap: 1rem;
 	grid-template-columns: max-content 1fr max-content;
 	grid-template-rows: repeat(3, max-content);
 	grid-template-areas:
 		"avatar name         date"
 		"avatar message      notification"
-		"avatar product-name status"
-		"avatar .            .";
+		"avatar product-name status";
 
-	padding: 0.75rem;
+	padding: 0.5rem 0.75rem;
 
 	background-color: white;
 
@@ -25,30 +24,62 @@
 
 	> .avatar {
 		grid-area: avatar;
+		align-self: center;
 	}
 
 	> .name {
 		grid-area: name;
+
+		@include ellipsis-text();
 	}
 
 	> .message {
 		grid-area: message;
+
+		@include ellipsis-text();
 	}
 
 	> .product-name {
 		grid-area: product-name;
+
+		@include ellipsis-text();
+
+		font-size: $font-size-small;
+		line-height: 1.4;
+
+		color: $color-gray-500;
 	}
 
 	> .date {
 		grid-area: date;
-		font-size: $font-size-small;
+
+		display: flex;
+		justify-content: flex-end;
+
+		font-size: $font-size-tiny;
+		color: $color-gray-500;
 	}
 
 	> .notification {
 		grid-area: notification;
+
+		display: flex;
+		justify-content: flex-end;
+
+		align-self: start;
 	}
 
 	> .status {
 		grid-area: status;
+
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&.-active > {
+		.name,
+		.message {
+			font-weight: $font-weight-bold;
+		}
 	}
 }
