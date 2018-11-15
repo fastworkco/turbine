@@ -3,6 +3,7 @@
 @import 'reset';
 
 @import 'mixins/shadow';
+@import 'mixins/card';
 @import 'mixins/text-oveflow';
 
 @import 'elements/avatar';
@@ -12,6 +13,7 @@
 @import 'elements/status-badge';
 
 @import 'components/card-deliverable';
+@import 'components/card-document';
 @import 'components/contact-list-item';
 @import 'components/message';
 @import 'components/quick-action-list';

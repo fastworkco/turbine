@@ -1,0 +1,10 @@
+@mixin make-card() {
+	background-color: $color-white;
+
+	border: 1px solid $color-gray-200;
+	border-radius: 3px;
+}
+
+@mixin make-card-padding() {
+	padding: 1rem;
+}

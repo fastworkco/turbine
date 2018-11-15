@@ -310,6 +310,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/components/card-document.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/components/card-document.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/components/contact-list-item.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -438,6 +451,19 @@
 		"oAP": "/dist/turbine.css",
 		"oF": 3,
 		"oS": 3,
+		"uL": 1
+		},
+	"/src/mixins/_card.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/mixins/_card.css",
+		"oF": 0,
+		"oS": 0,
 		"uL": 1
 		},
 	"/src/mixins/_shadow.scss": {

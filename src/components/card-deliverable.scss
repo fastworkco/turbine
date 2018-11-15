@@ -1,17 +1,13 @@
 .#{$prefix}card-deliverable {
+	@include make-card();
+	@include make-card-padding();
+
 	display: grid;
 	grid-gap: 12px;
 	grid-template-columns: 1fr max-content;
 	grid-template-areas:
 		"header timestamp"
 		"file-list file-list";
-
-	padding: 1rem;
-
-	background-color: $color-white;
-
-	border: 1px solid $color-gray-200;
-	border-radius: 3px;
 
 	ul {
 		list-style: none;
