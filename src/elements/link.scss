@@ -1,0 +1,37 @@
+$components-colors: (
+	'primary': $color-primary,
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning' : $color-warning,
+	'info'    : $color-info,
+);
+
+.#{$prefix}link {
+	font-weight: 400;
+	text-decoration: none;
+
+	color: $color-gray-800;
+
+	cursor: pointer;
+	outline: none;
+	transition: all 0.2s ease-in-out;
+
+	&:before, &:after {
+		pointer-events: none;
+		backface-visibility: hidden;
+	}
+
+	&:hover, &:focus, &.-active {
+		color: $color-primary;
+	}
+
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			color: $value;
+
+			&:hover, &:focus, &.-active {
+				color: darken($value, 8%);
+			}
+		}
+	};
+}
