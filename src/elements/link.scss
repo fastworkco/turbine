@@ -14,7 +14,7 @@ $components-colors: (
 
 	cursor: pointer;
 	outline: none;
-	transition: all $timing-faster ease-in-out;
+	transition: all $timing-fastest ease-in-out;
 
 	&:before, &:after {
 		pointer-events: none;
