@@ -192,11 +192,11 @@
 		"oAP": "/assets/fontawesome-pro-5.5.0/webfonts/fa-solid-900.woff2",
 		"oF": 0
 		},
-	"/assets/turbine-loading.svg": {
+	"/assets/turbine-spinning.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/turbine-loading.svg",
+		"oAP": "/assets/turbine-spinning.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
