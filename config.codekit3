@@ -23,6 +23,17 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/assets/banner1.jpg": {
+		"ft": 16384,
+		"iS": 204426,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/banner1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/fontawesome-pro-5.5.0/css/all.min.css": {
 		"aP": 1,
 		"bl": 0,
