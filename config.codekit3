@@ -34,6 +34,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/banner3.jpg": {
+		"ft": 16384,
+		"iS": 197037,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/banner3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/fontawesome-pro-5.5.0/css/all.min.css": {
 		"aP": 1,
 		"bl": 0,
