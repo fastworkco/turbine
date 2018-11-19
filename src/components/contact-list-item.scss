@@ -4,7 +4,7 @@
 	grid-template-columns: max-content 1fr max-content;
 	grid-template-rows: repeat(3, max-content);
 	grid-template-areas:
-		"avatar name         date"
+		"avatar name         timestamp"
 		"avatar message      notification"
 		"avatar product-name status";
 
@@ -50,8 +50,8 @@
 		color: $color-gray-500;
 	}
 
-	> .date {
-		grid-area: date;
+	> .timestamp {
+		grid-area: timestamp;
 
 		display: flex;
 		justify-content: flex-end;
