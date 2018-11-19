@@ -10,9 +10,11 @@
 				border: 1px dashed gray;
 				border-radius: 3px;
 			}
+
 			hr {
 				margin: 0px;
 			}
+
 			section {
 				padding: 24px;
 				background-color: white;
@@ -25,6 +27,14 @@
 				background-repeat: no-repeat;
 				background-color: #09191f;
 				background-attachment: fixed;
+			}
+
+			.source {
+				max-height: 0px
+			}
+
+			.source.show-source {
+				max-height: unset;
 			}
 		</style>
 	</head>
@@ -123,7 +133,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/8b6036a6ed0669b1fbd036fd3d933163.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-avatar')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-avatar" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/8b6036a6ed0669b1fbd036fd3d933163.js"></script>
+				</div>
 			</section>
 
 			<section id="button">
@@ -189,7 +206,14 @@
 					</button>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/9a1b2dca3d1a756a5c8d4ce4ca02daaf.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-button')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-button" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/9a1b2dca3d1a756a5c8d4ce4ca02daaf.js"></script>
+				</div>
 			</section>
 
 			<section id="input">
@@ -255,7 +279,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/cf24b0efcce86022f013e29e86bcee0d.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-input')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-input" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/cf24b0efcce86022f013e29e86bcee0d.js"></script>
+				</div>
 			</section>
 
 			<section id="link">
@@ -271,7 +302,14 @@
 					<a href="#" class="tb-link -negative">Negative link</a>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/97d65cef2fde2b322d7acc50f59b9dd3.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-link')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-link" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/97d65cef2fde2b322d7acc50f59b9dd3.js"></script>
+				</div>
 			</section>
 
 			<section id="select">
@@ -313,7 +351,30 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/0194207a317bc21ae5dd318d81b13a9b.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-select')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-select" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/0194207a317bc21ae5dd318d81b13a9b.js"></script>
+				</div>
+			</section>
+
+			<section id="checkbox">
+				<h3>Checkbox</h3>
+				<br>
+				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
+						<input type="checkbox">
+					<div class="tb-field">
+						<div class="tb-checkbox">
+							<input type="checkbox">
+						</div>
+						<label>Checkbox</label>
+					</div>
+				</div>
+				<br>
+				<!-- <script src="https://gist.github.com/BioMaRu/0194207a317bc21ae5dd318d81b13a9b.js"></script> -->
 			</section>
 
 			<section id="textarea">
@@ -343,7 +404,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/cf24b0efcce86022f013e29e86bcee0d.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-textarea')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-textarea" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/cf24b0efcce86022f013e29e86bcee0d.js"></script>
+				</div>
 			</section>
 
 			<section id="notification-badge">
@@ -361,8 +429,25 @@
 					</span>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/52ec3ec3feab7f15d049060dd63a0a5c.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-notification-badge')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-notification-badge" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/52ec3ec3feab7f15d049060dd63a0a5c.js"></script>
+				</div>
 			</section>
+
+			<!-- <section id="status-badge">
+				<h3>Status Badge</h3>
+				<br>
+				<div class="tb-separator">
+					<span>OR</span>
+				</div>
+				<br>
+				<script src="https://gist.github.com/BioMaRu/7e2b8bbff29ea678db869748cbfc94e3.js"></script>
+			</section> -->
 
 			<section id="status-badge">
 				<h3>Status Badge</h3>
@@ -385,7 +470,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/7e2b8bbff29ea678db869748cbfc94e3.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-status-badge')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-status-badge" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/7e2b8bbff29ea678db869748cbfc94e3.js"></script>
+				</div>
 			</section>
 
 			<!--
@@ -401,7 +493,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/5a8c5f83bb9d0762ff962fa8c2c9bf73.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-card-blank')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-card-blank" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/5a8c5f83bb9d0762ff962fa8c2c9bf73.js"></script>
+				</div>
 			</section>
 
 			<section id="card-deliverable" style="background-color: hsl(250, 27%, 96%);">
@@ -434,7 +533,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/15d85137eb8b5cc9663488434240ce15.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-card-deliverable')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-card-deliverable" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/15d85137eb8b5cc9663488434240ce15.js"></script>
+				</div>
 			</section>
 
 			<section id="card-document" style="background-color: hsl(250, 27%, 96%);">
@@ -454,7 +560,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/2b3619b4e0acbcd810e49dd71b80c172.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-card-document')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-card-document" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/2b3619b4e0acbcd810e49dd71b80c172.js"></script>
+				</div>
 			</section>
 
 			<section id="card-file" style="background-color: hsl(250, 27%, 96%);">
@@ -522,7 +635,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/99341657add84e3f60c79a6acec17b04.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-contact-list-item')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-contact-list-item" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/99341657add84e3f60c79a6acec17b04.js"></script>
+				</div>
 			</section>
 
 			<section id="message">
@@ -558,7 +678,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/391fcf81936ce4e48de83072f683e01e.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-message')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-message" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/391fcf81936ce4e48de83072f683e01e.js"></script>
+				</div>
 			</section>
 
 			<section id="quick-action-list">
@@ -590,7 +717,14 @@
 				</div>
 				<br>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/6a6919dfef786b590de43c4ed5f6d0e2.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-quick-action')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-quick-action" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/6a6919dfef786b590de43c4ed5f6d0e2.js"></script>
+				</div>
 			</section>
 
 			<section id="timeline">
@@ -642,7 +776,14 @@
 					</li>
 				</ul>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/77ff8aaff62bdaa1da9eb83aa5cdca8f.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-timeline')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-timeline" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/77ff8aaff62bdaa1da9eb83aa5cdca8f.js"></script>
+				</div>
 			</section>
 
 			<!--
@@ -670,7 +811,14 @@
 					</div>
 				</div>
 				<br>
-				<script src="https://gist.github.com/BioMaRu/87ae4c0cf85e35513c64262ca1e33e89.js"></script>
+				<div class="u-halign-center">
+					<div onclick="toggleSource('src-corner-badge-wrapper')" class="bio-link -fancy">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-corner-badge-wrapper" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/87ae4c0cf85e35513c64262ca1e33e89.js"></script>
+				</div>
 			</section>
 		</div>
 	</body>
@@ -682,4 +830,10 @@
 			el: '#app',
 		})
 	</script> -->
+
+	<script>
+		function toggleSource(id) {
+			document.getElementById(id).classList.toggle('show-source')
+		}
+	</script>
 </html>

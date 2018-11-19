@@ -1,0 +1,15 @@
+.#{$prefix}separator {
+	display: flex;
+	justify-content: center;
+	span {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0px;
+			height: 1px;
+			width: 100%;
+			background: black;
+		}
+	}
+}
