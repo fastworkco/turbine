@@ -42,7 +42,7 @@ $components-colors: (
 		}
 
 		&:not(:first-child) {
-			border-left: 1px solid $color-gray-200;
+			border-left: 1px solid $color-border-secondary;
 		}
 
 		&:only-child {
@@ -50,7 +50,7 @@ $components-colors: (
 		}
 
 		&:hover {
-			background-color: $color-gray-100;
+			background-color: $color-background-active-primary;
 		}
 
 		@each $key, $value in $components-colors {

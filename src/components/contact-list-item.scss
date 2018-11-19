@@ -14,7 +14,25 @@
 	cursor: pointer;
 
 	&:hover {
-		background-color: $color-gray-100;
+		background-color: $color-background-active-primary;
+	}
+
+	&.-active >,
+	&.active > {
+		.name,
+		.message {
+			font-weight: $font-weight-bold;
+		}
+	}
+
+	&.-selected,
+	&.selected {
+		background-color: $color-background-active-primary;
+
+		> .name,
+		> .message {
+			font-weight: $font-weight-bold;
+		}
 	}
 
 	> .avatar {
@@ -70,12 +88,5 @@
 
 		display: flex;
 		justify-content: flex-end;
-	}
-
-	&.-active > {
-		.name,
-		.message {
-			font-weight: $font-weight-bold;
-		}
 	}
 }
