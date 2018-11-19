@@ -9,17 +9,12 @@
 		"avatar product-name status";
 
 	padding: 0.5rem 0.75rem;
-
 	background-color: white;
-
+	border-bottom: 1px solid $color-border-secondary;
 	cursor: pointer;
 
 	&:hover {
 		background-color: $color-gray-100;
-	}
-
-	&:not(:only-child):not(:first-child) {
-		border-top: 1px solid $color-gray-200;
 	}
 
 	> .avatar {

@@ -31,11 +31,11 @@
 		font-size: $font-size-small;
 		line-height: $line-height-bigger;
 
-		color: $color-gray-600;
+		color: $color-text-secondary;
 
 		&:not(:last-child) {
 			padding-bottom: 1rem;
-			border-bottom: 1px solid $color-gray-200;
+			border-bottom: 1px solid $color-border-secondary;
 		}
 	}
 
@@ -67,7 +67,7 @@
 					bottom: 0;
 					margin: auto;
 					height: 50%;
-					background-color: $color-gray-200;
+					background-color: $color-border-secondary;
 				}
 			}
 
