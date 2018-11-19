@@ -339,7 +339,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/card-blank.scss": {
+	"/src/components/_card-blank.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -347,12 +347,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/card-blank.css",
+		"oAP": "/src/components/_card-blank.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/card-deliverable.scss": {
+	"/src/components/_card-deliverable.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -360,12 +360,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/card-deliverable.css",
+		"oAP": "/src/components/_card-deliverable.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/card-document.scss": {
+	"/src/components/_card-document.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -373,12 +373,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/card-document.css",
+		"oAP": "/src/components/_card-document.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/card-file.scss": {
+	"/src/components/_card-file.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -386,12 +386,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/card-file.css",
+		"oAP": "/src/components/_card-file.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/contact-list-item.scss": {
+	"/src/components/_contact-list-item.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -399,12 +399,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/contact-list-item.css",
+		"oAP": "/src/components/_contact-list-item.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/message.scss": {
+	"/src/components/_message.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -412,12 +412,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/message.css",
+		"oAP": "/src/components/_message.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/quick-action-list.scss": {
+	"/src/components/_quick-action-list.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -425,12 +425,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/quick-action-list.css",
+		"oAP": "/src/components/_quick-action-list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/timeline.scss": {
+	"/src/components/_timeline.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -438,12 +438,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/timeline.css",
+		"oAP": "/src/components/_timeline.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/avatar.scss": {
+	"/src/elements/_avatar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -451,12 +451,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/avatar.css",
+		"oAP": "/src/elements/_avatar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/button.scss": {
+	"/src/elements/_button.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -464,12 +464,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/button.css",
+		"oAP": "/src/elements/_button.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/link.scss": {
+	"/src/elements/_input.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -477,12 +477,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/link.css",
+		"oAP": "/src/elements/_input.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/notification-badge.scss": {
+	"/src/elements/_link.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -490,12 +490,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/notification-badge.css",
+		"oAP": "/src/elements/_link.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/status-badge.scss": {
+	"/src/elements/_notification-badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -503,7 +503,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/status-badge.css",
+		"oAP": "/src/elements/_notification-badge.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/elements/_status-badge.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/elements/_status-badge.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -572,13 +585,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/src/utilities/หกฟห": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/src/utilities/หกฟห",
-		"oF": 0
 		},
 	"/yarn.lock": {
 		"cB": 0,

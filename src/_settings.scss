@@ -9,3 +9,9 @@ $color-border-secondary: $color-gray-200;
 
 // MISC.
 $color-background-active-primary: $color-gray-100;
+
+// Placeholder color
+::-webkit-input-placeholder,
+::-moz-placeholder {
+	color: $color-gray-300;
+}
