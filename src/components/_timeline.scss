@@ -15,6 +15,9 @@ $components-colors: (
 
 .#{$prefix}timeline {
 	position: relative;
+
+	margin: 0;
+
 	list-style: none;
 
 	ul {

@@ -2,7 +2,7 @@
 	display: grid;
 	grid-column-gap: 1rem;
 	grid-template-columns: max-content 1fr max-content;
-	grid-template-rows: repeat(3, max-content);
+	grid-template-rows: minmax(24px, max-content) max-content max-content;
 	grid-template-areas:
 		"avatar name         timestamp"
 		"avatar message      notification"
