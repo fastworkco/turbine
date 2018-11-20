@@ -98,8 +98,8 @@ $components-colors: (
 		.#{$prefix}textarea > textarea,
 		.#{$prefix}select > select {
 			cursor: not-allowed;
-			background-color: hsla(0, 0%, 97%, 0.92);
-			border-color: hsla(0, 0%, 97%, 0.92);
+			background-color: $color-disable-input;
+			border-color: $color-border-input;
 		}
 
 		small {

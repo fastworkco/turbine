@@ -116,6 +116,7 @@
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
 					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
+
 					<div class="tb-corner-badge-wrapper" data-text="19m">
 						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
 					</div>
@@ -133,8 +134,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-avatar')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-avatar')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -147,67 +148,38 @@
 				<h3>Button</h3>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="tb-button">
-						Button
-					</button>
-					<button class="tb-button" disabled>
-						Disabled
-					</button>
-					<button class="tb-button -loading">
-						Loading
-					</button>
+					<button class="tb-button">Button</button>
+					<button class="tb-button -loading">Loading</button>
+					<button class="tb-button" disabled>Disabled</button>
+					<button class="tb-button-secondary">Button</button>
+					<button class="tb-button-secondary -loading">Loading</button>
+					<button class="tb-button-secondary" disabled>Disabled</button>
 				</div>
+				<br>
+				<h4>Color</h4>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<a href="#" class="tb-button -positive">
-						I am href link
-					</a>
-					<button class="tb-button -positive" disabled>
-						<i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Disabled
-					</button>
-					<button class="tb-button -positive -loading">
-						Loading
-					</button>
+					<button class="tb-button -positive"><i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Button</button>
+					<button class="tb-button -warning -loading">Loading</button>
+					<button class="tb-button -negative" disabled><i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Disabled</button>
+					<button class="tb-button-secondary -positive">Button</button>
+					<button class="tb-button-secondary -negative -loading">Loading</button>
+					<button class="tb-button-secondary -warning" disabled>Disabled</button>
 				</div>
+				<br>
+				<h4>Size</h4>
 				<br>
 				<div class="lo-4 _gg-16px">
-					<button class="tb-button-secondary -negative">
-						<i class="fa fa-times"></i> &nbsp;&nbsp; Button
-					</button>
-					<button class="tb-button-secondary -negative" disabled>
-						Disabled
-					</button>
-					<button class="tb-button-secondary -negative -loading" disabled>
-						Loading
-					</button>
+					<button class="tb-button -small">Button</button>
+					<button class="tb-button -small -loading">Loading</button>
+					<button class="tb-button -small" disabled>Disabled</button>
+					<button class="tb-button-secondary -small">Button</button>
+					<button class="tb-button-secondary -small -loading">Loading</button>
+					<button class="tb-button-secondary -small" disabled>Disabled</button>
 				</div>
 				<br>
-				<div class="lo-4 _gg-16px">
-					<a href="#" class="tb-button-secondary -warning">
-						I am href link
-					</a>
-					<button class="tb-button-secondary -warning" disabled>
-						Disabled
-					</button>
-					<button class="tb-button-secondary -warning -loading">
-						Loading
-					</button>
-				</div>
-				<br>
-				<div class="lo-4 _gg-16px">
-					<button class="tb-button -small">
-						Small Button
-					</button>
-					<button class="tb-button -small -loading">
-						Small Button
-					</button>
-					<button href class="tb-button-secondary -negative -small">
-						<i class="fa fa-times"></i> &nbsp;&nbsp; Small Button
-					</button>
-				</div>
-				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-button')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-button')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -219,44 +191,54 @@
 			<section id="input">
 				<h3>Input</h3>
 				<br>
+				<div class="tb-input">
+					<input type="text" placeholder="Placeholder">
+				</div>
+				<br>
+				<h3>Field</h3>
+				<br>
+				<h4>Color</h4>
+				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="tb-field">
 						<label>Label</label>
 						<div class="tb-input">
-							<input type="text" placeholder="Default input field">
+							<input type="text" placeholder="Placeholder">
 						</div>
 						<small>Description</small>
 					</div>
 					<div class="tb-field -negative">
 						<label>Label</label>
 						<div class="tb-input">
-							<input type="text" placeholder="Negative input field">
+							<input type="text" placeholder="Placeholder">
 						</div>
 						<small>Description</small>
 					</div>
 					<div class="tb-field -positive">
 						<label>Label</label>
 						<div class="tb-input">
-							<input type="text" placeholder="Positive input field">
+							<input type="text" placeholder="Placeholder">
 						</div>
 						<small>Description</small>
 					</div>
 				</div>
 				<br>
+				<h4>Disabled</h4>
+				<br>
+				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<div class="tb-field -disabled">
+						<div class="tb-input">
+							<input type="text" placeholder="Placeholder" disabled>
+						</div>
+					</div>
+				</div>
+				<br>
+				<h4>Size</h4>
+				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="tb-field -small">
 						<div class="tb-input">
-							<input type="text" placeholder="Default input field">
-						</div>
-					</div>
-					<div class="tb-field -small -negative">
-						<div class="tb-input">
-							<input type="text" placeholder="Negative input field">
-						</div>
-					</div>
-					<div class="tb-field -small -positive">
-						<div class="tb-input">
-							<input type="text" placeholder="Positive input field">
+							<input type="text" placeholder="Placeholder">
 						</div>
 					</div>
 				</div>
@@ -264,23 +246,13 @@
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="tb-field -big">
 						<div class="tb-input">
-							<input type="text" placeholder="Default input field">
-						</div>
-					</div>
-					<div class="tb-field -big -negative">
-						<div class="tb-input">
-							<input type="text" placeholder="Negative input field">
-						</div>
-					</div>
-					<div class="tb-field -big -positive">
-						<div class="tb-input">
-							<input type="text" placeholder="Positive input field">
+							<input type="text" placeholder="Placeholder">
 						</div>
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-input')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-input')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -302,8 +274,8 @@
 					<a href="#" class="tb-link -negative">Negative link</a>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-link')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-link')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -349,10 +321,21 @@
 						</div>
 						<small>Description</small>
 					</div>
+					<div class="tb-field -disabled">
+						<label>Label</label>
+						<div class="tb-select">
+							<select disabled>
+								<option value="">This is Option 1</option>
+								<option value="">This is Option 2</option>
+								<option value="">This is Option 3</option>
+							</select>
+						</div>
+						<small>Description</small>
+					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-select')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-select')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -402,10 +385,17 @@
 						</div>
 						<small>Description</small>
 					</div>
+					<div class="tb-field -disabled">
+						<label>Label</label>
+						<div class="tb-textarea">
+							<textarea placeholder="Placeholder" rows="4" disabled></textarea>
+						</div>
+						<small>Description</small>
+					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-textarea')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-textarea')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -418,24 +408,18 @@
 				<h3>Notification Badge</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<span class="tb-notification-badge">
-						1
-					</span>
-					<span class="tb-notification-badge -negative">
-						12
-					</span>
-					<span class="tb-notification-badge -negative">
-						99+
-					</span>
+					<span class="tb-notification-badge">1</span>
+					<span class="tb-notification-badge -negative">12</span>
+					<span class="tb-notification-badge -negative">99+</span>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-notification-badge')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-notification-badge')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
 				<div id="src-notification-badge" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/52ec3ec3feab7f15d049060dd63a0a5c.js"></script>
+					<script src="https://gist.github.com/BioMaRu/bf78601c77244e4c1d0b70aaebebc1e0.js"></script>
 				</div>
 			</section>
 
@@ -453,25 +437,15 @@
 				<h3>Status Badge</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="tb-status-badge">
-						รอรีวิว
-					</div>
-					<div class="tb-status-badge -positive">
-						ทำงาน
-					</div>
-					<div class="tb-status-badge -negative">
-						ยกเลิก
-					</div>
-					<div class="tb-status-badge -gray">
-						สำเร็จ
-					</div>
-					<div class="tb-status-badge -warning">
-						รอชำระ
-					</div>
+					<div class="tb-status-badge">รอรีวิว</div>
+					<div class="tb-status-badge -positive">ทำงาน</div>
+					<div class="tb-status-badge -negative">ยกเลิก</div>
+					<div class="tb-status-badge -gray">สำเร็จ</div>
+					<div class="tb-status-badge -warning">รอชำระ</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-status-badge')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-status-badge')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -493,8 +467,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-card-blank')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-card-blank')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -533,8 +507,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-card-deliverable')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-card-deliverable')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -560,8 +534,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-card-document')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-card-document')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -635,8 +609,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-contact-list-item')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-contact-list-item')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -678,8 +652,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-message')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-message')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -717,8 +691,8 @@
 				</div>
 				<br>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-quick-action')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-quick-action')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -776,8 +750,8 @@
 					</li>
 				</ul>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-timeline')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-timeline')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
@@ -811,8 +785,8 @@
 					</div>
 				</div>
 				<br>
-				<div class="u-halign-center">
-					<div onclick="toggleSource('src-corner-badge-wrapper')" class="bio-link -fancy">
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-corner-badge-wrapper')" class="bio-button -flat">
 						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
 					</div>
 				</div>
