@@ -28,11 +28,6 @@
 	&.-selected,
 	&.selected {
 		background-color: $color-background-active-primary;
-
-		> .name,
-		> .message {
-			font-weight: $font-weight-bold;
-		}
 	}
 
 	> .avatar {
