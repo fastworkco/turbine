@@ -8,9 +8,14 @@ $color-border-primary: $color-gray-300;
 $color-border-secondary: $color-gray-200;
 $color-border-input: $color-gray-300;
 $color-disable-input: $color-gray-100;
+
 // MISC.
 $color-background-active-primary: $color-gray-100;
 $color-select-chevron: $color-gray-400;
+
+// bubble
+$bubble-max-width: 20rem;
+$bubble-radius: 0.625rem;
 
 // Placeholder color
 ::-webkit-input-placeholder,

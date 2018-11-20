@@ -1,0 +1,85 @@
+%base-bubble-text {
+	position: relative;
+
+	max-width: $bubble-max-width;
+	padding: 8px 16px;
+
+	word-break: break-word;
+	white-space: pre-line;
+
+	&:before {
+		content: '';
+		display: block;
+
+		width: 0.875rem;
+		height: 0.875rem;
+		position: absolute;
+
+		top: 0;
+	}
+}
+
+.#{$prefix}bubble {
+	display: flex;
+	align-items: flex-start;
+	line-height: 1.25;
+
+	&.-self {
+		justify-content: flex-end;
+	}
+
+	&.-counterpath {
+		justify-content: flex-start;
+
+		> *:not(:only-child):first-child {
+			margin-right: 0.25rem;
+		}
+	}
+
+	&.-self > .#{$prefix}bubble-text {
+		@extend %base-bubble-text;
+
+		position: relative;
+		margin-right: $bubble-radius;
+
+		color: $color-white;
+		background-color: $color-primary;
+
+		border-radius: $bubble-radius;
+
+		&:before {
+			right: -0.5rem;
+			top: 0;
+
+			border-left: 0.5rem solid $color-primary;
+			border-bottom-left-radius: 100%;
+
+			transform: rotate(270deg);
+		}
+	}
+
+	&.-counterpath > .#{$prefix}bubble-text {
+		@extend %base-bubble-text;
+
+		position: relative;
+
+		margin-left: $bubble-radius;
+
+		color: $color-dark;
+		background-color: $color-gray-200;
+
+		border-radius: $bubble-radius;
+
+		&:before {
+			left: -0.5rem;
+
+			border-right: 0.5rem solid $color-gray-200;
+			border-bottom-right-radius: 100%;
+
+			transform: rotate(90deg) ;
+		}
+
+	}
+
+}
+
