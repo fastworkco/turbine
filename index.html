@@ -91,6 +91,7 @@
 					<li><a href="#card-file" class="bio-link">Card file</a></li>
 					<li><a href="#contact-list-item" class="bio-link">Contact list item</a></li>
 					<li><a href="#message" class="bio-link">Message</a></li>
+					<li><a href="#modal" class="bio-link">Modal</a></li>
 					<li><a href="#quick-action-list" class="bio-link">Quick action list</a></li>
 					<li><a href="#timeline" class="bio-link">Timeline</a></li>
 				</ul>
@@ -573,7 +574,7 @@ But when I call you never seem to be home ♪♪</div>
 						</p>
 						<div class="action-list">
 							<div class="tb-link -primary">Menu 1</div>
-							<div class="tb-link -primary">Menu 2 &nbsp;&nbsp;<i class="far fa-arrow-circle-down "></i></div>
+							<div class="tb-link -primary">Menu 2 &nbsp;&nbsp;<i class="far fa-arrow-circle-down"></i></div>
 						</div>
 					</div>
 				</div>
@@ -727,6 +728,27 @@ But when I call you never seem to be home ♪♪</div>
 				</div>
 			</section>
 
+			<section id="modal">
+				<h3>Modal</h3>
+				<br>
+				<div id="js-modal" onclick="closeModal()" class="tb-modal">
+					<div class="tb-modal-panel" onclick="event.stopPropagation();">
+						Modal Content &nbsp;&nbsp; <i class="far fa-times" onclick="closeModal()"></i>
+					</div>
+				</div>
+				<br>
+				<button onclick="openModal()">Open Modal</button>
+				<br>
+				<div class="u-halign-center _mgt-16px">
+					<div onclick="toggleSource('src-avatar')" class="bio-button -flat">
+						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+					</div>
+				</div>
+				<div id="src-avatar" class="source _ovf-hd _mgt-12px">
+					<script src="https://gist.github.com/BioMaRu/8b6036a6ed0669b1fbd036fd3d933163.js"></script>
+				</div>
+			</section>
+
 			<section id="quick-action-list">
 				<h3>Quick action list</h3>
 				<br>
@@ -862,17 +884,17 @@ But when I call you never seem to be home ♪♪</div>
 		</div>
 	</body>
 
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script>
-		const app = new Vue({
-			el: '#app',
-		})
-	</script> -->
-
-	<script>
-		function toggleSource(id) {
+		function toggleSource (id) {
 			document.getElementById(id).classList.toggle('show-source')
+		}
+
+		function openModal () {
+			document.getElementById('js-modal').classList.add('-show')
+		}
+
+		function closeModal () {
+			document.getElementById('js-modal').classList.remove('-show')
 		}
 	</script>
 </html>
