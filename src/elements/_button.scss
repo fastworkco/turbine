@@ -47,6 +47,10 @@
 		opacity: .5;
 		cursor: not-allowed;
 	}
+
+	&.-fluid {
+		width: 100%;
+	}
 }
 
 @mixin make-button($color: $color-primary) {

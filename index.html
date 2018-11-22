@@ -733,11 +733,26 @@ But when I call you never seem to be home ♪♪</div>
 				<br>
 				<div id="js-modal" onclick="closeModal()" class="tb-modal">
 					<div class="tb-modal-panel" onclick="event.stopPropagation();">
-						Modal Content &nbsp;&nbsp; <i class="far fa-times" onclick="closeModal()"></i>
+						<div class="close u-align-middle _w-32px _h-32px">
+							<i class="fal fa-times _fs-4" onclick="closeModal()"></i>
+						</div>
+						<h6 class="header">Modal title</h6>
+						<div class="description">Modal description</div>
+						<div class="content">
+							<p class="_tal-ct">
+								Hello, Howdy!
+							</p>
+							<br>
+							<button class="tb-button -fluid">
+								Action
+							</button>
+						</div>
 					</div>
 				</div>
 				<br>
-				<button onclick="openModal()">Open Modal</button>
+				<div class="u-halign-center">
+					<button onclick="openModal()" class="tb-button">Open Modal</button>
+				</div>
 				<br>
 				<div class="u-halign-center _mgt-16px">
 					<div onclick="toggleSource('src-avatar')" class="bio-button -flat">
@@ -891,10 +906,13 @@ But when I call you never seem to be home ♪♪</div>
 
 		function openModal () {
 			document.getElementById('js-modal').classList.add('-show')
+			document.body.style.overflowY = 'hidden'
+			document.getElementById('js-modal').scrollTo(0, 0)
 		}
 
 		function closeModal () {
 			document.getElementById('js-modal').classList.remove('-show')
+			document.body.style.overflowY = 'unset'
 		}
 	</script>
 </html>
