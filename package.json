@@ -1,6 +1,6 @@
 {
 	"name": "@fastwork/turbine",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"description": "Turbine UI",
 	"main": "index.js",
 	"directories": {
