@@ -1,15 +1,28 @@
 .#{$prefix}separator {
-	display: flex;
-	justify-content: center;
-	span {
-		position: relative;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+
+	white-space: nowrap;
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+
+		width: 50%;
+		height: 1px;
+
+		background: $color-gray-300;
+	}
+
+	&:not(:empty) {
 		&:before {
-			content: '';
-			position: absolute;
-			left: 0px;
-			height: 1px;
-			width: 100%;
-			background: black;
+			margin-right: 0.75rem;
+		}
+
+		&:after {
+			margin-left: 0.75rem;
 		}
 	}
 }
