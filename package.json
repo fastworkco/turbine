@@ -1,8 +1,10 @@
 {
 	"name": "@fastwork/turbine",
-	"version": "0.0.22",
+	"version": "0.0.23",
 	"description": "Turbine UI",
-	"main": "index.js",
+	"main": "src/main.scss",
+	"unpkg": "dist/turbine.css",
+	"style": "dist/turbine.css",
 	"directories": {
 		"src": "src"
 	},
