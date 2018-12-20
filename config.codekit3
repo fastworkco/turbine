@@ -244,6 +244,12 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/doc": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/doc",
+		"oF": 0
+		},
 	"/Gulpfile.js": {
 		"ft": 64,
 		"ma": 0,
@@ -259,6 +265,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/index.html",
+		"oF": 0
+		},
+	"/Makefile": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/Makefile",
 		"oF": 0
 		},
 	"/node_modules": {
@@ -300,7 +313,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/src/_reset.scss": {
+	"/scss/_reset.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -308,12 +321,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/_reset.css",
+		"oAP": "/scss/_reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/_settings.scss": {
+	"/scss/_settings.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -321,12 +334,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/_settings.css",
+		"oAP": "/scss/_settings.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/_variables.scss": {
+	"/scss/components/_bubble.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -334,12 +347,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/_variables.css",
+		"oAP": "/scss/components/_bubble.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_bubble.scss": {
+	"/scss/components/_card-blank.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -347,12 +360,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_bubble.css",
+		"oAP": "/scss/components/_card-blank.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_card-blank.scss": {
+	"/scss/components/_card-deliverable.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -360,12 +373,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_card-blank.css",
+		"oAP": "/scss/components/_card-deliverable.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_card-deliverable.scss": {
+	"/scss/components/_card-document.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -373,12 +386,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_card-deliverable.css",
+		"oAP": "/scss/components/_card-document.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_card-document.scss": {
+	"/scss/components/_card-file.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -386,12 +399,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_card-document.css",
+		"oAP": "/scss/components/_card-file.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_card-file.scss": {
+	"/scss/components/_contact-list-item.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -399,12 +412,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_card-file.css",
+		"oAP": "/scss/components/_contact-list-item.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_contact-list-item.scss": {
+	"/scss/components/_message.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -412,12 +425,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_contact-list-item.css",
+		"oAP": "/scss/components/_message.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_message.scss": {
+	"/scss/components/_modal.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -425,12 +438,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_message.css",
+		"oAP": "/scss/components/_modal.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_modal.scss": {
+	"/scss/components/_quick-action-list.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -438,12 +451,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_modal.css",
+		"oAP": "/scss/components/_quick-action-list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_quick-action-list.scss": {
+	"/scss/components/_timeline.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -451,12 +464,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_quick-action-list.css",
+		"oAP": "/scss/components/_timeline.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/components/_timeline.scss": {
+	"/scss/elements/_avatar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -464,12 +477,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/components/_timeline.css",
+		"oAP": "/scss/elements/_avatar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_avatar.scss": {
+	"/scss/elements/_button.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -477,12 +490,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/_avatar.css",
+		"oAP": "/scss/elements/_button.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_button.scss": {
+	"/scss/elements/_divider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -490,12 +503,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/_button.css",
+		"oAP": "/scss/elements/_divider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_divider.scss": {
+	"/scss/elements/_form.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -503,12 +516,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/_divider.css",
+		"oAP": "/scss/elements/_form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_form.scss": {
+	"/scss/elements/_link.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -516,12 +529,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/_form.css",
+		"oAP": "/scss/elements/_link.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_link.scss": {
+	"/scss/elements/_notification-badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -529,12 +542,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/_link.css",
+		"oAP": "/scss/elements/_notification-badge.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_notification-badge.scss": {
+	"/scss/elements/_status-badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -542,25 +555,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/elements/_notification-badge.css",
+		"oAP": "/scss/elements/_status-badge.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/elements/_status-badge.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/elements/_status-badge.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/main.scss": {
+	"/scss/main.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -573,7 +573,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/mixins/_card.scss": {
+	"/scss/mixins/_card.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -581,12 +581,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/mixins/_card.css",
+		"oAP": "/scss/mixins/_card.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/mixins/_shadow.scss": {
+	"/scss/mixins/_shadow.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -594,12 +594,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/mixins/_shadow.css",
+		"oAP": "/scss/mixins/_shadow.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/mixins/_text-oveflow.scss": {
+	"/scss/mixins/_text-oveflow.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -607,12 +607,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/mixins/_text-oveflow.css",
+		"oAP": "/scss/mixins/_text-oveflow.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/utilities/corner-badge-wrapper.scss": {
+	"/scss/utilities/corner-badge-wrapper.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -620,10 +620,30 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/utilities/corner-badge-wrapper.css",
+		"oAP": "/scss/utilities/corner-badge-wrapper.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/scss/variables/all.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/variables/all.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/yarn-error.log": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/yarn-error.log",
+		"oF": 0
 		},
 	"/yarn.lock": {
 		"cB": 0,
@@ -2629,7 +2649,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules, /doc",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,

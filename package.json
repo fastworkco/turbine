@@ -1,8 +1,8 @@
 {
 	"name": "@fastwork/turbine",
-	"version": "0.0.23",
+	"version": "0.0.24",
 	"description": "Turbine UI",
-	"main": "src/main.scss",
+	"main": "scss/main.scss",
 	"unpkg": "dist/turbine.css",
 	"style": "dist/turbine.css",
 	"directories": {
@@ -20,5 +20,8 @@
 		"gulp-autoprefixer": "^4.0.0",
 		"gulp-rename": "^1.2.2",
 		"gulp-sass": "^3.1.0"
+	},
+	"dependencies": {
+		"sass-loader": "^7.1.0"
 	}
 }

@@ -1,26 +1,26 @@
 // color
-$color-primary: hsl(219, 75%, 54%) !default;
-$color-secondary: hsl(210, 96%, 28%) !default;
+$color-primary: hsl(219, 75%, 54%);
+$color-secondary: hsl(210, 96%, 28%);
 
-$color-gray-900: hsl(210, 10%, 15%) !default;
-$color-gray-800: hsl(210, 10%, 23%) !default;
-$color-gray-700: hsl(210, 10%, 36%) !default;
-$color-gray-600: hsl(210, 10%, 52%) !default;
-$color-gray-500: hsl(210, 10%, 63%) !default;
-$color-gray-400: hsl(210, 10%, 73%) !default;
-$color-gray-300: hsl(210, 10%, 83%) !default;
-$color-gray-200: hsl(210, 10%, 91%) !default;
-$color-gray-100: hsl(210, 10%, 97%) !default;
+$color-gray-900: hsl(210, 10%, 15%);
+$color-gray-800: hsl(210, 10%, 23%);
+$color-gray-700: hsl(210, 10%, 36%);
+$color-gray-600: hsl(210, 10%, 52%);
+$color-gray-500: hsl(210, 10%, 63%);
+$color-gray-400: hsl(210, 10%, 73%);
+$color-gray-300: hsl(210, 10%, 83%);
+$color-gray-200: hsl(210, 10%, 91%);
+$color-gray-100: hsl(210, 10%, 97%);
 
-$color-positive: hsl(150, 81%, 45%) !default;
-$color-warning: hsl(48, 88%, 49%) !default;
-$color-info: hsl(200, 100%, 65%) !default;
-$color-negative: hsl(8, 78%, 61%) !default;
+$color-positive: hsl(150, 81%, 45%);
+$color-warning: hsl(48, 88%, 49%);
+$color-info: hsl(200, 100%, 65%);
+$color-negative: hsl(8, 78%, 61%);
 
-$color-white: hsl(0, 255%, 100%) !default;
-$color-light: hsla(0, 255%, 100%, 0.92) !default;
-$color-dark: hsla(231, 10%, 18%, 0.98) !default;
-$color-black: hsl(0, 0%, 0%) !default;
+$color-white: hsl(0, 255%, 100%);
+$color-light: hsla(0, 255%, 100%, 0.92);
+$color-dark: hsla(231, 10%, 18%, 0.98);
+$color-black: hsl(0, 0%, 0%);
 
 :root {
     --color-primary: hsl(219, 75%, 54%);
@@ -45,12 +45,13 @@ $color-black: hsl(0, 0%, 0%) !default;
 }
 
 // typography
-$font-primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif !default;
+$font-primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
-$font-weight-normal: 400 !default;
-$font-weight-semibold: 500 !default;
-$font-weight-bold: 600 !default;
-$font-weight-black: 800 !default;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-black: 800;
 
 $font-size-tiny: 0.7rem;
 $font-size-mini: 0.8rem;

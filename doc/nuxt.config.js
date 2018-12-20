@@ -3,6 +3,7 @@ const pkg = require('./package')
 module.exports = {
 	mode: 'universal',
 
+	analyze: true,
 	/*
 	** Headers of the page
 	*/
@@ -14,6 +15,7 @@ module.exports = {
 			{ hid: 'description', name: 'description', content: pkg.description }
 		],
 		link: [
+			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,600,700' },
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
@@ -23,11 +25,21 @@ module.exports = {
 	*/
 	loading: { color: '#fff' },
 
+	modules: [
+        'nuxt-sass-resources-loader'
+	],
+
+	sassResources: [
+		'@/assets/scss/main.scss',
+		'@/assets/scss/biomatic-config/config.scss',
+	],
+
 	/*
 	** Global CSS
 	*/
 	css: [
-		'turbine',
+		'../scss/main.scss',
+		'@/assets/scss/biomatic.scss',
 	],
 
 	/*
@@ -39,8 +51,6 @@ module.exports = {
 	/*
 	** Nuxt.js modules
 	*/
-	modules: [
-	],
 
 	/*
 	** Build configuration

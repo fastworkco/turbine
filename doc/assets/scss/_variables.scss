@@ -1,0 +1,53 @@
+// color
+$color-primary: hsl(219, 75%, 54%);
+$color-secondary: hsl(210, 96%, 28%);
+
+$color-gray-900: hsl(210, 10%, 15%);
+$color-gray-800: hsl(210, 10%, 23%);
+$color-gray-700: hsl(210, 10%, 36%);
+$color-gray-600: hsl(210, 10%, 52%);
+$color-gray-500: hsl(210, 10%, 63%);
+$color-gray-400: hsl(210, 10%, 73%);
+$color-gray-300: hsl(210, 10%, 83%);
+$color-gray-200: hsl(210, 10%, 91%);
+$color-gray-100: hsl(210, 10%, 97%);
+
+$color-positive: hsl(150, 81%, 45%);
+$color-warning: hsl(48, 88%, 49%);
+$color-info: hsl(200, 100%, 65%);
+$color-negative: hsl(8, 78%, 61%);
+
+$color-white: hsl(0, 255%, 100%);
+$color-light: hsla(0, 255%, 100%, 0.92);
+$color-dark: hsla(231, 10%, 18%, 0.98);
+$color-black: hsl(0, 0%, 0%);
+
+// typography
+$font-primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+$font-secondary: 'Poppins', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-black: 800;
+
+$font-size-tiny: 0.7rem;
+$font-size-mini: 0.8rem;
+$font-size-small: 0.875rem;
+$font-size-normal: 1rem;
+
+// Timing
+$timing-fastest: 80ms;
+$timing-faster:  120ms;
+$timing-normal:  160ms;
+$timing-slower:  240ms;
+$timing-slowest: 480ms;
+
+// Line Height
+$line-height-none: 1;
+$line-height-normal: 1.15;
+$line-height-bigger: 1.35;
+$line-height-paragraph: 1.5;
+
+$border-radius-max: 999px;
