@@ -9,6 +9,11 @@ module.exports = {
 	*/
 	head: {
 		title: pkg.name,
+
+		htmlAttrs: {
+			lang: 'th-th',
+		},
+
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },

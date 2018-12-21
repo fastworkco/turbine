@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="section-hero _mgt-32px">
-			<img src="~assets/images/bg.svg" class="_w-100pct">
+			<img src="~assets/images/bg.svg" alt="fastwork" class="_w-100pct _ptev-n">
 			<div class="lo-container _pst-asl _t-0px _l-0px _r-0px">
 				<div class="_mgt-128px _mgt-128px-sm _mgt-196px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
 					Build product <br> with confidence
