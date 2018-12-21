@@ -8,7 +8,7 @@
  * - $font-secondary is REQUIRED for set header font-family
  */
 $font-primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-$font-secondary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+$font-secondary: 'Poppins', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
 /**
  * [ATOMICS]
@@ -37,6 +37,9 @@ $font-families: (
  * - add "'9': 0.5rem" will create new "_fs-9" (font-size: 0.5rem) class
  */
 $font-sizes: (
+	'hero-1': 5.5rem,
+	'hero-2': 4.5rem,
+	'hero-3': 4rem,
 	'1': 3rem,
 	'2': 2.5rem,
 	'3': 2rem,

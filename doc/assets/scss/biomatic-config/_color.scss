@@ -4,8 +4,9 @@
  * SCSS variables for Color. use in biomatic
  * You can change the value or add/remove variables here.
  */
-$color-primary: hsl(206, 100%, 56%); /* REQUIRED, default components theme */
-$color-accent: hsl(350, 100%, 60%);
+$color-primary: hsl(219, 75%, 54%);
+$color-secondary: hsl(210, 96%, 28%);
+$color-neutral-1: hsl(221, 86%, 14%);
 
 $color-gray-900: hsl(210, 10%, 15%);
 $color-gray-800: hsl(210, 10%, 23%);
@@ -24,7 +25,7 @@ $color-negative: hsl(0, 100%, 65%);
 
 $color-white: hsl(0, 255%, 100%);
 $color-light: hsla(0, 255%, 100%, 0.92);
-$color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default font color */
+$color-dark: hsla(231, 10%, 8%, 0.95); /* REQUIRED, default font color */
 $color-black: hsl(0, 0%, 0%);
 
 /**
@@ -40,7 +41,8 @@ $color-black: hsl(0, 0%, 0%);
  */
 $colors: (
 	'primary': $color-primary, /* REQUIRED, default components theme */
-	'accent': $color-accent,
+	'secondary': $color-secondary,
+	'neutral-1': $color-neutral-1,
 	'gray-900': $color-gray-900,
 	'gray-800': $color-gray-800,
 	'gray-700': $color-gray-700,
@@ -77,7 +79,6 @@ $colors: (
  * - "'positive': $color-positive" will make "bio-*" to have "bio-* -positive" variant Ex. "bio-message -positive"
  */
 $components-colors: (
-	'accent': $color-accent,
 	'positive': $color-positive,
 	'negative': $color-negative,
 	'warning': $color-warning,
@@ -97,7 +98,7 @@ $components-colors: (
  */
 :root {
 	--color-primary: hsl(206, 100%, 56%);
-	--color-accent: hsl(350, 100%, 60%);
+	--color-secondary: hsl(210, 96%, 28%);
 	--color-gray-900: hsl(210, 10%, 15%);
 	--color-gray-800: hsl(210, 10%, 23%);
 	--color-gray-700: hsl(210, 10%, 36%);
