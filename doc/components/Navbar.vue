@@ -13,7 +13,7 @@
 					<li class="_mgl-32px"><a href="#" class="tb-link -primary _fw-600 _fs-5">Articles</a></li>
 					<li class="_mgl-32px"><a href="#" class="tb-link -primary _fw-600 _fs-5">Team</a></li>
 					<li class="_mgl-32px">
-						<a href="#" class="tb-link -primary _fw-600 _fs-3">
+						<a href="https://github.com/fastworkco" target="_blank" rel="noopener noreferrer" class="tb-link -primary _fw-600 _fs-3">
 							<i class="fab fa-github"></i>
 						</a>
 					</li>
