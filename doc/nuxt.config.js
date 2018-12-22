@@ -78,5 +78,10 @@ module.exports = {
 				})
 			}
 		}
-	}
+	},
+
+	purgeCSS: {
+		mode: 'postcss',
+		styleExtensions: ['.css', '.scss'],
+	},
 }
