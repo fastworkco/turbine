@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="section-hero _pst-rlt">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAAE1wRXrAAAABGdBTUEAALGPC/xhBQAAAAxJREFUCB1jYBgYAAAAeAABmevWowAAAABJRU5ErkJggg==" alt="fastwork" class="_w-100pct _ptev-n">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAPCAYAAAFvivQJAAAABGdBTUEAALGPC/xhBQAAABtJREFUOBFjYBgFoyEwGgKjITAaAqMhMIxDAAAG6QAB14aB/AAAAABJRU5ErkJggg==" alt="fastwork" class="_w-100pct _ptev-n">
 			<img src="~assets/images/bg.svg" alt="fastwork" class="_pst-asl _t-0px _l-0px _w-100pct _h-100pct _ptev-n">
 			<div class="lo-container _pst-asl _t-0px _l-0px _r-0px">
 				<h1 class="_mgt-48px _mgt-64px-sm _mgt-128px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
@@ -10,7 +10,7 @@
 			</div>
 		</section>
 
-		<section class="section-content lo-container _pdv-96px _bgcl-neutral-1">
+		<section class="section-content lo-container _pdv-64px _bgcl-neutral-1">
 			<div class="_cl-white _tal-ct">
 				<h2 class="_fs-hero-3">Turbine UI</h2>
 				<p class="_fs-5 _fw-500">CSS framework to build and style Fastwork products</p>
