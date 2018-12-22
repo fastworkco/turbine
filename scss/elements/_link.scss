@@ -16,6 +16,11 @@ $components-colors: (
 	outline: none;
 	transition: all $timing-fastest ease-in-out;
 
+	svg, path {
+		transition: fill $timing-fastest ease-in-out;
+		fill: $color-gray-800;
+	}
+
 	&:before, &:after {
 		pointer-events: none;
 		backface-visibility: hidden;
@@ -23,14 +28,26 @@ $components-colors: (
 
 	&:hover, &:focus, &.-active {
 		color: $color-primary;
+
+		svg, path {
+			fill: $color-primary;
+		}
 	}
 
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
 			color: $value;
 
+			svg, path {
+				fill: $value;
+			}
+
 			&:hover, &:focus, &.-active {
 				color: darken($value, 8%);
+
+				svg, path {
+					fill:darken($value, 8%);
+				}
 			}
 		}
 	};

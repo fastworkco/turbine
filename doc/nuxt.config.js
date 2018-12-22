@@ -21,7 +21,6 @@ module.exports = {
 		],
 		link: [
 			{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,600,700' },
-			{ rel: 'stylesheet', href: '/fontawesome-pro-5.5.0/css/all.min.css' },
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
