@@ -2,7 +2,7 @@
 	<nav class="lo-container navbar">
 		<div class="navbar-container">
 			<nuxt-link to="/" class="_dp-f _alit-ct">
-				<img src="~assets/icon/turbine-spinning.svg" alt="fastwork" draggable="false" class="_h-48px">
+				<img src="~assets/icon/turbine.svg" alt="fastwork" draggable="false" class="_h-48px">
 				<div class="_fs-4 _fw-600 _cl-secondary _mgl-12px" style="letter-spacing: -1px">
 					Fastwork <span class="_fw-300">| engineer</span>
 				</div>
