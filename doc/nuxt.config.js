@@ -32,7 +32,8 @@ module.exports = {
 	loading: { color: '#fff' },
 
 	modules: [
-        'nuxt-sass-resources-loader'
+		'nuxt-sass-resources-loader',
+		'nuxt-purgecss',
 	],
 
 	sassResources: [
