@@ -4,7 +4,7 @@
 			<nuxt-link to="/" class="_dp-f _alit-ct">
 				<img src="~assets/icon/turbine-spinning.svg" alt="fastwork" draggable="false" class="_h-48px">
 				<div class="_fs-4 _fw-600 _cl-secondary _mgl-12px" style="letter-spacing: -1px">
-					fastwork <span class="_fw-300">| engineer</span>
+					Fastwork <span class="_fw-300">| engineer</span>
 				</div>
 			</nuxt-link>
 			<div>

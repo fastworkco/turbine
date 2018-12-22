@@ -3,14 +3,38 @@
 		<section class="section-hero _mgt-32px">
 			<img src="~assets/images/bg.svg" alt="fastwork" class="_w-100pct _ptev-n">
 			<div class="lo-container _pst-asl _t-0px _l-0px _r-0px">
-				<div class="_mgt-128px _mgt-128px-sm _mgt-196px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
+				<h1 class="_mgt-128px _mgt-128px-sm _mgt-196px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
 					Build product <br> with confidence
-				</div>
+				</h1>
 			</div>
 		</section>
 
-		<section class="lo-container _h-512px _bgcl-neutral-1 _cl-white">
-			<h1>Hello</h1>
+		<section class="section-content lo-container _pdv-96px _bgcl-neutral-1">
+			<div class="_cl-white _tal-ct">
+				<h2 class="_fs-hero-3">Turbine UI</h2>
+				<p class="_fs-5 _fw-500">CSS framework to build and style Fastwork products</p>
+			</div>
+
+			<div class="lo-content-grid _mgt-48px">
+				<a href="#">
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Getting Start</div>
+				</a>
+				<a href="#">
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">About Turbine UI</div>
+				</a>
+				<a href="#">
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Design Tokens</div>
+				</a>
+				<a href="#">
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">CSS Components</div>
+				</a>
+				<a href="#">
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Assets</div>
+				</a>
+				<a href="#">
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Press Kit</div>
+				</a>
+			</div>
 		</section>
 	</div>
 </template>
@@ -26,7 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 	.section-hero {
 		font-family: $font-secondary;
 		background: $color-white;
@@ -36,7 +59,28 @@ export default {
 		background-position: top rignt;
 	}
 
-	.bg {
+	.section-content {
 
+	}
+
+	.lo-content-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 140px;
+		grid-gap: 12px;
+
+		>*:nth-child(3n + 1) {
+			grid-column-end: span 2;
+			grid-row-end: span 2;
+		}
+	}
+
+	@media (min-width: $md) {
+		.lo-content-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: 180px;
+			grid-gap: 24px;
+		}
 	}
 </style>

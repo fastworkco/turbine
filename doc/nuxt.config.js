@@ -45,6 +45,7 @@ module.exports = {
 	*/
 	css: [
 		'../scss/main.scss',
+		'@/assets/scss/_initial.scss',
 		'@/assets/scss/biomatic.scss',
 	],
 
