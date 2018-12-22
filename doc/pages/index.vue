@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="section-hero _pst-rlt">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAPCAYAAAFvivQJAAAABGdBTUEAALGPC/xhBQAAABtJREFUOBFjYBgFoyEwGgKjITAaAqMhMIxDAAAG6QAB14aB/AAAAABJRU5ErkJggg==" alt="fastwork" class="_w-100pct _ptev-n _mgt-196px _mgt-0-md">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAPCAYAAAFvivQJAAAABGdBTUEAALGPC/xhBQAAABtJREFUOBFjYBgFoyEwGgKjITAaAqMhMIxDAAAG6QAB14aB/AAAAABJRU5ErkJggg==" alt="fastwork" class="_w-100pct _ptev-n _mgt-196px _mgt-0px-sm">
 			<img src="~assets/images/bg.svg" alt="fastwork" class="_pst-asl _ojf-cv _bt-0px _l-0px _w-100pct _h-100pct _ptev-n">
 			<div class="lo-container _pst-asl _t-0px _l-0px _r-0px">
 				<h1 class="_tal-ct _tal-l-md _mgt-48px _mgt-64px-sm _mgt-128px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
