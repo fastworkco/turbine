@@ -2,9 +2,9 @@
 	<div>
 		<section class="section-hero _mgt-32px _pst-rlt">
 			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAQAQAAAADGg5lBAAAAAnRSTlMAAHaTzTgAAAALSURBVHgBY6AyAAAAUAABLO4WegAAAABJRU5ErkJggg==" alt="fastwork" class="_w-100pct _ptev-n">
-			<img src="~assets/images/bg.svg" alt="fastwork" class="_pst-asl _t-0px _l-0px _w-100pct _ptev-n">
+			<img src="~assets/images/bg.svg" alt="fastwork" class="_pst-asl _t-0px _l-0px _w-100pct _h-100pct _ptev-n">
 			<div class="lo-container _pst-asl _t-0px _l-0px _r-0px">
-				<h1 class="_mgt-128px _mgt-128px-sm _mgt-196px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
+				<h1 class="_mgt-48px _mgt-64px-sm _mgt-128px-lg _fs-1 _fs-hero-3-sm _fs-hero-1-lg _fw-600" style="letter-spacing: -2px">
 					Build product <br> with confidence
 				</h1>
 			</div>
@@ -58,6 +58,12 @@ export default {
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position: top rignt;
+
+		+ * {
+			position: relative;
+			z-index: 1;
+			margin-top: -1px;
+		}
 	}
 
 	.section-content {
