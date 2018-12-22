@@ -9,8 +9,8 @@
 
 <style lang="scss" scoped>
 	footer {
-		height: 400px;
-		background-color: $color-secondary;
+		height: 200px;
+		background-color: $color-black;
 		color: white;
 	}
 </style>
