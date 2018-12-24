@@ -12,7 +12,7 @@
 
 		<section class="section-content lo-container _pdv-64px _bgcl-neutral-1">
 			<div class="_cl-white _tal-ct">
-				<h2 class="_fs-hero-3">Turbine UI</h2>
+				<h2 class="_fs-1 _fs-hero-3-md">Turbine UI</h2>
 				<p class="_fs-5 _fw-500">CSS framework to build and style Fastwork products</p>
 			</div>
 
