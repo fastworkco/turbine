@@ -21,13 +21,13 @@
 					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Getting Start</div>
 				</a>
 				<a href="#">
-					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">About Turbine UI</div>
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">About</div>
 				</a>
 				<a href="#">
 					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Design Tokens</div>
 				</a>
 				<a href="#">
-					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">CSS Components</div>
+					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Document</div>
 				</a>
 				<a href="#">
 					<div class="u-align-middle _w-100pct _h-100pct _bgcl-white _bdrd-4px _fs-4 _fw-600">Assets</div>
