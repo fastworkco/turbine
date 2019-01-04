@@ -40,6 +40,7 @@
 
 			width: 100%;
 
+			white-space: nowrap;
 			text-align: center;
 
 			color: $color-gray-500;
@@ -53,6 +54,7 @@
 				display: flex;
 				justify-content: center;
 				transform: translateX(0);
+				white-space: nowrap;
 			}
 		}
 
