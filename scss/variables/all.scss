@@ -1,5 +1,6 @@
 // color
 $color-primary: hsl(219, 75%, 54%);
+$color-primary-lightest: lighten($color-primary, 36%);
 $color-secondary: hsl(210, 96%, 28%);
 
 $color-gray-900: hsl(210, 10%, 15%);
