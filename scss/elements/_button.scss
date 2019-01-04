@@ -83,7 +83,7 @@
 	color: $color;
 	background-color: white;
 
-	border: 1px solid $color;
+	border: 1px solid $color-gray-300;
 
 	&:focus {
 		@include focused-shadow($color);
