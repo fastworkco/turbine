@@ -52,7 +52,7 @@
 			> * {
 				display: flex;
 				justify-content: center;
-				transform: translateX(calc(-#{$bullet-size} / 2));
+				transform: translateX(0);
 			}
 		}
 
