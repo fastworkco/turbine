@@ -15,6 +15,7 @@ $components-colors: (
 
 	list-style: none;
 	border-radius: $border-radius-max;
+	user-select: none;
 
 	&:empty {
 		display: none;

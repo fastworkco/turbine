@@ -20,16 +20,40 @@
 }
 
 .#{$prefix}bubble {
-	display: flex;
-	align-items: flex-start;
+	// display: flex;
+	// align-items: flex-start;
 	line-height: 1.25;
 
 	&.-self {
+		display: grid;
 		justify-content: flex-end;
+
+		> .#{$prefix}bubble-timestemp {
+			margin-bottom: 0.25rem;
+			padding-right: 0.75rem;
+			text-align: right;
+			color: $color-gray-600;
+		}
 	}
 
 	&.-counterpath {
-		justify-content: flex-start;
+		display: grid;
+		align-items: start;
+		justify-items: start;
+		justify-content: start;
+		grid-template-columns: max-content 1fr;
+		justify-content: start;
+
+		> .#{$prefix}bubble-text {
+			grid-column: 2;
+		}
+
+		> .#{$prefix}bubble-timestemp {
+			grid-column: 2;
+			margin-bottom: 0.25rem;
+			padding-left: 0.75rem;
+			color: $color-gray-600;
+		}
 
 		> *:not(:only-child):first-child {
 			margin-right: 0.25rem;
