@@ -23,3 +23,9 @@ $bubble-radius: 0.625rem;
 ::-moz-placeholder {
 	color: $color-gray-300;
 }
+
+:root {
+	@each $key, $value in $colors {
+		--color-#{$key}: #{$value};
+	}
+}
