@@ -2,41 +2,39 @@
 	position: relative;
 	display: inline-block;
 
-	&:after {
-		content: '';
-
-		width: 0.75rem;
-		height: 0.75rem;
-
-		position: absolute;
-		display: flex;
-		align-items: center;
-
-		bottom: 0;
-		right: 0;
-
-		color: white;
-		background-color: $color-positive;
-		border: 1px solid white;
-		border-radius: $border-radius-max;
-
-		transform: translate3d(20%, 0, 0);
-	}
-
 	&[data-text] {
 		&:after {
 			content: attr(data-text);
 
 			bottom: 0;
 			right: 0;
+
 			width: auto;
 			height: auto;
-
 			padding: 0.1rem 0.2rem;
 
+			position: absolute;
+			display: flex;
+			align-items: center;
+
+			color: white;
+			background-color: $color-positive;
+			border: 1px solid white;
+			border-radius: $border-radius-max;
+
+
 			font-size: 0.6rem;
-			line-height: 1;
 			font-weight: $font-weight-black;
+			line-height: 1;
+
+			transform: translate3d(20%, 0, 0);
+		}
+	}
+
+	&[data-text=""] {
+		&:after {
+			width: 0.75rem;
+			height: 0.75rem;
 		}
 	}
 
