@@ -19,8 +19,15 @@ $bubble-max-width: 20rem;
 $bubble-radius: 0.625rem;
 
 // Placeholder color
-::-webkit-input-placeholder,
-::-moz-placeholder {
+*::placeholder {
+	color: $color-gray-300;
+}
+
+*::-moz-placeholder {
+	color: $color-gray-300;
+}
+
+*::webkit-input-placeholder {
 	color: $color-gray-300;
 }
 
