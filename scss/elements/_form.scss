@@ -145,6 +145,7 @@ $components-colors: (
 
 .#{$prefix}textarea > textarea {
 	padding: 8px 12px;
+	line-height: 1.25;
 }
 
 .#{$prefix}input,
