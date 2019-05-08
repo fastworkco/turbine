@@ -1,0 +1,37 @@
+@mixin make-badge() {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	font-size: $font-size-small;
+	border-radius: 999px;
+
+	color: $color-primary;
+	background-color: lighten($color-primary, 41%);
+}
+
+.#{$prefix}badge {
+	@include make-badge();
+
+	&.-positive {
+		@include make-badge();
+		color: $color-positive;
+		background-color: lighten($color-positive, 47%);
+	}
+
+	&.-negative {
+		@include make-badge();
+		color: $color-negative;
+		background-color: lighten($color-negative, 35%);
+	}
+
+	&.-warning {
+		@include make-badge();
+		color: $color-warning;
+		background-color: lighten($color-warning, 45%);
+	}
+
+	&.-info {
+		@include make-badge();
+		color: $color-info;
+		background-color: lighten($color-info, 30%);
+	}
+}

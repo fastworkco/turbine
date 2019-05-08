@@ -6,7 +6,8 @@
 	grid-template-areas:
 		"avatar name         timestamp"
 		"avatar message      notification"
-		"avatar product-name status";
+		"avatar product-name status"
+		"avatar badge        .";
 
 	padding: 0.5rem 0.75rem;
 	background-color: white;
@@ -83,5 +84,14 @@
 
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	> .badge {
+		grid-area: badge;
+
+		display: flex;
+		justify-content: flex-start;
+
+		margin-top: .25rem;
 	}
 }
