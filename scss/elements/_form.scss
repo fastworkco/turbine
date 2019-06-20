@@ -181,7 +181,7 @@ $components-colors: (
 		padding-left: 2.625rem;
 	}
 
-	> .icon.-is-left {
+	> .icon:not(.-is-right) {
 		left: 0;
 	}
 }
@@ -191,7 +191,7 @@ $components-colors: (
 		padding-left: 2.625rem;
 	}
 
-	> .icon.-is-left {
+	> .icon:not(.-is-right) {
 		left: 0;
 	}
 }
@@ -212,7 +212,7 @@ $components-colors: (
 			padding-left: 2rem;
 		}
 
-		> .icon.-is-left {
+		> .icon:not(.-is-right) {
 			left: 0;
 
 			width: 2rem;
@@ -225,7 +225,7 @@ $components-colors: (
 			padding-left: 2rem;
 		}
 
-		> .icon.-is-left {
+		> .icon:not(.-is-right) {
 			left: 0;
 
 			width: 2rem;
@@ -254,7 +254,7 @@ $components-colors: (
 			padding-left: 3rem;
 		}
 
-		> .icon.-is-left {
+		> .icon:not(.-is-right) {
 			left: 0;
 
 			width: 3rem;
@@ -267,7 +267,7 @@ $components-colors: (
 			padding-left: 3rem;
 		}
 
-		> .icon.-is-left {
+		> .icon:not(.-is-right) {
 			left: 0;
 
 			width: 3rem;
