@@ -158,75 +158,92 @@ $components-colors: (
 .#{$prefix}select.-has-icon-left,
 .#{$prefix}input.-has-icon-right {
 	position: relative;
-	> span.icon {
-		color: $color-border-input;
+
+	> .icon {
+		position: absolute;
+		top: 0;
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		position: absolute;
-		top: 0px;
-		width: 42px;
+
+		width: 2.625rem;
 		height: 100%;
-		font-size: 1em;
+
+		color: $color-border-input;
+
+		font-size: 1rem;
 	}
 }
 
 .#{$prefix}input.-has-icon-left {
 	> input {
-		padding-left: 42px;
+		padding-left: 2.625rem;
 	}
-	> span.icon.-is-left {
-		left: 0px;
+
+	> .icon.-is-left {
+		left: 0;
 	}
 }
 
 .#{$prefix}select.-has-icon-left {
 	> select {
-		padding-left: 42px;
+		padding-left: 2.625rem;
 	}
-	> span.icon.-is-left {
-		left: 0px;
+
+	> .icon.-is-left {
+		left: 0;
 	}
 }
 
 .#{$prefix}input.-has-icon-right {
 	> input {
-		padding-right: 42px;
+		padding-right: 2.625rem;
 	}
-	> span.icon.-is-right {
-		right: 0px;
+
+	> .icon.-is-right {
+		right: 0;
 	}
 }
 
 .#{$prefix}field.-small {
 	.#{$prefix}input.-has-icon-left {
 		> input {
-			padding-left: 32px;
+			padding-left: 2rem;
 		}
-		> span.icon.-is-left {
-			width: 32px;
-			font-size: .875em;
-			left: 0px;
+
+		> .icon.-is-left {
+			left: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
 		}
 	}
 	.#{$prefix}select.-has-icon-left {
 		> select {
-			padding-left: 32px;
+			padding-left: 2rem;
 		}
-		> span.icon.-is-left {
-			width: 32px;
-			font-size: .875em;
-			left: 0px;
+
+		> .icon.-is-left {
+			left: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
 		}
 	}
 	.#{$prefix}input.-has-icon-right {
 		> input {
-			padding-right: 32px;
+			padding-right: 2rem;
 		}
-		> span.icon.-is-right {
-			width: 32px;
-			font-size: .875em;
-			right: 0px;
+
+		> .icon.-is-right {
+			right: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
 		}
 	}
 }
@@ -234,32 +251,41 @@ $components-colors: (
 .#{$prefix}field.-big {
 	.#{$prefix}input.-has-icon-left {
 		> input {
-			padding-left: 48px;
+			padding-left: 3rem;
 		}
-		> span.icon.-is-left {
-			width: 48px;
-			font-size: 1.33333em;
-			left: 0px;
+
+		> .icon.-is-left {
+			left: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
 		}
 	}
 	.#{$prefix}select.-has-icon-left {
 		> select {
-			padding-left: 48px;
+			padding-left: 3rem;
 		}
-		> span.icon.-is-left {
-			width: 48px;
-			font-size: 1.33333em;
-			left: 0px;
+
+		> .icon.-is-left {
+			left: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
 		}
 	}
 	.#{$prefix}input.-has-icon-right {
 		> input {
-			padding-right: 48px;
+			padding-right: 3rem;
 		}
-		> span.icon.-is-right {
-			width: 48px;
-			font-size: 1.33333em;
-			right: 0px;
+
+		> .icon.-is-right {
+			right: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
 		}
 	}
 }
