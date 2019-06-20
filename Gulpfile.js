@@ -12,7 +12,6 @@ gulp.task('default', function() {
 })
 
 function generateCSS({ src = '', basename = '' }) {
-
   gulp
     .src(src)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))

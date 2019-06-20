@@ -201,30 +201,30 @@ $components-colors: (
 .#{$prefix}field.-small {
 	.#{$prefix}input.-has-icon-left {
 		> input {
-			padding-left: 40px;
+			padding-left: 32px;
 		}
 		> span.icon.-is-left {
-			width: 40px;
+			width: 32px;
 			font-size: .875em;
 			left: 0px;
 		}
 	}
 	.#{$prefix}select.-has-icon-left {
 		> select {
-			padding-left: 40px;
+			padding-left: 32px;
 		}
 		> span.icon.-is-left {
-			width: 40px;
+			width: 32px;
 			font-size: .875em;
 			left: 0px;
 		}
 	}
 	.#{$prefix}input.-has-icon-right {
 		> input {
-			padding-right: 40px;
+			padding-right: 32px;
 		}
 		> span.icon.-is-right {
-			width: 40px;
+			width: 32px;
 			font-size: .875em;
 			right: 0px;
 		}
@@ -234,30 +234,30 @@ $components-colors: (
 .#{$prefix}field.-big {
 	.#{$prefix}input.-has-icon-left {
 		> input {
-			padding-left: 44px;
+			padding-left: 48px;
 		}
 		> span.icon.-is-left {
-			width: 44px;
+			width: 48px;
 			font-size: 1.33333em;
 			left: 0px;
 		}
 	}
 	.#{$prefix}select.-has-icon-left {
 		> select {
-			padding-left: 44px;
+			padding-left: 48px;
 		}
 		> span.icon.-is-left {
-			width: 44px;
+			width: 48px;
 			font-size: 1.33333em;
 			left: 0px;
 		}
 	}
 	.#{$prefix}input.-has-icon-right {
 		> input {
-			padding-right: 44px;
+			padding-right: 48px;
 		}
 		> span.icon.-is-right {
-			width: 44px;
+			width: 48px;
 			font-size: 1.33333em;
 			right: 0px;
 		}
