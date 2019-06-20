@@ -153,105 +153,113 @@ $components-colors: (
 	height: 2.5rem;
 }
 
-// // input icon
-// .#{$prefix}input.-has-icon-left,
-// .#{$prefix}select.-has-icon-left,
-// .#{$prefix}input.-has-icon-right {
-// 	position: relative;
-// 	> i {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: center;
-// 		position: absolute;
-// 		top: 0px;
-// 		width: 42px;
-// 		height: 100%;
-// 	}
-// }
+// input icon
+.#{$prefix}input.-has-icon-left,
+.#{$prefix}select.-has-icon-left,
+.#{$prefix}input.-has-icon-right {
+	position: relative;
+	> span.icon {
+		color: $color-border-input;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0px;
+		width: 42px;
+		height: 100%;
+		font-size: 1em;
+	}
+}
 
-// .#{$prefix}input.-has-icon-left {
-// 	> input {
-// 		padding-left: 42px;
-// 	}
-// 	> i {
-// 		left: 0px;
-// 	}
-// }
+.#{$prefix}input.-has-icon-left {
+	> input {
+		padding-left: 42px;
+	}
+	> span.icon.-is-left {
+		left: 0px;
+	}
+}
 
-// .#{$prefix}select.-has-icon-left {
-// 	> select {
-// 		padding-left: 42px;
-// 	}
-// 	> i {
-// 		left: 0px;
-// 	}
-// }
+.#{$prefix}select.-has-icon-left {
+	> select {
+		padding-left: 42px;
+	}
+	> span.icon.-is-left {
+		left: 0px;
+	}
+}
 
-// .#{$prefix}input.-has-icon-right {
-// 	> input {
-// 		padding-right: 42px;
-// 	}
-// 	> i {
-// 		right: 0px;
-// 	}
-// }
+.#{$prefix}input.-has-icon-right {
+	> input {
+		padding-right: 42px;
+	}
+	> span.icon.-is-right {
+		right: 0px;
+	}
+}
 
-// .#{$prefix}field.-small {
-// 	.#{$prefix}input.-has-icon-right {
-// 		> input {
-// 			padding-right: 40px;
-// 		}
-// 		> i {
-// 			width: 40px;
-// 			right: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}input.-has-icon-left {
-// 		> input {
-// 			padding-left: 40px;
-// 		}
-// 		> i {
-// 			width: 40px;
-// 			left: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}select.-has-icon-left {
-// 		> select {
-// 			padding-left: 40px;
-// 		}
-// 		> i {
-// 			width: 40px;
-// 			left: 0px;
-// 		}
-// 	}
-// }
+.#{$prefix}field.-small {
+	.#{$prefix}input.-has-icon-left {
+		> input {
+			padding-left: 40px;
+		}
+		> span.icon.-is-left {
+			width: 40px;
+			font-size: .875em;
+			left: 0px;
+		}
+	}
+	.#{$prefix}select.-has-icon-left {
+		> select {
+			padding-left: 40px;
+		}
+		> span.icon.-is-left {
+			width: 40px;
+			font-size: .875em;
+			left: 0px;
+		}
+	}
+	.#{$prefix}input.-has-icon-right {
+		> input {
+			padding-right: 40px;
+		}
+		> span.icon.-is-right {
+			width: 40px;
+			font-size: .875em;
+			right: 0px;
+		}
+	}
+}
 
-// .#{$prefix}field.-big {
-// 	.#{$prefix}input.-has-icon-right {
-// 		> input {
-// 			padding-right: 44px;
-// 		}
-// 		> i {
-// 			width: 44px;
-// 			right: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}input.-has-icon-left {
-// 		> input {
-// 			padding-left: 44px;
-// 		}
-// 		> i {
-// 			width: 44px;
-// 			left: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}select.-has-icon-left {
-// 		> select {
-// 			padding-left: 44px;
-// 		}
-// 		> i {
-// 			width: 44px;
-// 			left: 0px;
-// 		}
-// 	}
-// }
+.#{$prefix}field.-big {
+	.#{$prefix}input.-has-icon-left {
+		> input {
+			padding-left: 44px;
+		}
+		> span.icon.-is-left {
+			width: 44px;
+			font-size: 1.33333em;
+			left: 0px;
+		}
+	}
+	.#{$prefix}select.-has-icon-left {
+		> select {
+			padding-left: 44px;
+		}
+		> span.icon.-is-left {
+			width: 44px;
+			font-size: 1.33333em;
+			left: 0px;
+		}
+	}
+	.#{$prefix}input.-has-icon-right {
+		> input {
+			padding-right: 44px;
+		}
+		> span.icon.-is-right {
+			width: 44px;
+			font-size: 1.33333em;
+			right: 0px;
+		}
+	}
+}
