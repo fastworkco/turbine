@@ -153,105 +153,139 @@ $components-colors: (
 	height: 2.5rem;
 }
 
-// // input icon
-// .#{$prefix}input.-has-icon-left,
-// .#{$prefix}select.-has-icon-left,
-// .#{$prefix}input.-has-icon-right {
-// 	position: relative;
-// 	> i {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: center;
-// 		position: absolute;
-// 		top: 0px;
-// 		width: 42px;
-// 		height: 100%;
-// 	}
-// }
+// input icon
+.#{$prefix}input.-has-icon-left,
+.#{$prefix}select.-has-icon-left,
+.#{$prefix}input.-has-icon-right {
+	position: relative;
 
-// .#{$prefix}input.-has-icon-left {
-// 	> input {
-// 		padding-left: 42px;
-// 	}
-// 	> i {
-// 		left: 0px;
-// 	}
-// }
+	> .icon {
+		position: absolute;
+		top: 0;
 
-// .#{$prefix}select.-has-icon-left {
-// 	> select {
-// 		padding-left: 42px;
-// 	}
-// 	> i {
-// 		left: 0px;
-// 	}
-// }
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-// .#{$prefix}input.-has-icon-right {
-// 	> input {
-// 		padding-right: 42px;
-// 	}
-// 	> i {
-// 		right: 0px;
-// 	}
-// }
+		width: 2.625rem;
+		height: 100%;
 
-// .#{$prefix}field.-small {
-// 	.#{$prefix}input.-has-icon-right {
-// 		> input {
-// 			padding-right: 40px;
-// 		}
-// 		> i {
-// 			width: 40px;
-// 			right: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}input.-has-icon-left {
-// 		> input {
-// 			padding-left: 40px;
-// 		}
-// 		> i {
-// 			width: 40px;
-// 			left: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}select.-has-icon-left {
-// 		> select {
-// 			padding-left: 40px;
-// 		}
-// 		> i {
-// 			width: 40px;
-// 			left: 0px;
-// 		}
-// 	}
-// }
+		color: $color-border-input;
 
-// .#{$prefix}field.-big {
-// 	.#{$prefix}input.-has-icon-right {
-// 		> input {
-// 			padding-right: 44px;
-// 		}
-// 		> i {
-// 			width: 44px;
-// 			right: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}input.-has-icon-left {
-// 		> input {
-// 			padding-left: 44px;
-// 		}
-// 		> i {
-// 			width: 44px;
-// 			left: 0px;
-// 		}
-// 	}
-// 	.#{$prefix}select.-has-icon-left {
-// 		> select {
-// 			padding-left: 44px;
-// 		}
-// 		> i {
-// 			width: 44px;
-// 			left: 0px;
-// 		}
-// 	}
-// }
+		font-size: 1rem;
+	}
+}
+
+.#{$prefix}input.-has-icon-left {
+	> input {
+		padding-left: 2.625rem;
+	}
+
+	> .icon:not(.-is-right) {
+		left: 0;
+	}
+}
+
+.#{$prefix}select.-has-icon-left {
+	> select {
+		padding-left: 2.625rem;
+	}
+
+	> .icon:not(.-is-right) {
+		left: 0;
+	}
+}
+
+.#{$prefix}input.-has-icon-right {
+	> input {
+		padding-right: 2.625rem;
+	}
+
+	> .icon.-is-right {
+		right: 0;
+	}
+}
+
+.#{$prefix}field.-small {
+	.#{$prefix}input.-has-icon-left {
+		> input {
+			padding-left: 2rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
+		}
+	}
+	.#{$prefix}select.-has-icon-left {
+		> select {
+			padding-left: 2rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
+		}
+	}
+	.#{$prefix}input.-has-icon-right {
+		> input {
+			padding-right: 2rem;
+		}
+
+		> .icon.-is-right {
+			right: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
+		}
+	}
+}
+
+.#{$prefix}field.-big {
+	.#{$prefix}input.-has-icon-left {
+		> input {
+			padding-left: 3rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
+		}
+	}
+	.#{$prefix}select.-has-icon-left {
+		> select {
+			padding-left: 3rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
+		}
+	}
+	.#{$prefix}input.-has-icon-right {
+		> input {
+			padding-right: 3rem;
+		}
+
+		> .icon.-is-right {
+			right: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
+		}
+	}
+}
