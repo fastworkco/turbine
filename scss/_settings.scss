@@ -35,4 +35,8 @@ $bubble-radius: 0.625rem;
 	@each $key, $value in $colors {
 		--color-#{$key}: #{$value};
 	}
+
+	@each $key, $value in $font-families {
+		--font-family-#{$key}: #{$value};
+	}
 }

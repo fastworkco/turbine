@@ -53,6 +53,7 @@ $colors: (
 
 // typography
 $font-primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+$font-secondary: 'Kanit', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -133,7 +134,8 @@ $spacings: (
 );
 
 $font-families: (
-	'primary': $font-primary
+	'primary': $font-primary,
+	'secondary': $font-secondary
 );
 
 $font-sizes: (

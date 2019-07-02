@@ -25,6 +25,10 @@
 		font-size: $font-size-small;
 	}
 
+	&.-big {
+		min-height: 3rem;
+	}
+
 	&.-loading {
 		color: transparent;
 
