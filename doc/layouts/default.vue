@@ -4,25 +4,26 @@
 		<div class="page-container">
 			<nuxt/>
 		</div>
-		<foot></foot>
 	</div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue'
-import Foot from '~/components/Foot.vue'
 
 export default {
 	components: {
 		Navbar,
-		Foot,
 	},
 }
 </script>
 
-<style lang="scss">
+<style>
+	:root {
+		--height-navbar: 5rem;
+	}
+
 	.page-container {
-		padding-top: $height-navbar;
+		padding-top: var(--height-navbar);
 	}
 </style>
 

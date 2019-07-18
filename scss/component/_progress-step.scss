@@ -1,0 +1,98 @@
+.#{$component-prefix}progress-step {
+	$bullet-size: 1rem;
+
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	// child node
+	> * {
+		position: relative;
+		text-align: right;
+
+		&:not(:first-child) {
+			flex: 1;
+		}
+
+		&.active {
+			color: $color-primary;
+
+			> * {
+				color: currentColor;
+			}
+
+			&:before,
+			&:after {
+				background-color: currentColor;
+			}
+		}
+
+		// Label
+		> * {
+			position: absolute;
+			top: calc(#{$bullet-size} + 4px);
+
+			display: inline-block;
+
+			width: 100%;
+
+			white-space: nowrap;
+			text-align: center;
+
+			color: $color-gray-500;
+
+			transform: translateX(calc(-50% - (#{$bullet-size} / 2) ));
+
+		}
+
+		&:first-child {
+			> * {
+				display: flex;
+				justify-content: center;
+				transform: translateX(0);
+				white-space: nowrap;
+			}
+		}
+
+		// Progress bullet
+		&:before {
+			content: '';
+
+			position: relative;
+			z-index: 1;
+
+			display: inline-block;
+
+			width: $bullet-size;
+			height: $bullet-size;
+
+			border-radius: $border-radius-max;
+			background-color: $color-primary-lightest;
+
+		}
+
+		// Progress line
+		&:after {
+			background-color: $color-primary-lightest;
+		}
+
+		&:not(:first-child):after {
+			content: '';
+
+			position: absolute;
+
+			display: block;
+
+			top: calc((#{$bullet-size} / 2) - (#{$bullet-size} / 8));
+			right: calc((#{$bullet-size} / 2));
+
+			width: 100%;
+			height: calc(#{$bullet-size} / 4);
+		}
+	}
+
+}

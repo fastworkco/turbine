@@ -15,6 +15,6 @@
 	}
 }
 
-.#{$prefix}avatar {
+.#{$component-prefix}avatar {
 	@extend %base-avatar;
 }

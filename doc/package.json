@@ -15,8 +15,7 @@
 	"dependencies": {
 		"biomatic": "^0.3.11",
 		"cross-env": "^5.2.0",
-		"nuxt": "^2.0.0",
-		"nuxt-sass-resources-loader": "^2.0.5"
+		"nuxt": "^2.0.0"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.1",

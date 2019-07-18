@@ -1,0 +1,83 @@
+.#{$component-prefix}card-document {
+	@include make-card();
+	@include make-card-padding();
+
+	display: grid;
+	grid-column-gap: 12px;
+	grid-template-columns: 1fr max-content;
+	grid-template-areas:
+		"header header-right"
+		"detail detail"
+		"action-list action-list";
+
+	padding-bottom: 0;
+
+	> .header {
+		grid-area: header;
+	}
+
+	> .header-right {
+		grid-area: header-right;
+		color: $color-primary;
+
+		&:not(:last-child) {
+			padding-bottom: 1rem;
+		}
+	}
+
+	> .detail {
+		grid-area: detail;
+
+		font-size: $font-size-small;
+		line-height: $line-height-bigger;
+
+		color: $color-text-secondary;
+
+		&:not(:last-child) {
+			padding-bottom: 1rem;
+			border-bottom: 1px solid $color-border-secondary;
+		}
+	}
+
+	> .action-list {
+		grid-area: action-list;
+
+		display: flex;
+		width: 100%;
+
+		text-align: center;
+
+		> * {
+			flex: 1;
+			padding: 0.875rem 0;
+
+			font-weight: $font-weight-semibold;
+
+			cursor: pointer;
+
+			&:not(:first-child) {
+				position: relative;
+
+				&:before {
+					position: absolute;
+					display: block;
+					content: '';
+					width: 1px;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					height: 50%;
+					background-color: $color-border-secondary;
+				}
+			}
+
+			&:first-child {
+				margin-left: -1rem;
+			}
+
+			&:last-child {
+				margin-right: -1rem;
+			}
+		}
+	}
+}

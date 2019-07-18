@@ -8,7 +8,7 @@
 	background-color: lighten($color-primary, 41%);
 }
 
-.#{$prefix}badge {
+.#{$component-prefix}badge {
 	@include make-badge();
 
 	&.-positive {

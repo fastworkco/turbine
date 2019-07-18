@@ -6,7 +6,7 @@ $components-colors: (
 	'info'    : $color-info,
 );
 
-.#{$prefix}link {
+.#{$component-prefix}link {
 	font-weight: 400;
 	text-decoration: none;
 

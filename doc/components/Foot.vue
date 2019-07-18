@@ -10,7 +10,7 @@
 <style lang="scss" scoped>
 	footer {
 		height: 200px;
-		background-color: $color-black;
+		background-color: var(--color-black);
 		color: white;
 	}
 </style>

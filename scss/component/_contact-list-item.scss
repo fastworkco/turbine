@@ -1,0 +1,97 @@
+.#{$component-prefix}contact-list-item {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-template-columns: max-content 1fr max-content;
+	grid-template-rows: minmax(24px, max-content) max-content max-content;
+	grid-template-areas:
+		"avatar name         timestamp"
+		"avatar message      notification"
+		"avatar product-name status"
+		"avatar badge        badge";
+
+	padding: 0.5rem 0.75rem;
+	background-color: white;
+	border-bottom: 1px solid $color-border-secondary;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $color-background-active-primary;
+	}
+
+	&.-active >,
+	&.active > {
+		.name,
+		.message {
+			font-weight: $font-weight-bold;
+		}
+	}
+
+	&.-selected,
+	&.selected {
+		background-color: $color-background-active-primary;
+	}
+
+	> .avatar {
+		grid-area: avatar;
+		align-self: center;
+	}
+
+	> .name {
+		grid-area: name;
+
+		@include ellipsis-text();
+	}
+
+	> .message {
+		grid-area: message;
+
+		@include ellipsis-text();
+	}
+
+	> .product-name {
+		grid-area: product-name;
+
+		@include ellipsis-text();
+
+		font-size: $font-size-small;
+		line-height: 1.4;
+
+		color: $color-gray-500;
+	}
+
+	> .timestamp {
+		grid-area: timestamp;
+
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		font-size: $font-size-tiny;
+		color: $color-gray-500;
+	}
+
+	> .notification {
+		grid-area: notification;
+
+		display: flex;
+		justify-content: flex-end;
+
+		align-self: start;
+	}
+
+	> .status {
+		grid-area: status;
+
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	> .badge {
+		grid-area: badge;
+
+		display: flex;
+		justify-content: flex-start;
+
+		margin-top: .25rem;
+	}
+}

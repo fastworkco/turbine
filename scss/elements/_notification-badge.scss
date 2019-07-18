@@ -20,7 +20,7 @@ $components-colors: (
 	'gray'    : $color-gray-300,
 );
 
-.#{$prefix}notification-badge {
+.#{$component-prefix}notification-badge {
 	@include make-notification-badge();
 
 	@each $key, $value in $components-colors {

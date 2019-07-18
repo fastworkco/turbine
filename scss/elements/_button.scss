@@ -120,7 +120,7 @@ $components-colors: (
 	'info'    : $color-info,
 );
 
-.#{$prefix}button {
+.#{$component-prefix}button {
 	@include make-button();
 
 	@each $key, $value in $components-colors {
@@ -130,7 +130,7 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}button-secondary {
+.#{$component-prefix}button-secondary {
 	@include make-secondary-button();
 
 	@each $key, $value in $components-colors {
