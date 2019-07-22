@@ -1,3 +1,5 @@
+$atom-prefix: '_';
+
 /*
  * Color
  *********************************************/
@@ -106,22 +108,39 @@ $spacings: (
 	'100vw': 100vw,
 	'100vh': 100vh,
 	'at': auto,
+	'us': unset,
 );
 
 $font-families: (
 	'primary': var(--font-family-primary),
-	'secondary': var(--font-family-secondary)
+	'secondary': var(--font-family-secondary, --font-family-primary)
 );
 
 $font-sizes: (
-	'1': 3rem,
-	'2': 2.5rem,
-	'3': 2rem,
-	'4': 1.5rem,
-	'5': 1.125rem,
-	'6': 1rem,
-	'7': 0.85rem,
-	'8': 0.70rem
+	'1200': var(--font-size-1200),
+	'1100': var(--font-size-1100),
+	'1000': var(--font-size-1000),
+	'900': var(--font-size-900),
+	'800': var(--font-size-800),
+	'700': var(--font-size-700),
+	'600': var(--font-size-600),
+	'500': var(--font-size-500),
+	'400': var(--font-size-400),
+	'300': var(--font-size-300),
+	'200': var(--font-size-200),
+	'100': var(--font-size-100)
+);
+
+$font-weights: (
+	'default': var(--font-weight-default),
+	'strong': var(--font-weight-strong),
+	'heading': var(--font-weight-heading),
+);
+
+$line-heights: (
+	'ui': var(--line-height-ui),
+	'default': var(--line-height-default),
+	'paragraph': var(--line-height-paragraph),
 );
 
 $sm: 768px;

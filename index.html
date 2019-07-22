@@ -2,7 +2,11 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
-		<link rel="stylesheet" href="dist/turbine.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/theme.css">
+		<link rel="stylesheet" href="dist/layout.css">
+		<link rel="stylesheet" href="dist/component.css">
+		<link rel="stylesheet" href="dist/utility.css">
 		<style>
 			section {
 				padding: 24px;
@@ -62,6 +66,11 @@
 				<h3>Table of contents 🍭</h3>
 				<br>
 				<br>
+				<h5>Foundation / Tokens</h5>
+				<ul class="_lh-150pct">
+					<li><a href="#token-color" class="tb-link -primary">Color</a></li>
+					<li><a href="#token-typography" class="tb-link -primary">Typography</a></li>
+				</ul>
 				<h5>Elements</h5>
 				<ul class="_lh-150pct">
 					<li><a href="#avatar" class="tb-link -primary">Menu 1</a></li>
@@ -73,31 +82,123 @@
 			</section>
 
 			<!--
-				Elements
+				Tokens
 			===================================-->
-
-			<section id="avatar">
-				<h3>Avatar</h3>
+			<section id="token-color">
+				<h3>Color</h3>
 				<br>
-				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
+				<div class="lo-6 lo-3-sm _gg-24px _fw-strong">
+					<div class="_bdrd-16px _ovf-hd">
+						<div class="_bgcl-primary-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary</div>
+						<div class="_bgcl-primary-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 900</div>
+						<div class="_bgcl-primary-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 800</div>
+						<div class="_bgcl-primary-700 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 700</div>
+						<div class="_bgcl-primary-600 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 600</div>
+						<div class="_bgcl-primary-500 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 500</div>
+						<div class="_bgcl-primary-400 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 400</div>
+						<div class="_bgcl-primary-300 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Primary 300</div>
+						<div class="_bgcl-primary-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Primary 200</div>
+						<div class="_bgcl-primary-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Primary 100</div>
+					</div>
+					<div class="_bdrd-16px _ovf-hd">
+						<div class="_bgcl-gray-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray</div>
+						<div class="_bgcl-gray-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray 900</div>
+						<div class="_bgcl-gray-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray 800</div>
+						<div class="_bgcl-gray-700 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray 700</div>
+						<div class="_bgcl-gray-600 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray 600</div>
+						<div class="_bgcl-gray-500 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray 500</div>
+						<div class="_bgcl-gray-400 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray 400</div>
+						<div class="_bgcl-gray-300 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Gray 300</div>
+						<div class="_bgcl-gray-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Gray 200</div>
+						<div class="_bgcl-gray-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Gray 100</div>
+					</div>
+					<div class="_bdrd-16px _ovf-hd">
+						<div class="_bgcl-positive-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive</div>
+						<div class="_bgcl-positive-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive 900</div>
+						<div class="_bgcl-positive-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive 800</div>
+						<div class="_bgcl-positive-700 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive 700</div>
+						<div class="_bgcl-positive-600 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive 600</div>
+						<div class="_bgcl-positive-500 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive 500</div>
+						<div class="_bgcl-positive-400 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive 400</div>
+						<div class="_bgcl-positive-300 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Positive 300</div>
+						<div class="_bgcl-positive-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Positive 200</div>
+						<div class="_bgcl-positive-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Positive 100</div>
+					</div>
+					<div class="_bdrd-16px _ovf-hd">
+						<div class="_bgcl-negative-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative</div>
+						<div class="_bgcl-negative-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative 900</div>
+						<div class="_bgcl-negative-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative 800</div>
+						<div class="_bgcl-negative-700 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative 700</div>
+						<div class="_bgcl-negative-600 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative 600</div>
+						<div class="_bgcl-negative-500 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative 500</div>
+						<div class="_bgcl-negative-400 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative 400</div>
+						<div class="_bgcl-negative-300 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Negative 300</div>
+						<div class="_bgcl-negative-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Negative 200</div>
+						<div class="_bgcl-negative-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Negative 100</div>
+					</div>
+					<div class="_bdrd-16px _ovf-hd">
+						<div class="_bgcl-warning-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning</div>
+						<div class="_bgcl-warning-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning 900</div>
+						<div class="_bgcl-warning-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning 800</div>
+						<div class="_bgcl-warning-700 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning 700</div>
+						<div class="_bgcl-warning-600 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning 600</div>
+						<div class="_bgcl-warning-500 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning 500</div>
+						<div class="_bgcl-warning-400 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning 400</div>
+						<div class="_bgcl-warning-300 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Warning 300</div>
+						<div class="_bgcl-warning-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Warning 200</div>
+						<div class="_bgcl-warning-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Warning 100</div>
+					</div>
+					<div class="_bdrd-16px _ovf-hd">
+						<div class="_bgcl-info-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info</div>
+						<div class="_bgcl-info-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info 900</div>
+						<div class="_bgcl-info-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info 800</div>
+						<div class="_bgcl-info-700 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info 700</div>
+						<div class="_bgcl-info-600 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info 600</div>
+						<div class="_bgcl-info-500 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info 500</div>
+						<div class="_bgcl-info-400 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info 400</div>
+						<div class="_bgcl-info-300 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Info 300</div>
+						<div class="_bgcl-info-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Info 200</div>
+						<div class="_bgcl-info-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Info 100</div>
+					</div>
+				</div>
+			</section>
 
-					<div class="tb-corner-badge-wrapper" data-text="19m">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					</div>
-					<div class="tb-corner-badge-wrapper" data-text="Hello">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					</div>
-					<div class="tb-corner-badge-wrapper">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					</div>
-					<div class="tb-corner-badge-wrapper" data-position="top">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
-					</div>
-					<div class="tb-corner-badge-wrapper">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
+			<section id="token-typography">
+				<h3>Typography</h3>
+				<br>
+				<div>
+					<div class="_fs-1200 _fw-heading">Font size 1200</div>
+					<div class="_fs-1100 _fw-heading">Font size 1100</div>
+					<div class="_fs-1000 _fw-heading">Font size 1000</div>
+					<div class="_fs-900 _fw-heading">Font size 900</div>
+					<div class="_fs-800 _fw-heading">Font size 800</div>
+					<div class="_fs-700 _fw-heading">Font size 700</div>
+					<div class="_fs-600 _fw-heading">Font size 600</div>
+					<div class="_fs-500 _fw-heading">Font size 500</div>
+					<div class="_fs-400 _fw-heading">Font size 400</div>
+					<div class="_fs-300 _fw-heading">Font size 300</div>
+					<div class="_fs-200 _fw-heading">Font size 200</div>
+					<div class="_fs-100 _fw-heading">Font size 100</div>
+				</div>
+			</section>
+
+			<!--
+				Component
+			===================================-->
+			<section id="component-card-product">
+				<h3>Card Product</h3>
+				<br>
+				<div>
+					<div class="tb-card-product">
+						<div class="slot-avatar"></div>
+						<div class="slot-username"></div>
+						<div class="slot-online-status"></div>
+						<div class="slot-favorite"></div>
+						<div class="slot-image"></div>
+						<div class="slot-title"></div>
+						<div class="slot-rating"></div>
+						<div class="slot-badge"></div>
+						<div class="slot-price"></div>
 					</div>
 				</div>
 			</section>
