@@ -1,3 +1,9 @@
 // @import 'corner-badge-wrapper';
 @import 'flex-alignment';
 @import 'animation';
+
+.u-ellipsis-text {
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

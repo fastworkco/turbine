@@ -19,7 +19,7 @@ html, body {
 }
 
 p {
-	line-height: 1.65;
+	line-height: var(--line-height-paragraph);
 	margin: 0;
 	padding: 0;
 }
