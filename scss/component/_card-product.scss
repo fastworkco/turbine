@@ -1,8 +1,80 @@
 .#{$component-prefix}card-product {
-	$card-padding: 8px;
+	$card-padding: .5rem;
+	$card-max-width: 14rem;
 
 	display: grid;
+	grid-template-columns: min-content 1fr min-content;
+	grid-template-rows: max-content;
+	grid-template-areas:
+		"avatar seller-name favorite"
+		"avatar online favorite"
+		"image image image"
+		"title title title"
+		"rating badge price";
+
+	width: 100%;
+	max-width: $card-max-width;
+
 	padding: $card-padding;
 
-	border: 1px solid var(--color-gray-200);
+	border: 1px solid var(--color-gray-300);
+	border-radius: 4px;
+
+	font-size: var(--font-size-300);
+
+	>.slot-avatar {
+		grid-area: avatar;
+
+		margin-right: .5rem;
+	}
+
+	>.slot-seller-name {
+		grid-area: seller-name;
+
+		margin-top: .25rem;
+	}
+
+	>.slot-online {
+		grid-area: online;
+
+		font-size: var(--font-size-200);
+	}
+
+	>.slot-favorite {
+		grid-area: favorite;
+
+		margin-left: .5rem;
+		font-size: var(--font-size-200);
+	}
+
+	>.slot-image {
+		grid-area: image;
+
+		margin-top: .5rem;
+
+		img {
+			width: 100%;
+			border-radius: 2px;
+		}
+	}
+
+	>.slot-title {
+		grid-area: title;
+
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+	}
+
+	>.slot-rating {
+		grid-area: rating;
+	}
+
+	>.slot-badge {
+		grid-area: badge;
+	}
+
+	>.slot-price {
+		grid-area: price;
+	}
+
 }
