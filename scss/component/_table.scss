@@ -1,0 +1,83 @@
+.#{$component-prefix}table-container {
+	position: relative;
+	overflow-x: auto;
+	overflow-y: visible;
+
+	margin-top: 1rem;
+
+	.row {
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba(247, 247, 247, 0.8);
+		}
+	}
+}
+
+.#{$component-prefix}table {
+	overflow-x: auto;
+	overflow-y: visible;
+
+	width: 100%;
+	max-width: 100%;
+
+	word-break: normal;
+
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	thead {
+		font-size: 15px;
+		color: var(--color-gray-500);
+	}
+
+	td, th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+
+		vertical-align: middle;
+		text-align: left;
+
+		&:not(:first-child){
+			padding-left: 2rem;
+		}
+	}
+
+	&.-ruled {
+		tbody tr {
+			border-bottom: 1px solid var(--color-gray-300);
+		}
+
+		thead tr {
+			padding-left: .5rem;
+			padding-right: .5rem;
+		}
+
+		&:not(.-no-top-rule) {
+			thead tr {
+				border-bottom: 2px solid var(--color-gray-300);
+			}
+		}
+	}
+
+	&.-striped {
+		tbody tr:nth-child(even) {
+			background-color: var(--color-gray-100);
+		}
+	}
+
+	&.-list {
+		tbody tr td:first-child {
+			white-space: nowrap;
+			font-weight: 700;
+		}
+
+		tbody tr td:last-child {
+			text-align: right;
+		}
+	}
+
+	.collapse {
+		width: 1%;
+	}
+}
