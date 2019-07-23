@@ -10,9 +10,11 @@
 }
 
 $components-colors: (
-	'primary',
-	'positive',
-	'negative'
+	'positive': 'positive-500',
+	'negative': 'negative-500',
+	'dark-cerulean': 'dark-cerulean',
+	'bittersweet': 'bittersweet',
+	'golden-poppy': 'golden-poppy'
 );
 
 .#{$component-prefix}badge {
@@ -20,7 +22,7 @@ $components-colors: (
 
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			background-color: var(--color-#{$value}-500);
+			background-color: var(--color-#{$value});
 		}
 	}
 }

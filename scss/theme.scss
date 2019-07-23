@@ -2,22 +2,22 @@
  * Color
  *********************************************/
  :root {
-	--color-primary-100: hsl(227, 85%, 96%);
-	--color-primary-200: hsl(227, 85%, 93%);
-	--color-primary-300: hsl(227, 85%, 89%);
-	--color-primary-400: hsl(227, 75%, 62%);
-	--color-primary-500: hsl(227, 75%, 55%);
-	--color-primary-600: hsl(227, 70%, 49%);
-	--color-primary-700: hsl(227, 75%, 33%);
-	--color-primary-800: hsl(227, 75%, 28%);
-	--color-primary-900: hsl(227, 75%, 24%);
+	--color-primary-100: hsl(207, 85%, 94%);
+	--color-primary-200: hsl(207, 85%, 90%);
+	--color-primary-300: hsl(207, 85%, 86%);
+	--color-primary-400: hsl(207, 100%, 48%);
+	--color-primary-500: hsl(207, 100%, 43%);
+	--color-primary-600: hsl(207, 100%, 38%);
+	--color-primary-700: hsl(207, 95%, 29%);
+	--color-primary-800: hsl(207, 95%, 24%);
+	--color-primary-900: hsl(207, 95%, 20%);
 
 	--color-gray-100: hsl(216, 15%, 97%);
-	--color-gray-200: hsl(216, 15%, 93%);
-	--color-gray-300: hsl(216, 15%, 87%);
-	--color-gray-400: hsl(216, 15%, 63%);
-	--color-gray-500: hsl(216, 15%, 55%);
-	--color-gray-600: hsl(216, 15%, 48%);
+	--color-gray-200: hsl(216, 15%, 92%);
+	--color-gray-300: hsl(216, 15%, 86%);
+	--color-gray-400: hsl(216, 15%, 66%);
+	--color-gray-500: hsl(216, 15%, 59%);
+	--color-gray-600: hsl(216, 15%, 52%);
 	--color-gray-700: hsl(216, 15%, 33%);
 	--color-gray-800: hsl(216, 15%, 26%);
 	--color-gray-900: hsl(216, 15%, 20%);
@@ -27,7 +27,7 @@
 	--color-positive-300: hsl(163, 75%, 83%);
 	--color-positive-400: hsl(163, 100%, 34%);
 	--color-positive-500: hsl(163, 100%, 31%);
-	--color-positive-600: hsl(163, 100%, 28%);
+	--color-positive-600: hsl(163, 100%, 27%);
 	--color-positive-700: hsl(163, 80%, 19%);
 	--color-positive-800: hsl(163, 80%, 16%);
 	--color-positive-900: hsl(163, 80%, 13%);
@@ -52,15 +52,15 @@
 	--color-info-800: hsl(200, 75%, 26%);
 	--color-info-900: hsl(200, 75%, 22%);
 
-	--color-warning-100: hsl(48, 100%, 93%);
-	--color-warning-200: hsl(48, 100%, 88%);
-	--color-warning-300: hsl(48, 100%, 83%);
+	--color-warning-100: hsl(48, 80%, 95%);
+	--color-warning-200: hsl(48, 80%, 89%);
+	--color-warning-300: hsl(48, 80%, 85%);
 	--color-warning-400: hsl(48, 70%, 55%);
 	--color-warning-500: hsl(48, 70%, 48%);
 	--color-warning-600: hsl(48, 70%, 45%);
-	--color-warning-700: hsl(48, 90%, 34%);
+	--color-warning-700: hsl(48, 90%, 33%);
 	--color-warning-800: hsl(48, 90%, 30%);
-	--color-warning-900: hsl(48, 90%, 26%);
+	--color-warning-900: hsl(48, 90%, 27%);
 
 	--color-light: hsla(0, 0%, 100%, .95);
 	--color-dark: hsla(0, 0%, 10%, .97);

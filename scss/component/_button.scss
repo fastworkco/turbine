@@ -1,9 +1,6 @@
 $components-colors: (
 	'positive',
-	'accent',
 	'negative',
-	'warning',
-	'info'
 );
 
 %base-button {
@@ -22,12 +19,12 @@ $components-colors: (
 	min-height: 2.875rem;
 	padding: 0.5rem 1.5rem;
 
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 1rem;
 	line-height: 100%;
 
 	border: none;
-	border-radius: 0.125rem;
+	border-radius: 3px;
 
 	transition: all 0.16s ease-in-out;
 	user-select: none;
@@ -70,10 +67,10 @@ $components-colors: (
 	}
 }
 
-.#{$namespace}button {
+.#{$component-prefix}button {
 	@extend %base-button;
 
-	color: var(--color-text-light);
+	color: var(--color-light);
 	background-color: var(--color-primary-500);
 
 	&:focus {
@@ -81,21 +78,21 @@ $components-colors: (
 	}
 
 	&:hover {
-		background-color: var(--color-primary-400);
+		background-color: var(--color-primary-600);
 	}
 
 	&.-loading {
 		color: transparent;
 
 		&:after {
-			border-right-color: var(--color-text-light);
-			border-top-color: var(--color-text-light);
+			border-right-color: var(--color-light);
+			border-top-color: var(--color-light);
 		}
 	}
 
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			color: var(--color-text-light);
+			color: var(--color-light);
 			background-color: var(--color-#{$key}-500);
 
 			&:focus {
@@ -103,21 +100,20 @@ $components-colors: (
 			}
 
 			&:hover {
-				background-color: var(--color-#{$key}-400);
+				background-color: var(--color-#{$key}-600);
 			}
 
 			&.-loading {
 				color: transparent;
 
 				&:after {
-					border-right-color: var(--color-text-light);
-					border-top-color: var(--color-text-light);
+					border-right-color: var(--color-light);
+					border-top-color: var(--color-light);
 				}
 			}
 
 			&.-secondary {
 				color: var(--color-#{$key}-600);
-				border: 2px solid var(--color-#{$key}-600);
 				background: transparent;
 
 				&:hover {
@@ -156,17 +152,17 @@ $components-colors: (
 	}
 
 	&.-secondary {
-		color: var(--color-primary-600);
-		border: 2px solid var(--color-primary-600);
+		color: var(--color-primary-500);
+		border: 1px solid var(--color-gray-400);
 		background: transparent;
 
 		&:hover {
-			background-color: var(--color-primary-100);
+			background-color: var(--color-gray-100);
 		}
 
 		&.-disabled {
 			color: var(--color-gray-400);
-			border: 2px solid var(--color-gray-300);
+			border: 1px solid var(--color-gray-300);
 			background-color: transparent;
 
 			&:hover {
@@ -182,40 +178,31 @@ $components-colors: (
 				border-top-color: var(--color-primary-600);
 			}
 		}
-	}
-
-	&.-tertiary {
-		color: var(--color-primary-600);
-		border: none;
-		background: transparent;
-
-		&:hover {
-			background-color: var(--color-primary-100);
-		}
-
-		&.-loading {
-			color: transparent;
-
-			&:after {
-				border-right-color: var(--color-primary-600);
-				border-top-color: var(--color-primary-600);
-			}
-		}
 
 		&.-disabled {
-			color: var(--color-gray-400);
-			background-color: transparent;
-
-			&:hover {
-				background-color: var(--color-gray-100);
+			&.-loading {
+				&:after {
+					border-right-color: var(--color-gray-500);
+					border-top-color: var(--color-gray-500);
+				}
 			}
 		}
 	}
 
 	&.-disabled {
-		color: var(--color-gray-500);
 		background-color: var(--color-gray-200);
 		cursor: not-allowed;
+
+		&:not(.-loading) {
+			color: var(--color-gray-500);
+		}
+
+		&.-loading {
+			&:after {
+				border-right-color: var(--color-gray-500);
+				border-top-color: var(--color-gray-500);
+			}
+		}
 
 		&:hover {
 			background-color: var(--color-gray-300);

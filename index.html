@@ -89,7 +89,7 @@
 				<h3>Color</h3>
 				<br>
 				<div class="lo-6 lo-3-sm _gg-24px _fw-strong">
-					<div class="_bdrd-16px _ovf-hd">
+					<div class="_bdrd-16px _ovf-hd _alit-st">
 						<div class="_bgcl-primary-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary</div>
 						<div class="_bgcl-primary-900 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 900</div>
 						<div class="_bgcl-primary-800 _h-32px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary 800</div>
@@ -161,6 +161,11 @@
 						<div class="_bgcl-info-200 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Info 200</div>
 						<div class="_bgcl-info-100 _h-32px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">Info 100</div>
 					</div>
+					<div>
+						<div class="_bgcl-golden-poppy _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Golden Poppy</div>
+						<div class="_bgcl-dark-cerulean _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Dark Cerulean</div>
+						<div class="_bgcl-bittersweet _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Bittersweet</div>
+					</div>
 				</div>
 			</section>
 
@@ -186,7 +191,7 @@
 			<!--
 				Component
 			===================================-->
-			<section id="component-card-product">
+			<section id="component-avatar">
 				<h3>Avatar</h3>
 				<br>
 				<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
@@ -201,6 +206,74 @@
 </code></pre>
 			</section>
 
+			<section id="component-badge">
+				<h3>Badge</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+					<span class="tb-badge -dark-cerulean">Dark cerulean</span>
+					<span class="tb-badge -bittersweet">Bittersweet</span>
+					<span class="tb-badge -positive">Positive</span>
+					<span class="tb-badge -negative">Negative</span>
+					<span class="tb-badge -golden-poppy">Goldenpoppy</span>
+				</div>
+
+				<pre><code class="language-html">&lt;span class="tb-badge -dark-cerulean">Dark cerulean&lt;/span>
+&lt;span class="tb-badge -bittersweet">Bittersweet&lt;/span>
+&lt;span class="tb-badge -positive">Positive&lt;/span>
+&lt;span class="tb-badge -negative">Negative&lt;/span>
+&lt;span class="tb-badge -golden-poppy">Goldenpoppy&lt;/span>
+</code></pre>
+			</section>
+
+			<section id="component-button">
+				<h3>Button</h3>
+				<br>
+				<div class="lo-12 _gg-12px">
+					<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+						<button class="tb-button -small">Button</button>
+						<button class="tb-button">Button</button>
+						<button class="tb-button -big">Button</button>
+						<button class="tb-button -loading">Button</button>
+						<button class="tb-button -disabled" disabled>Button</button>
+						<button class="tb-button -loading -disabled" disabled>Button</button>
+					</div>
+					<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+						<button class="tb-button -secondary -small">Button</button>
+						<button class="tb-button -secondary">Button</button>
+						<button class="tb-button -secondary -big">Button</button>
+						<button class="tb-button -secondary -loading">Button</button>
+						<button class="tb-button -secondary -disabled" disabled>Button</button>
+						<button class="tb-button -secondary -loading -disabled" disabled>Button</button>
+					</div>
+					<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+						<button class="tb-button -positive">Button</button>
+						<button class="tb-button -negative">Button</button>
+						<button class="tb-button -secondary -positive">Button</button>
+						<button class="tb-button -secondary -negative">Button</button>
+					</div>
+				</div>
+
+				<pre><code class="language-html">&lt;button class="tb-button -small">Button&lt;/button>
+&lt;button class="tb-button">Button&lt;/button>
+&lt;button class="tb-button -big">Button&lt;/button>
+&lt;button class="tb-button -loading">Button&lt;/button>
+&lt;button class="tb-button -disabled" disabled>Button&lt;/button>
+&lt;button class="tb-button -loading -disabled" disabled>Button&lt;/button>
+
+&lt;button class="tb-button -secondary -small">Button&lt;/button>
+&lt;button class="tb-button -secondary">Button&lt;/button>
+&lt;button class="tb-button -secondary -big">Button&lt;/button>
+&lt;button class="tb-button -secondary -loading">Button&lt;/button>
+&lt;button class="tb-button -secondary -disabled" disabled>Button&lt;/button>
+&lt;button class="tb-button -secondary -loading -disabled" disabled>Button&lt;/button>
+
+&lt;button class="tb-button -positive">Button&lt;/button>
+&lt;button class="tb-button -negative">Button&lt;/button>
+&lt;button class="tb-button -secondary -positive">Button&lt;/button>
+&lt;button class="tb-button -secondary -negative">Button&lt;/button>
+</code></pre>
+			</section>
+
 			<section id="component-card-product">
 				<h3>Card Product</h3>
 				<br>
@@ -209,17 +282,17 @@
 						<div class="slot-avatar">
 							<img src="https://storage.googleapis.com/fastwork-static/fdc8f43b-b9ab-449f-a4d6-e266a3bfa2ff.jpg" alt="Avatar" class="tb-avatar -small">
 						</div>
-						<div class="slot-seller-name">usernameasdsad asd asd as sa da</div>
-						<div class="slot-online">ออนไลน์เมื่อุ 2 ชั่วโมงที่แล้ว</div>
+						<div class="slot-seller-name">usernamelongggg</div>
+						<div class="slot-online">ออนไลน์เมื่อ 2 ชั่วโมงที่แล้ว</div>
 						<div class="slot-favorite"><i class="fal fa-heart"></i>&nbsp;1,690</div>
 						<div class="slot-image"><img src="https://storage.googleapis.com/fastwork-static/ab6109a8-b54d-42d3-b355-b55c2f27680d.jpg" alt="Image"></div>
-						<div class="slot-title">บริการออกแบบโลโก้ที่แฝงด้วยความหมายู บริการออกแบบโลโก้ที่แฝงด้วยความหมาย</div>
+						<div class="slot-title">บริการออกแบบโลโก้ที่แฝงด้วยความหมาย บริการออกแบบโลโก้ที่แฝงด้วยความหมาย</div>
 						<div class="slot-rating">
 							<small class="_dp-g _gatf-cl">
 								<i class="fas fa-star _cl-golden-poppy"></i>
-								<i class="fas fa-star _cl-gray-300"></i>
-								<i class="fas fa-star _cl-gray-300"></i>
-								<i class="fas fa-star _cl-gray-300"></i>
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-golden-poppy"></i>
 								<i class="fas fa-star _cl-gray-300"></i>
 							</small>
 							<div class="_cl-mute _mgt-4px">
@@ -233,21 +306,17 @@
 						</div>
 						<div class="slot-price">
 							<div class="_cl-mute _fs-200">เริ่มต้น</div>
-							<div class="_cl-primary-500">Rp12,000,000</div>
+							<div class="_cl-primary-500">Rp1,000,000</div>
 						</div>
 					</div>
 				</div>
 
 				<pre><code class="language-html">&lt;div class="tb-card-product">
 	&lt;div class="slot-avatar">
-		&lt;img
-			src="..."
-			alt="Avatar"
-			class="tb-avatar -small"
-		>
+		&lt;img src="..." alt="Avatar" class="tb-avatar -small">
 	&lt;/div>
-	&lt;div class="slot-seller-name">username&lt;/div>
-	&lt;div class="slot-online">ออนไลน์เมื่อุ 2 ชั่วโมงที่แล้ว&lt;/div>
+	&lt;div class="slot-seller-name">usernamelonggg&lt;/div>
+	&lt;div class="slot-online">ออนไลน์เมื่อ 2 ชั่วโมงที่แล้ว&lt;/div>
 	&lt;div class="slot-favorite">&lt;i class="fal fa-heart">&lt;/i>&nbsp;1,690&lt;/div>
 	&lt;div class="slot-image">
 		&lt;img src="..." alt="Image">
@@ -257,9 +326,9 @@
 		&lt;!-- Example of rating slot -->
 		&lt;small class="_dp-g _gatf-cl">
 			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
-			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
-			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
-			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
 			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
 		&lt;/small>
 		&lt;div class="_cl-mute _mgt-4px">
@@ -275,6 +344,111 @@
 		&lt;!-- Example of price slot -->
 		&lt;div class="_cl-mute _fs-200">เริ่มต้น&lt;/div>
 		&lt;div class="_cl-primary-500">Rp12,000,000&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+			</section>
+
+			<section id="component-form">
+				<h3>Form</h3>
+				<br>
+				<h4>Text input</h4>
+				<br>
+				<div class="lo-12 _gg-24px" style="max-width: 400px;">
+					<div class="tb-field">
+						<label for="input1">Username</label>
+						<div class="tb-input">
+							<input id="input1" placeholder="Enter text">
+						</div>
+						<small class="_cl-mute">คำอธิบาย 1234</small>
+					</div>
+					<div class="tb-field -disabled">
+						<div class="tb-input">
+							<input placeholder="Disabled" disabled>
+						</div>
+					</div>
+					<div class="tb-field -negative">
+						<div class="tb-input">
+							<input placeholder="Negative" value="Error">
+						</div>
+					</div>
+					<div class="tb-field -positive">
+						<div class="tb-input">
+							<input placeholder="Positive" value="Look good">
+						</div>
+					</div>
+					<div class="tb-field -big">
+						<div class="tb-input">
+							<input placeholder="Big!!">
+						</div>
+					</div>
+					<div class="tb-field -small">
+						<div class="tb-input">
+							<input placeholder="Small">
+						</div>
+					</div>
+				</div>
+				<pre><code class="language-html">&lt;div class="tb-field">
+	&lt;label for="input-normal">Username&lt;/label>
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Enter text">
+	&lt;/div>
+	&lt;small class="_cl-mute">คำอธิบาย 1234&lt;/small>
+&lt;/div>
+
+&lt;div class="tb-field -disabled">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Disabled" disabled>
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -negative">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Negative" value="Error">
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -positive">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Positive" value="Look good">
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -big">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Big!!">
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -small">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Small">
+	&lt;/div>
+&lt;/div></code></pre>
+			<br>
+			<h4>Textarea</h4>
+			<br>
+			<div class="lo-12 _gg-24px" style="max-width: 400px;">
+				<div class="tb-field">
+					<label for="textarea1">Your detail</label>
+					<div class="tb-textarea">
+						<textarea id="textarea1" rows="4" placeholder="Enter detail..."></textarea>
+					</div>
+				</div>
+				<div class="tb-field -disabled">
+					<div class="tb-textarea">
+						<textarea id="textarea1" rows="4" placeholder="Disabled textarea..." disabled></textarea>
+					</div>
+				</div>
+			</div>
+			<pre><code class="language-html">&lt;div class="tb-field">
+	&lt;label for="textarea1">Your detail&lt;/label>
+	&lt;div class="tb-textarea">
+		&lt;textarea id="textarea1" rows="4" placeholder="Enter detail...">&lt;/textarea>
+	&lt;/div>
+&lt;/div>
+&lt;div class="tb-field -disabled">
+	&lt;div class="tb-textarea">
+		&lt;textarea id="textarea1" rows="4" placeholder="Disabled textarea..." disabled>&lt;/textarea>
 	&lt;/div>
 &lt;/div></code></pre>
 			</section>
