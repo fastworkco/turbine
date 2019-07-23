@@ -2,6 +2,7 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/theme.css">
 		<link rel="stylesheet" href="dist/layout.css">
@@ -193,54 +194,77 @@
 						<div class="slot-avatar">
 							<img src="https://storage.googleapis.com/fastwork-static/2b8cbb47-ccc4-4018-a6d0-1c19eb2b897e.jpg" alt="Avatar" class="tb-avatar -small">
 						</div>
-						<div class="slot-seller-name u-ellipsis-text">usernameasdsad asd asd as sa da</div>
-						<div class="slot-online u-ellipsis-text">ออนไลน์เมื่อุ 2 ชั่วโมงที่แล้ว</div>
+						<div class="slot-seller-name">usernameasdsad asd asd as sa da</div>
+						<div class="slot-online">ออนไลน์เมื่อุ 2 ชั่วโมงที่แล้ว</div>
 						<div class="slot-favorite"><i class="fal fa-heart"></i>&nbsp;1,690</div>
 						<div class="slot-image"><img src="https://storage.googleapis.com/fastwork-static/ab6109a8-b54d-42d3-b355-b55c2f27680d.jpg" alt="Image"></div>
 						<div class="slot-title">บริการออกแบบโลโก้ที่แฝงด้วยความหมายู บริการออกแบบโลโก้ที่แฝงด้วยความหมาย</div>
 						<div class="slot-rating">
-							<div>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
+							<small class="_dp-g _gatf-cl">
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-gray-300"></i>
+								<i class="fas fa-star _cl-gray-300"></i>
+								<i class="fas fa-star _cl-gray-300"></i>
+								<i class="fas fa-star _cl-gray-300"></i>
+							</small>
+							<div class="_cl-mute _mgt-4px">
+								4.9(39)
 							</div>
 						</div>
 						<div class="slot-badge">
-							badge
+							<div class="tb-badge">
+								Pro
+							</div>
 						</div>
 						<div class="slot-price">
-							2000
-						</div>
-					</div>
-					<div class="tb-card-product">
-						<div class="slot-avatar">
-							<img src="https://storage.googleapis.com/fastwork-static/2b8cbb47-ccc4-4018-a6d0-1c19eb2b897e.jpg" alt="Avatar" class="tb-avatar -small">
-						</div>
-						<div class="slot-seller-name">username</div>
-						<div class="slot-online">ออนไลน์อยู่</div>
-						<div class="slot-favorite">
-							<i class="fal fa-heart"></i>&nbsp;1,690
-						</div>
-						<div class="slot-image">
-							<img src="https://storage.googleapis.com/fastwork-static/ab6109a8-b54d-42d3-b355-b55c2f27680d.jpg" alt="Image">
-						</div>
-						<div class="slot-title">
-							<p>บริการออกแบบโลโก้ที่แฝงด้วยความหมายู บริการออกแบบโลโก้ที่แฝงด้วยความหมาย</p>
-						</div>
-						<div class="slot-rating">
-							rate
-						</div>
-						<div class="slot-badge">
-							badge
-						</div>
-						<div class="slot-price">
-							2000
+							<div class="_cl-mute _fs-200">เริ่มต้น</div>
+							<div class="_cl-primary-500">Rp12,000,000</div>
 						</div>
 					</div>
 				</div>
+
+				<pre><code class="language-html">&lt;div class="tb-card-product">
+	&lt;div class="slot-avatar">
+		&lt;img
+			src="..."
+			alt="Avatar"
+			class="tb-avatar -small"
+		>
+	&lt;/div>
+	&lt;div class="slot-seller-name">username&lt;/div>
+	&lt;div class="slot-online">ออนไลน์เมื่อุ 2 ชั่วโมงที่แล้ว&lt;/div>
+	&lt;div class="slot-favorite">&lt;i class="fal fa-heart">&lt;/i>&nbsp;1,690&lt;/div>
+	&lt;div class="slot-image">
+		&lt;img src="..." alt="Image">
+	&lt;/div>
+	&lt;div class="slot-title">บริการออกแบบโลโก้ที่แฝงด้วยความหมาย&lt;/div>
+	&lt;div class="slot-rating">
+		&lt;!-- Example of rating slot -->
+		&lt;small class="_dp-g _gatf-cl">
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
+			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
+			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
+			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
+		&lt;/small>
+		&lt;div class="_cl-mute _mgt-4px">
+			4.9(39)
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="slot-badge">
+		&lt;div class="tb-badge">
+			Pro
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="slot-price">
+		&lt;!-- Example of price slot -->
+		&lt;div class="_cl-mute _fs-200">เริ่มต้น&lt;/div>
+		&lt;div class="_cl-primary-500">Rp12,000,000&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
 			</section>
 		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
 	</body>
 </html>

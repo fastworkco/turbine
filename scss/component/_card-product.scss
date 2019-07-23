@@ -1,16 +1,23 @@
 .#{$component-prefix}card-product {
 	$card-padding: .5rem;
-	$card-max-width: 12rem;
+	$card-max-width: 12.5rem;
 
 	display: grid;
-	grid-template-columns: min-content 1fr max-content;
-	grid-template-rows: max-content max-content max-content max-content max-content max-content;
+	grid-template-columns: min-content min-content 1fr max-content;
+	grid-template-rows:
+		max-content
+		max-content
+		max-content
+		max-content
+		max-content
+		max-content;
+
 	grid-template-areas:
-		"avatar seller-name favorite"
-		"avatar online online"
-		"image image image"
-		"title title title"
-		"rating badge price";
+		"avatar seller-name seller-name favorite"
+		"avatar online online online"
+		"image  image  image  image"
+		"title  title  title  title"
+		"rating rating badge  price";
 
 	width: 100%;
 	max-width: $card-max-width;
@@ -32,6 +39,9 @@
 		grid-area: seller-name;
 
 		margin-top: .125rem;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	>.slot-online {
@@ -40,6 +50,10 @@
 		font-size: var(--font-size-100);
 		line-height: var(--line-height-paragraph);
 		color: var(--color-gray-500);
+
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	>.slot-favorite {
@@ -79,14 +93,22 @@
 
 	>.slot-rating {
 		grid-area: rating;
+
+		font-size: var(--font-size-100);
 	}
 
 	>.slot-badge {
 		grid-area: badge;
+
+		margin-left: .25rem;
 	}
 
 	>.slot-price {
-		grid-area: price;
+		// grid-area: price;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 5;
+		text-align: right;
 	}
 
 }
