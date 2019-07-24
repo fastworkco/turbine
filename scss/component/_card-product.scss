@@ -17,7 +17,7 @@
 		"avatar online online online"
 		"image  image  image  image"
 		"title  title  title  title"
-		"rating rating badge  price";
+		"rating rating label  price";
 
 	width: 100%;
 	max-width: $card-max-width;
@@ -97,8 +97,8 @@
 		font-size: var(--font-size-100);
 	}
 
-	>.slot-badge {
-		grid-area: badge;
+	>.slot-label {
+		grid-area: label;
 
 		margin-left: .25rem;
 	}
