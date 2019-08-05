@@ -156,7 +156,7 @@ $components-colors: (
 			background-color: white;
 
 			&:focus {
-				box-shadow: 0 0 0 .175rem var(--color-#{$key}-200);
+				box-shadow: 0 0 0 .175rem var(--color-primary-200);
 			}
 
 			&:hover {
