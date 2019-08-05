@@ -70,7 +70,9 @@
 	--color-golden-poppy: hsl(47, 99%, 50%);   // NOTE: star
 	--color-dark-cerulean: hsl(210, 96%, 28%); // NOTE: pro
 	--color-bittersweet: hsl(4, 96%, 67%);     // NOTE: hot
-	--color-facebook: hsl(217, 51%, 45%);      // NOTE: facebook
+	--color-facebook: hsl(217, 51%, 45%);
+
+	--color-shader: rgba(0, 0, 0 , 0.12);// NOTE: facebook
 }
 
 /*
@@ -115,4 +117,13 @@
 	--font-weight-default: 400;
 	--font-weight-strong: 600;
 	--font-weight-heading: 700;
+}
+
+/*
+ * Timing
+ *********************************************/
+:root {
+	--timing-normal: 320ms;
+	--timing-faster: 160ms;
+	--timing-fastest: 80ms;
 }

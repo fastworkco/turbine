@@ -7,10 +7,10 @@
 	margin: 0 auto;
 	padding: 16px;
 
-	background: $color-white;
+	background: white;
 
 	transform: translate3d(0, 20px, 0);
-	transition: all $timing-normal ease;
+	transition: all var(--timing-faster) ease;
 
 	opacity: 0;
 
@@ -25,10 +25,8 @@
 	> .description {
 		padding: 0 2rem;
 
-		font-size: $font-size-small;
+		font-size: var(--font-size-300);
 		text-align: center;
-
-		color: $color-text-secondary;
 
 		+ .content { margin-top: 2rem; }
 	}
@@ -65,7 +63,7 @@
 	visibility: hidden;
 	opacity: 0;
 
-	transition: all $timing-normal ease;
+	transition: all var(--timing-faster) ease;
 
 	&:before,
 	&:after {
