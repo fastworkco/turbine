@@ -30,6 +30,31 @@
 
 	outline: none;
 
+	// size
+	&.-big {
+		.#{$component-prefix}input,
+		.#{$component-prefix}select:not(.-multiple) {
+			height: 3rem;
+		}
+		.#{$component-prefix}input > input,
+		.#{$component-prefix}select:not(.-multiple) > select {
+			font-size: 1.25rem;
+			height: 100%;
+		}
+	}
+
+	&.-small {
+		.#{$component-prefix}input,
+		.#{$component-prefix}select:not(.-multiple) {
+			height: 1.875em;
+		}
+		.#{$component-prefix}input > input,
+		.#{$component-prefix}select:not(.-multiple) > select {
+			font-size: 0.75rem;
+			height: 100%;
+		}
+	}
+
 	&:hover {
 		border-color: hsl(216, 15%, 65%);
 	}
@@ -348,6 +373,144 @@ $components-colors: (
 					border-color: var(--color-dark);
 				}
 			}
+		}
+	}
+}
+
+// input icon
+.#{$component-prefix}input.-has-icon-left,
+.#{$component-prefix}select.-has-icon-left,
+.#{$component-prefix}input.-has-icon-right {
+	position: relative;
+
+	> .icon {
+		position: absolute;
+		top: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 2.625rem;
+		height: 100%;
+
+		color: var(--color-gray-400);
+
+		font-size: 1rem;
+	}
+}
+
+.#{$component-prefix}input.-has-icon-left {
+	> input {
+		padding-left: 2.625rem;
+	}
+
+	> .icon:not(.-is-right) {
+		left: 0;
+	}
+}
+
+.#{$component-prefix}select.-has-icon-left {
+	> select {
+		padding-left: 2.625rem;
+	}
+
+	> .icon:not(.-is-right) {
+		left: 0;
+	}
+}
+
+.#{$component-prefix}input.-has-icon-right {
+	> input {
+		padding-right: 2.625rem;
+	}
+
+	> .icon.-is-right {
+		right: 0;
+	}
+}
+
+
+.#{$component-prefix}field.-small {
+	.#{$component-prefix}input.-has-icon-left {
+		> input {
+			padding-left: 2rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
+		}
+	}
+	.#{$component-prefix}select.-has-icon-left {
+		> select {
+			padding-left: 2rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
+		}
+	}
+	.#{$component-prefix}input.-has-icon-right {
+		> input {
+			padding-right: 2rem;
+		}
+
+		> .icon.-is-right {
+			right: 0;
+
+			width: 2rem;
+
+			font-size: .875rem;
+		}
+	}
+}
+
+.#{$component-prefix}field.-big {
+	.#{$component-prefix}input.-has-icon-left {
+		> input {
+			padding-left: 3rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
+		}
+	}
+	.#{$component-prefix}select.-has-icon-left {
+		> select {
+			padding-left: 3rem;
+		}
+
+		> .icon:not(.-is-right) {
+			left: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
+		}
+	}
+	.#{$component-prefix}input.-has-icon-right {
+		> input {
+			padding-right: 3rem;
+		}
+
+		> .icon.-is-right {
+			right: 0;
+
+			width: 3rem;
+
+			font-size: 1.33333rem;
 		}
 	}
 }
