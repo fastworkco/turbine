@@ -1,6 +1,6 @@
 {
 	"name": "@fastwork/turbine",
-	"version": "2.2.4",
+	"version": "2.3.0",
 	"description": "Turbine UI",
 	"main": "scss/main.scss",
 	"unpkg": "dist/component.css",
@@ -9,7 +9,7 @@
 		"src": "src"
 	},
 	"scripts": {
-		"build": "gulp"
+		"build": "yarn gulp"
 	},
 	"keywords": [
 		"css"
