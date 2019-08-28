@@ -1,0 +1,82 @@
+{
+	"source": ["tokens/properties/**/*.json"],
+	"platforms": {
+		"css": {
+			"transformGroup": "css",
+			"buildPath": "dist/tokens/css/",
+			"files": [
+				{
+					"format": "css/variables",
+					"destination": "css/variables.css"
+				}
+			]
+		},
+
+		"scss": {
+			"transformGroup": "scss",
+			"buildPath": "dist/tokens/scss/",
+			"files": [
+				{
+					"destination": "_variables.scss",
+					"format": "scss/variables"
+				}
+			]
+		},
+
+		"android": {
+			"transformGroup": "android",
+			"buildPath": "dist/tokens/android/",
+			"files": [
+				{
+					"destination": "font_dimens.xml",
+					"format": "android/fontDimens"
+				},
+				{
+					"destination": "colors.xml",
+					"format": "android/colors"
+				}
+			]
+		},
+
+		"ios-swift": {
+			"transformGroup": "ios-swift",
+			"buildPath": "dist/tokens/ios-swift/",
+			"files": [
+				{
+					"destination": "StyleDictionary.swift",
+					"format": "ios-swift/class.swift",
+					"className": "StyleDictionary",
+					"filter": {}
+				}
+			]
+		},
+
+		"ios-swift-separate-enums": {
+			"transformGroup": "ios-swift-separate",
+			"buildPath": "dist/tokens/ios-swift/",
+			"files": [
+				{
+					"destination": "StyleDictionaryColor.swift",
+					"format": "ios-swift/enum.swift",
+					"className": "StyleDictionaryColor",
+					"filter": {
+						"attributes": {
+							"category": "color"
+						}
+					}
+				},
+				{
+					"destination": "StyleDictionarySize.swift",
+					"format": "ios-swift/enum.swift",
+					"className": "StyleDictionarySize",
+					"type": "float",
+					"filter": {
+						"attributes": {
+							"category": "size"
+						}
+					}
+				}
+			]
+		}
+	}
+}
