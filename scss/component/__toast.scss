@@ -1,0 +1,102 @@
+@mixin make-toast($color: $color-primary) {
+	display: flex;
+	border: 1px solid $color;
+	border-radius: 0.25rem;
+	overflow: hidden;
+
+	> .#{$component-prefix}toast-message {
+		flex: 1;
+		display: block;
+		padding: 14px;
+
+		background: white;
+		color: $color;
+	}
+
+	> .#{$component-prefix}toast-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 3rem;
+
+		background: $color;
+		color: white;
+	}
+
+	> .#{$component-prefix}toast-close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 3rem;
+
+		background: transparent;
+		color: $color;
+
+		> * {
+			cursor: pointer;
+		}
+	}
+}
+
+.#{$component-prefix}toast {
+	@include make-toast();
+
+	&.-positive {
+		border-color: #49A211;
+
+		> .#{$component-prefix}toast-message {
+			background: #5ED016;
+			color: white;
+		}
+
+		> .#{$component-prefix}toast-icon {
+			background: #49A211;
+			color: white;
+		}
+
+		> .#{$component-prefix}toast-close {
+			background: #5ED016;
+			color: white;
+		}
+	}
+
+	&.-negative {
+		border-color: #E92812;
+
+		> .#{$component-prefix}toast-message {
+			background: #F26555;
+			color: white;
+		}
+
+		> .#{$component-prefix}toast-icon {
+			background: #E92812;
+			color: white;
+		}
+
+		> .#{$component-prefix}toast-close {
+			background: #F26555;
+			color: white;
+		}
+	}
+
+	&.-warning {
+		border-color: #DA960B;
+
+		> .#{$component-prefix}toast-message {
+			background: #F5B83D;
+			color: white;
+		}
+
+		> .#{$component-prefix}toast-icon {
+			background: #DA960B;
+			color: white;
+		}
+
+		> .#{$component-prefix}toast-close {
+			background: #F5B83D;
+			color: white;
+		}
+	}
+}

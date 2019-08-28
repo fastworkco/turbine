@@ -1,0 +1,64 @@
+$components-colors: (
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning' : $color-warning,
+	'info'    : $color-info,
+	'disabled': $color-gray-400,
+	'gray'    : $color-gray-400
+);
+
+.#{$component-prefix}quick-action-list {
+	@extend %raised-shadow-2;
+
+	display: inline-flex;
+	padding: 0;
+
+	list-style: none;
+	border-radius: $border-radius-max;
+	user-select: none;
+
+	&:empty {
+		display: none;
+	}
+
+	> div, > a {
+		padding: .5rem 1rem;
+
+		font-weight: $font-weight-semibold;
+
+		color: $color-primary;
+		background-color: $color-white;
+
+		transition: all $timing-faster ease;
+		cursor: pointer;
+
+		&:first-child {
+			border-top-left-radius: $border-radius-max;
+			border-bottom-left-radius: $border-radius-max;
+		}
+
+		&:last-child {
+			border-top-right-radius: $border-radius-max;
+			border-bottom-right-radius: $border-radius-max;
+		}
+
+		&:not(:first-child) {
+			border-left: 1px solid $color-border-secondary;
+		}
+
+		&:only-child {
+			padding: .5rem 1.75rem;
+		}
+
+		&:hover {
+			background-color: $color-background-active-primary;
+		}
+
+		@each $key, $value in $components-colors {
+			&.-#{$key},
+			&.#{$key} {
+				color: $value
+			}
+		};
+	}
+}

@@ -1,32 +1,51 @@
+$components-colors: (
+	'positive',
+	'accent',
+	'negative',
+	'warning',
+	'info'
+);
+
 %base-button {
+	$height-button-small: 2.25rem;
+	$font-size-button-small: 0.875rem;
+
+	$height-button-big: 3.25rem;
+	$font-size-button-big: 1.25rem;
+
 	position: relative;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	min-height: 2.5rem;
-	padding: 0.5rem 1rem;
+	min-height: 2.875rem;
+	padding: 0.5rem 1.5rem;
 
-	font-weight: $font-weight-semibold;
+	font-weight: 600;
 	font-size: 1rem;
 	line-height: 100%;
 
 	border: none;
-	border-radius: 0.25rem;
+	border-radius: 0.125rem;
 
-	transition: all $timing-normal ease-in-out;
+	transition: all 0.16s ease-in-out;
 	user-select: none;
 	cursor: pointer;
 	outline: none;
 
+	&.-pill {
+		border-radius: 999px;
+	}
+
 	&.-small {
-		min-height: 2rem;
-		font-size: $font-size-small;
+		min-height: $height-button-small;
+		font-size: $font-size-button-small;
 	}
 
 	&.-big {
-		min-height: 3rem;
+		min-height: $height-button-big;
+		font-size: $font-size-button-big;
 	}
 
 	&.-loading {
@@ -42,14 +61,8 @@
 			margin: auto;
 			border: 2px solid;
 			border-radius: 999px;
-			animation: spinAround $timing-slowest infinite linear;
+			animation: spinAround 0.48s infinite linear;
 		}
-	}
-
-	&[disabled],
-	&.-disabled {
-		opacity: .5;
-		cursor: not-allowed;
 	}
 
 	&.-fluid {
@@ -57,52 +70,155 @@
 	}
 }
 
-@mixin make-button($color: $color-primary) {
+.#{$namespace}button {
 	@extend %base-button;
 
-	color: $color-light;
-	background-color: $color;
+	color: var(--color-text-light);
+	background-color: var(--color-primary-500);
 
 	&:focus {
-		@include focused-shadow($color);
+		box-shadow: 0 0 0 .175rem var(--color-primary-300);
 	}
 
 	&:hover {
-		background-color: mix($color, black, 90%);
+		background-color: var(--color-primary-400);
 	}
 
 	&.-loading {
 		color: transparent;
 
 		&:after {
-			border-right-color: $color-light;
-			border-top-color: $color-light;
+			border-right-color: var(--color-text-light);
+			border-top-color: var(--color-text-light);
 		}
 	}
-}
 
-@mixin make-secondary-button($color: $color-primary) {
-	@extend %base-button;
+	@each $key, $value in $components-colors {
+		&.-#{$key} {
+			color: var(--color-text-light);
+			background-color: var(--color-#{$key}-500);
 
-	color: $color;
-	background-color: white;
+			&:focus {
+				box-shadow: 0 0 0 .175rem var(--color-#{$key}-200);
+			}
 
-	border: 1px solid $color-gray-300;
+			&:hover {
+				background-color: var(--color-#{$key}-400);
+			}
 
-	&:focus {
-		@include focused-shadow($color);
+			&.-loading {
+				color: transparent;
+
+				&:after {
+					border-right-color: var(--color-text-light);
+					border-top-color: var(--color-text-light);
+				}
+			}
+
+			&.-secondary {
+				color: var(--color-#{$key}-600);
+				border: 2px solid var(--color-#{$key}-600);
+				background: transparent;
+
+				&:hover {
+					background-color: var(--color-#{$key}-100);
+				}
+
+				&.-loading {
+					color: transparent;
+
+					&:after {
+						border-right-color: var(--color-#{$key}-600);
+						border-top-color: var(--color-#{$key}-600);
+					}
+				}
+			}
+
+			&.-tertiary {
+				color: var(--color-#{$key}-600);
+				border: none;
+				background: transparent;
+
+				&:hover {
+					background-color: var(--color-#{$key}-100);
+				}
+
+				&.-loading {
+					color: transparent;
+
+					&:after {
+						border-right-color: var(--color-#{$key}-600);
+						border-top-color: var(--color-#{$key}-600);
+					}
+				}
+			}
+		}
 	}
 
-	&:hover {
-		background-color: $color-gray-100;
+	&.-secondary {
+		color: var(--color-primary-600);
+		border: 2px solid var(--color-primary-600);
+		background: transparent;
+
+		&:hover {
+			background-color: var(--color-primary-100);
+		}
+
+		&.-disabled {
+			color: var(--color-gray-400);
+			border: 2px solid var(--color-gray-300);
+			background-color: transparent;
+
+			&:hover {
+				background-color: transparent;
+			}
+		}
+
+		&.-loading {
+			color: transparent;
+
+			&:after {
+				border-right-color: var(--color-primary-600);
+				border-top-color: var(--color-primary-600);
+			}
+		}
 	}
 
-	&.-loading {
-		color: transparent;
+	&.-tertiary {
+		color: var(--color-primary-600);
+		border: none;
+		background: transparent;
 
-		&:after {
-			border-right-color: $color;
-			border-top-color: $color;
+		&:hover {
+			background-color: var(--color-primary-100);
+		}
+
+		&.-loading {
+			color: transparent;
+
+			&:after {
+				border-right-color: var(--color-primary-600);
+				border-top-color: var(--color-primary-600);
+			}
+		}
+
+		&.-disabled {
+			color: var(--color-gray-400);
+			background-color: transparent;
+
+			&:hover {
+				background-color: var(--color-gray-100);
+			}
+		}
+	}
+
+	&.-disabled {
+		color: var(--color-gray-500);
+		background-color: var(--color-gray-200);
+		cursor: not-allowed;
+
+		&:hover {
+			background-color: var(--color-gray-300);
 		}
 	}
 }
@@ -110,33 +226,4 @@
 @keyframes spinAround {
 	from { transform: rotate(0deg); }
 	to   { transform: rotate(359deg); }
-}
-
-$components-colors: (
-	'secondary'  : $color-secondary,
-	'positive': $color-positive,
-	'negative': $color-negative,
-	'warning' : $color-warning,
-	'info'    : $color-info,
-);
-
-.#{$prefix}button {
-	@include make-button();
-
-	@each $key, $value in $components-colors {
-		&.-#{$key} {
-			@include make-button($value);
-		}
-	}
-}
-
-.#{$prefix}button-secondary {
-	@include make-secondary-button();
-
-	@each $key, $value in $components-colors {
-		&.-#{$key} {
-			@include make-secondary-button($value);
-			color: $value;
-		}
-	}
 }

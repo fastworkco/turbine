@@ -8,7 +8,36 @@ gulp.task('default', function() {
     src: './scss/main.scss',
     basename: 'turbine'
   }
-  generateCSS(outputConfigs)
+
+  generateCSS({
+    src: './scss/component.scss',
+    basename: 'component'
+  })
+
+  generateCSS({
+    src: './scss/theme.scss',
+    basename: 'theme'
+  })
+
+  generateCSS({
+    src: './scss/layout.scss',
+    basename: 'layout'
+  })
+
+  generateCSS({
+    src: './scss/reset.scss',
+    basename: 'reset'
+  })
+
+  generateCSS({
+    src: './scss/utility.scss',
+    basename: 'utility'
+  })
+
+  generateCSS({
+    src: './scss/all.scss',
+    basename: 'all'
+  })
 })
 
 function generateCSS({ src = '', basename = '' }) {

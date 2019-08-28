@@ -1,0 +1,114 @@
+.#{$component-prefix}card-product {
+	$card-padding: .5rem;
+	$card-max-width: 12.5rem;
+
+	display: grid;
+	grid-template-columns: min-content min-content 1fr max-content;
+	grid-template-rows:
+		max-content
+		max-content
+		max-content
+		max-content
+		max-content
+		max-content;
+
+	grid-template-areas:
+		"avatar seller-name seller-name favorite"
+		"avatar online online online"
+		"image  image  image  image"
+		"title  title  title  title"
+		"rating rating label  price";
+
+	width: 100%;
+	max-width: $card-max-width;
+
+	padding: $card-padding;
+
+	border: 1px solid var(--color-gray-300);
+	border-radius: 4px;
+
+	font-size: var(--font-size-300);
+
+	>.slot-avatar {
+		grid-area: avatar;
+
+		margin-right: .5rem;
+	}
+
+	>.slot-seller-name {
+		grid-area: seller-name;
+
+		margin-top: .125rem;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	>.slot-online {
+		grid-area: online;
+
+		font-size: var(--font-size-100);
+		line-height: var(--line-height-paragraph);
+		color: var(--color-gray-500);
+
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	>.slot-favorite {
+		grid-area: favorite;
+
+		margin-top: .125rem;
+		margin-left: .5rem;
+		font-size: var(--font-size-100);
+		line-height: var(--line-height-paragraph);
+		color: var(--color-gray-500);
+	}
+
+	>.slot-image {
+		grid-area: image;
+
+		margin-top: .5rem;
+
+		img {
+			width: 100%;
+			border-radius: 2px;
+		}
+	}
+
+	>.slot-title {
+		grid-area: title;
+
+		// overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: clip;
+		-webkit-line-clamp: 2; // Note: 41px height is size of two lines included line-height
+		line-height: var(--line-height-paragraph);
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+	}
+
+	>.slot-rating {
+		grid-area: rating;
+
+		font-size: var(--font-size-100);
+	}
+
+	>.slot-label {
+		grid-area: label;
+
+		margin-left: .25rem;
+	}
+
+	>.slot-price {
+		// grid-area: price;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 5;
+		text-align: right;
+	}
+
+}

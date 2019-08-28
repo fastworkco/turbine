@@ -1,51 +1,47 @@
 <html>
 	<head>
-		<!-- <link rel="stylesheet" href="https://unpkg.com/biomatic@0.3.7/dist/biomatic.min.css"> -->
+		<link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/fontawesome-pro-5.5.0/css/all.min.css">
-		<link rel="stylesheet" href="dist/turbine.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/theme.css">
+		<link rel="stylesheet" href="dist/layout.css">
+		<link rel="stylesheet" href="dist/component.css">
+		<link rel="stylesheet" href="dist/utility.css">
 		<style>
-			.blank {
-				width: 3rem;
-				height: 3rem;
-				border: 1px dashed gray;
-				border-radius: 3px;
-			}
-
-			hr {
-				margin: 0px;
-			}
-
 			section {
-				padding: 24px;
+				padding: 64px 24px;
 				background-color: white;
 				border-bottom: 1px solid var(--color-gray-200);
 			}
 
 			body {
+				display: flex;
+				justify-content: center;
 				background-image: url(assets/banner3.jpg);
 				background-size: 100%, 300px;
+				background-position: top center;
 				background-repeat: no-repeat;
-				background-color: #09191f;
-				background-attachment: fixed;
+				background-color: #0e1a1d;
+				backface-visibility: hidden;
 			}
 
-			.source {
-				max-height: 0px
-			}
-
-			.source.show-source {
-				max-height: unset;
+			.panel {
+				width: 100%;
+				max-width: 1200px;
+				margin: 10rem 0 6rem 0;
+				box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
 			}
 		</style>
 	</head>
-	<body class="_pd-24px _pdt-128px _dp-f _jtfct-ct">
-		<div class="_bgcl-white _w-100pct _pd-24px u-raised-4" style="max-width: 1200px">
+	<body>
+		<div class="panel">
 			<section class="_tal-ct _pdt-64px _pdbt-128px">
-				<img src="assets/turbine-spinning-linear.svg" alt="Turbine UI" width="100" draggable="false">
+				<!-- <img src="assets/turbine-spinning-linear.svg" alt="Turbine UI" width="100" draggable="false"> -->
 				<br>
 				<br>
 				<br>
-				<h1>Turbine UI – Editor Draft 1</h1>
+				<h1>Turbine@2.0.0 – Draft 1</h1>
 				<br>
 				<code>https://unpkg.com/@fastwork/turbine/dist/turbine.css</code>
 				<br>
@@ -71,1111 +67,683 @@
 				<h3>Table of contents 🍭</h3>
 				<br>
 				<br>
-				<h5>Elements</h5>
-				<ul class="_lh-150pct">
-					<li><a href="#avatar" class="tb-link -primary">Avatar</a></li>
-					<li><a href="#badge" class="tb-link -primary">Badge</a></li>
-					<li><a href="#button" class="tb-link -primary">Button</a></li>
-					<li><a href="#input" class="tb-link -primary">Input</a></li>
-					<li><a href="#link" class="tb-link -primary">Link</a></li>
-					<li><a href="#select" class="tb-link -primary">Select</a></li>
-					<li><a href="#divider" class="tb-link -primary">Divider</a></li>
-					<li><a href="#textarea" class="tb-link -primary">Textarea</a></li>
-					<li><a href="#notification-badge" class="tb-link -primary">Notification badge</a></li>
-					<li><a href="#status-badge" class="tb-link -primary">Status badge</a></li>
+				<h5>Foundation / Tokens</h5>
+				<ul class="_lh-paragraph">
+					<li><a href="#token-breakpoint" class="tb-link -primary">Breakpoint</a></li>
+					<li><a href="#token-color" class="tb-link -primary">Color</a></li>
+					<li><a href="#token-typography" class="tb-link -primary">Typography</a></li>
 				</ul>
 				<h5>Components</h5>
-				<ul class="_lh-150pct">
-					<li><a href="#bubble-text" class="tb-link -primary">Bubble text</a></li>
-					<li><a href="#card-blank" class="tb-link -primary">Card blank</a></li>
-					<li><a href="#card-deliverable" class="tb-link -primary">Card deliverable</a></li>
-					<li><a href="#card-document" class="tb-link -primary">Card document</a></li>
-					<li><a href="#card-file" class="tb-link -primary">Card file</a></li>
-					<li><a href="#contact-list-item" class="tb-link -primary">Contact list item</a></li>
-					<li><a href="#message" class="tb-link -primary">Message</a></li>
-					<li><a href="#modal" class="tb-link -primary">Modal</a></li>
-					<li><a href="#progress-step" class="tb-link -primary">Progress step</a></li>
-					<li><a href="#quick-action-list" class="tb-link -primary">Quick action list</a></li>
-					<li><a href="#timeline" class="tb-link -primary">Timeline</a></li>
-					<li><a href="#toast" class="tb-link -primary">Toast</a></li>
-				</ul>
-				<h5>Utilities</h5>
-				<ul class="_lh-150pct">
-					<li><a href="#corner-badge-wrapper" class="tb-link -primary">Corner badge wrapper</a></li>
-				</ul>
-				<h5>Resources</h5>
-				<ul class="_lh-150pct">
-					<!-- <li><a href="#logo" class="tb-link -primary">Logo</a></li> -->
-					<li><a href="assets/turbine-spinning.svg" target="_blank" class="tb-link -primary">[SVG]</a> Loading spinner (easing)</li>
-					<li><a href="assets/turbine-loading-linear.svg" target="_blank" class="tb-link -primary">[SVG]</a> Loading spinner (linear)</li>
+				<ul class="_lh-paragraph">
+					<li><a href="#component-avatar" class="tb-link -primary">Avatar</a></li>
+					<li><a href="#component-button" class="tb-link -primary">Button</a></li>
+					<li><a href="#component-card-product" class="tb-link -primary">Card product</a></li>
+					<li><a href="#component-form" class="tb-link -primary">Form</a></li>
+					<li><a href="#component-label" class="tb-link -primary">Label</a></li>
+					<li><a href="#component-link" class="tb-link -primary">Link</a></li>
+					<li><a href="#component-message" class="tb-link -primary">Message</a></li>
 				</ul>
 			</section>
 
 			<!--
-				Elements
+				Tokens
 			===================================-->
+			<section id="token-breakpoint">
+				<h3>Breakpoint</h3>
+				<br>
+				<div class="tb-table-container">
+					<table class="tb-table -ruled">
+						<thead>
+							<tr>
+								<th>Token</th>
+								<th>Size</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">breakpoint-xs</span></td>
+								<td>768px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">breakpoint-sm</span></td>
+								<td>1024px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">breakpoint-md</span></td>
+								<td>1280px</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
 
-			<section id="avatar">
+			<section id="token-color">
+				<h3>Color</h3>
+				<br>
+				<div class="lo-12 _gg-16px">
+					<div class="lo-6 lo-3-sm _gg-24px _fw-strong">
+						<div class="_bdrd-16px _ovf-hd _alit-st">
+							<div class="_bgcl-primary-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Primary</div>
+							<div class="_bgcl-primary-900 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">primary-900</div>
+							<div class="_bgcl-primary-800 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">primary-800</div>
+							<div class="_bgcl-primary-700 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">primary-700</div>
+							<div class="_bgcl-primary-600 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">primary-600</div>
+							<div class="_bgcl-primary-500 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">primary-500</div>
+							<div class="_bgcl-primary-400 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">primary-400</div>
+							<div class="_bgcl-primary-300 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">primary-300</div>
+							<div class="_bgcl-primary-200 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">primary-200</div>
+							<div class="_bgcl-primary-100 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">primary-100</div>
+						</div>
+						<div class="_bdrd-16px _ovf-hd">
+							<div class="_bgcl-gray-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Gray</div>
+							<div class="_bgcl-gray-900 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">gray-900</div>
+							<div class="_bgcl-gray-800 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">gray-800</div>
+							<div class="_bgcl-gray-700 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">gray-700</div>
+							<div class="_bgcl-gray-600 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">gray-600</div>
+							<div class="_bgcl-gray-500 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">gray-500</div>
+							<div class="_bgcl-gray-400 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">gray-400</div>
+							<div class="_bgcl-gray-300 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">gray-300</div>
+							<div class="_bgcl-gray-200 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">gray-200</div>
+							<div class="_bgcl-gray-100 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">gray-100</div>
+						</div>
+						<div>
+							<div class="_bgcl-golden-poppy _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">golden-poppy</div>
+							<div class="_bgcl-dark-cerulean _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">dark-cerulean</div>
+							<div class="_bgcl-bittersweet _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">bittersweet</div>
+							<div class="_bgcl-facebook _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">facebook</div>
+						</div>
+					</div>
+					<div class="lo-6 lo-3-sm _gg-24px _fw-strong">
+						<div class="_bdrd-16px _ovf-hd">
+							<div class="_bgcl-positive-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Positive</div>
+							<div class="_bgcl-positive-900 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">positive-900</div>
+							<div class="_bgcl-positive-800 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">positive-800</div>
+							<div class="_bgcl-positive-700 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">positive-700</div>
+							<div class="_bgcl-positive-600 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">positive-600</div>
+							<div class="_bgcl-positive-500 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">positive-500</div>
+							<div class="_bgcl-positive-400 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">positive-400</div>
+							<div class="_bgcl-positive-300 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">positive-300</div>
+							<div class="_bgcl-positive-200 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">positive-200</div>
+							<div class="_bgcl-positive-100 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">positive-100</div>
+						</div>
+						<div class="_bdrd-16px _ovf-hd">
+							<div class="_bgcl-negative-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Negative</div>
+							<div class="_bgcl-negative-900 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">negative-900</div>
+							<div class="_bgcl-negative-800 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">negative-800</div>
+							<div class="_bgcl-negative-700 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">negative-700</div>
+							<div class="_bgcl-negative-600 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">negative-600</div>
+							<div class="_bgcl-negative-500 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">negative-500</div>
+							<div class="_bgcl-negative-400 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">negative-400</div>
+							<div class="_bgcl-negative-300 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">negative-300</div>
+							<div class="_bgcl-negative-200 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">negative-200</div>
+							<div class="_bgcl-negative-100 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">negative-100</div>
+						</div>
+						<div class="_bdrd-16px _ovf-hd">
+							<div class="_bgcl-warning-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Warning</div>
+							<div class="_bgcl-warning-900 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">warning-900</div>
+							<div class="_bgcl-warning-800 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">warning-800</div>
+							<div class="_bgcl-warning-700 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">warning-700</div>
+							<div class="_bgcl-warning-600 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">warning-600</div>
+							<div class="_bgcl-warning-500 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">warning-500</div>
+							<div class="_bgcl-warning-400 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">warning-400</div>
+							<div class="_bgcl-warning-300 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">warning-300</div>
+							<div class="_bgcl-warning-200 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">warning-200</div>
+							<div class="_bgcl-warning-100 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">warning-100</div>
+						</div>
+						<div class="_bdrd-16px _ovf-hd">
+							<div class="_bgcl-info-500 _h-64px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">Info</div>
+							<div class="_bgcl-info-900 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">info-900</div>
+							<div class="_bgcl-info-800 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">info-800</div>
+							<div class="_bgcl-info-700 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">info-700</div>
+							<div class="_bgcl-info-600 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">info-600</div>
+							<div class="_bgcl-info-500 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">info-500</div>
+							<div class="_bgcl-info-400 _h-48px _pdh-12px _tal-r _cl-light u-valign-center u-halign-right _fw-600">info-400</div>
+							<div class="_bgcl-info-300 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">info-300</div>
+							<div class="_bgcl-info-200 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">info-200</div>
+							<div class="_bgcl-info-100 _h-48px _pdh-12px _tal-r u-valign-center u-halign-right _fw-600">info-100</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="token-typography">
+				<h3>Typography</h3>
+				<br>
+				<div class="tb-table-container">
+					<table class="tb-table -ruled">
+						<thead>
+							<tr>
+								<th>Token</th>
+								<th>Size</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-1200</span></td>
+								<td>48px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-1100</span></td>
+								<td>40px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-1000</span></td>
+								<td>36px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-900</span></td>
+								<td>32px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-800</span></td>
+								<td>28px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-700</span></td>
+								<td>24px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-600</span></td>
+								<td>20px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-500</span></td>
+								<td>18px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-400</span></td>
+								<td>16px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-300</span></td>
+								<td>14px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-200</span></td>
+								<td>12px</td>
+							</tr>
+							<tr>
+								<td><span class="_bgcl-primary-100 _pdv-4px _pdh-8px _bdrd-2px">font-size-100</span></td>
+								<td>11px</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br>
+				<div class="lo-12 _gg-24px">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+					<p class="paragraph-big _pd-16px _bgcl-primary-100 _cl-primary-700">
+						<strong>Paragraph big</strong><br><br>
+						ปัจจุบัน Fastwork.co มี freelance คุณภาพที่คัดเฉพาะกว่า 7,500 คน มีหมวดหมู่งานทั้งหมดกว่า 70 หมวดหมู่ ผ่านการจ้างงานมาแล้วกว่า 150,000 งาน มีการบริการผู้ว่าจ้างและ freelance อย่างครบวงจร ตอบโจทย์เจ้าของกิจการ, ธุรกิจ SME, แม่ค้าออนไลน์ หรือแม้แต่บุคคลทั่วไป ที่ต้องการหา freelance ดี ๆ มีคุณภาพ มาช่วยให้งานสำเร็จตามต้องการ การันตีงานคุณภาพโดยทีมงานมืออาชีพ ที่ได้รับความไว้วางใจจากลูกค้ากว่า 300,000 ราย
+					</p>
+					<p class="_pd-16px _bgcl-primary-100 _cl-primary-700">
+						<strong>Paragraph default</strong><br><br>
+						ปัจจุบัน Fastwork.co มี freelance คุณภาพที่คัดเฉพาะกว่า 7,500 คน มีหมวดหมู่งานทั้งหมดกว่า 70 หมวดหมู่ ผ่านการจ้างงานมาแล้วกว่า 150,000 งาน มีการบริการผู้ว่าจ้างและ freelance อย่างครบวงจร ตอบโจทย์เจ้าของกิจการ, ธุรกิจ SME, แม่ค้าออนไลน์ หรือแม้แต่บุคคลทั่วไป ที่ต้องการหา freelance ดี ๆ มีคุณภาพ มาช่วยให้งานสำเร็จตามต้องการ การันตีงานคุณภาพโดยทีมงานมืออาชีพ ที่ได้รับความไว้วางใจจากลูกค้ากว่า 300,000 ราย
+					</p>
+					<p class="paragraph-small _pd-16px _bgcl-primary-100 _cl-primary-700">
+						<strong>Paragraph small</strong><br><br>
+						ปัจจุบัน Fastwork.co มี freelance คุณภาพที่คัดเฉพาะกว่า 7,500 คน มีหมวดหมู่งานทั้งหมดกว่า 70 หมวดหมู่ ผ่านการจ้างงานมาแล้วกว่า 150,000 งาน มีการบริการผู้ว่าจ้างและ freelance อย่างครบวงจร ตอบโจทย์เจ้าของกิจการ, ธุรกิจ SME, แม่ค้าออนไลน์ หรือแม้แต่บุคคลทั่วไป ที่ต้องการหา freelance ดี ๆ มีคุณภาพ มาช่วยให้งานสำเร็จตามต้องการ การันตีงานคุณภาพโดยทีมงานมืออาชีพ ที่ได้รับความไว้วางใจจากลูกค้ากว่า 300,000 ราย
+					</p>
+				</div>
+
+				<pre><code class="language-html">&lt;h1>Heading 1&lt;/h1>
+&lt;h2>Heading 2&lt;/h2>
+&lt;h3>Heading 3&lt;/h3>
+&lt;h4>Heading 4&lt;/h4>
+&lt;h5>Heading 5&lt;/h5>
+&lt;h6>Heading 6&lt;/h6>
+
+&lt;p class="paragraph-big">
+	...
+&lt;/p>
+&lt;p>
+	...
+&lt;/p>
+&lt;p class="paragraph-small">
+	...
+&lt;/p>
+</code></pre>
+			</section>
+
+			<!--
+				Component
+			===================================-->
+			<section id="component-avatar">
 				<h3>Avatar</h3>
 				<br>
-				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
-					<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
+				<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+					<img src="https://storage.googleapis.com/fastwork-static/fdc8f43b-b9ab-449f-a4d6-e266a3bfa2ff.jpg" alt="avatar" class="tb-avatar">
+					<img src="https://storage.googleapis.com/fastwork-static/fdc8f43b-b9ab-449f-a4d6-e266a3bfa2ff.jpg" alt="avatar" class="tb-avatar -small">
+					<img src="https://storage.googleapis.com/fastwork-static/fdc8f43b-b9ab-449f-a4d6-e266a3bfa2ff.jpg" alt="avatar" class="tb-avatar -tiny">
+				</div>
 
-					<div class="tb-corner-badge-wrapper" data-text="19m">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					</div>
-					<div class="tb-corner-badge-wrapper" data-text="Hello">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					</div>
-					<div class="tb-corner-badge-wrapper">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-					</div>
-					<div class="tb-corner-badge-wrapper" data-position="top">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -small">
-					</div>
-					<div class="tb-corner-badge-wrapper">
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar -tiny">
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-avatar')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-avatar" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/8b6036a6ed0669b1fbd036fd3d933163.js"></script>
-				</div>
+				<pre><code class="language-html">&lt;img src="..." class="tb-avatar">
+&lt;img src="..." class="tb-avatar -small">
+&lt;img src="..." class="tb-avatar -tiny">
+</code></pre>
 			</section>
 
-			<section id="badge">
-				<h3>Badge</h3>
-				<br>
-				<div class="tb-badge">
-					Badge
-				</div>
-				<div class="tb-badge">
-					<i class="fal fa-clock"></i> Badge with icon
-				</div>
-				<div class="tb-badge -positive">
-					<i class="fal fa-clock"></i> อีก 3 วันส่งงาน 12/03/19
-				</div>
-				<div class="tb-badge -negative">
-					<i class="fal fa-clock"></i> อีก 3 วันส่งงาน 12/03/19
-				</div>
-				<div class="tb-badge -warning">
-					<i class="fal fa-clock"></i> อีก 3 วันส่งงาน 12/03/19
-				</div>
-				<div class="tb-badge -info">
-					<i class="fal fa-clock"></i> อีก 3 วันส่งงาน 12/03/19
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-button')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-button" class="source _ovf-hd _mgt-12px">
-						<script src="https://gist.github.com/BioMaRu/9129612b2d1d689e7e2254412e367358.js"></script>
-				</div>
-			</section>
-
-			<section id="button">
+			<section id="component-button">
 				<h3>Button</h3>
 				<br>
-				<div class="lo-4 _gg-16px">
-					<button class="tb-button">Button</button>
-					<button class="tb-button -loading">Loading</button>
-					<button class="tb-button" disabled>Disabled</button>
-					<button class="tb-button-secondary">Button</button>
-					<button class="tb-button-secondary -loading">Loading</button>
-					<button class="tb-button-secondary" disabled>Disabled</button>
-				</div>
-				<br>
-				<h4>Color</h4>
-				<br>
-				<div class="lo-4 _gg-16px">
-					<button class="tb-button -positive"><i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Button</button>
-					<button class="tb-button -warning -loading">Loading</button>
-					<button class="tb-button -negative" disabled><i class="fa fa-arrow-left"></i> &nbsp;&nbsp; Disabled</button>
-					<button class="tb-button-secondary -positive">Button</button>
-					<button class="tb-button-secondary -negative -loading">Loading</button>
-					<button class="tb-button-secondary -warning" disabled>Disabled</button>
-				</div>
-				<br>
-				<h4>Size</h4>
-				<br>
-				<div class="lo-4 _gg-16px">
-					<button class="tb-button -small">Button</button>
-					<button class="tb-button -small -loading">Loading</button>
-					<button class="tb-button -small" disabled>Disabled</button>
-					<button class="tb-button-secondary -small">Button</button>
-					<button class="tb-button-secondary -small -loading">Loading</button>
-					<button class="tb-button-secondary -small" disabled>Disabled</button>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-button')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+				<div class="lo-12 _gg-12px">
+					<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+						<button class="tb-button -white -small">Button</button>
+						<button class="tb-button -white -secondary">Button</button>
+						<button class="tb-button -small">Button</button>
+						<button class="tb-button">Button</button>
+						<button class="tb-button -big">Button</button>
+						<button class="tb-button -loading">Button</button>
+						<button class="tb-button -disabled" disabled>Button</button>
+						<button class="tb-button -loading -disabled" disabled>Button</button>
+					</div>
+					<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+						<button class="tb-button -secondary -small">Button</button>
+						<button class="tb-button -secondary">Button</button>
+						<button class="tb-button -secondary -big">Button</button>
+						<button class="tb-button -secondary -loading">Button</button>
+						<button class="tb-button -secondary -disabled" disabled>Button</button>
+						<button class="tb-button -secondary -loading -disabled" disabled>Button</button>
+					</div>
+					<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+						<button class="tb-button -positive">Button</button>
+						<button class="tb-button -negative">Button</button>
+						<button class="tb-button -secondary -positive">Button</button>
+						<button class="tb-button -secondary -negative">Button</button>
 					</div>
 				</div>
-				<div id="src-button" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/9a1b2dca3d1a756a5c8d4ce4ca02daaf.js"></script>
-				</div>
+
+				<pre><code class="language-html">&lt;button class="tb-button -small">Button&lt;/button>
+&lt;button class="tb-button">Button&lt;/button>
+&lt;button class="tb-button -big">Button&lt;/button>
+&lt;button class="tb-button -loading">Button&lt;/button>
+&lt;button class="tb-button -disabled" disabled>Button&lt;/button>
+&lt;button class="tb-button -loading -disabled" disabled>Button&lt;/button>
+
+&lt;button class="tb-button -secondary -small">Button&lt;/button>
+&lt;button class="tb-button -secondary">Button&lt;/button>
+&lt;button class="tb-button -secondary -big">Button&lt;/button>
+&lt;button class="tb-button -secondary -loading">Button&lt;/button>
+&lt;button class="tb-button -secondary -disabled" disabled>Button&lt;/button>
+&lt;button class="tb-button -secondary -loading -disabled" disabled>Button&lt;/button>
+
+&lt;button class="tb-button -positive">Button&lt;/button>
+&lt;button class="tb-button -negative">Button&lt;/button>
+&lt;button class="tb-button -secondary -positive">Button&lt;/button>
+&lt;button class="tb-button -secondary -negative">Button&lt;/button>
+</code></pre>
 			</section>
 
-			<section id="input">
-				<h3>Input</h3>
+			<section id="component-card-product">
+				<h3>Card Product</h3>
 				<br>
-				<div class="tb-input">
-					<input type="text" placeholder="Placeholder">
-				</div>
-				<br>
-				<h3>Field</h3>
-				<br>
-				<h4>Icon</h4>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="tb-input -has-icon-left">
-						<span class="icon">
-							<i class="fal fa-mobile"></i>
-						</span>
-						<input type="text" placeholder="Placeholder">
-					</div>
-					<div class="tb-input -has-icon-right">
-						<span class="icon -is-right">
-							<i class="fal fa-mobile"></i>
-						</span>
-						<input type="text" placeholder="Placeholder">
-					</div>
-					<div class="tb-input -has-icon-left -has-icon-right">
-						<span class="icon">
-							<i class="fal fa-mobile"></i>
-						</span>
-						<input type="text" placeholder="Placeholder">
-						<span class="icon -is-right">
-							<i class="fal fa-check"></i>
-						</span>
-					</div>
-				</div>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st _mgv-12px">
-					<div class="tb-field -small">
-						<div class="tb-input -has-icon-left">
-							<span class="icon">
-								<i class="fal fa-mobile"></i>
-							</span>
-							<input type="text" placeholder="Placeholder">
+				<div class="_dp-g _gatf-cl">
+					<div class="tb-card-product">
+						<div class="slot-avatar">
+							<img src="https://storage.googleapis.com/fastwork-static/fdc8f43b-b9ab-449f-a4d6-e266a3bfa2ff.jpg" alt="Avatar" class="tb-avatar -small">
 						</div>
-					</div>
-					<div class="tb-field -small">
-						<div class="tb-input -has-icon-right">
-							<span class="icon -is-right">
-								<i class="fal fa-mobile"></i>
-							</span>
-							<input type="text" placeholder="Placeholder">
+						<div class="slot-seller-name">usernamelongggg</div>
+						<div class="slot-online">ออนไลน์เมื่อ 2 ชั่วโมงที่แล้ว</div>
+						<div class="slot-favorite"><i class="fal fa-heart"></i>&nbsp;1,690</div>
+						<div class="slot-image"><img src="https://storage.googleapis.com/fastwork-static/ab6109a8-b54d-42d3-b355-b55c2f27680d.jpg" alt="Image"></div>
+						<div class="slot-title">บริการออกแบบโลโก้ที่แฝงด้วยความหมาย บริการออกแบบโลโก้ที่แฝงด้วยความหมาย</div>
+						<div class="slot-rating">
+							<small class="_dp-g _gatf-cl">
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-golden-poppy"></i>
+								<i class="fas fa-star _cl-gray-300"></i>
+							</small>
+							<div class="_cl-mute _mgt-4px">
+								4.9(39)
+							</div>
 						</div>
-					</div>
-					<div class="tb-field -small">
-						<div class="tb-input -has-icon-left -has-icon-right">
-							<span class="icon">
-								<i class="fal fa-mobile"></i>
+						<div class="slot-label">
+							<span class="tb-label -dark-cerulean">
+								Pro
 							</span>
-							<input type="text" placeholder="Placeholder">
-							<span class="icon -is-right">
-								<i class="fal fa-check"></i>
-							</span>
+						</div>
+						<div class="slot-price">
+							<div class="_cl-mute _fs-200">เริ่มต้น</div>
+							<div class="_cl-primary-500">Rp1,000,000</div>
 						</div>
 					</div>
 				</div>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st _mgv-12px">
-					<div class="tb-field -big">
-						<div class="tb-input -has-icon-left">
-							<span class="icon">
-								<i class="fal fa-mobile"></i>
-							</span>
-							<input type="text" placeholder="Placeholder">
-						</div>
-					</div>
-					<div class="tb-field -big">
-						<div class="tb-input -has-icon-right">
-							<span class="icon -is-right">
-								<i class="fal fa-mobile"></i>
-							</span>
-							<input type="text" placeholder="Placeholder">
-						</div>
-					</div>
-					<div class="tb-field -big">
-						<div class="tb-input -has-icon-left -has-icon-right">
-							<span class="icon">
-								<i class="fal fa-mobile"></i>
-							</span>
-							<input type="text" placeholder="Placeholder">
-							<span class="icon -is-right">
-								<i class="fal fa-check"></i>
-							</span>
-						</div>
-					</div>
-				</div>
-				<h4>Color</h4>
+
+				<pre><code class="language-html">&lt;div class="tb-card-product">
+	&lt;div class="slot-avatar">
+		&lt;img src="..." alt="Avatar" class="tb-avatar -small">
+	&lt;/div>
+	&lt;div class="slot-seller-name">usernamelonggg&lt;/div>
+	&lt;div class="slot-online">ออนไลน์เมื่อ 2 ชั่วโมงที่แล้ว&lt;/div>
+	&lt;div class="slot-favorite">&lt;i class="fal fa-heart">&lt;/i>&nbsp;1,690&lt;/div>
+	&lt;div class="slot-image">
+		&lt;img src="..." alt="Image">
+	&lt;/div>
+	&lt;div class="slot-title">บริการออกแบบโลโก้ที่แฝงด้วยความหมาย&lt;/div>
+	&lt;div class="slot-rating">
+		&lt;!-- Example of rating slot -->
+		&lt;small class="_dp-g _gatf-cl">
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-golden-poppy">&lt;/i>
+			&lt;i class="fas fa-star _cl-gray-300">&lt;/i>
+		&lt;/small>
+		&lt;div class="_cl-mute _mgt-4px">
+			4.9(39)
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="slot-label">
+		&lt;div class="tb-label">
+			Pro
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="slot-price">
+		&lt;!-- Example of price slot -->
+		&lt;div class="_cl-mute _fs-200">เริ่มต้น&lt;/div>
+		&lt;div class="_cl-primary-500">Rp12,000,000&lt;/div>
+	&lt;/div>
+&lt;/div></code></pre>
+			</section>
+
+			<section id="component-form">
+				<h3>Form</h3>
 				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+				<h4>Text input</h4>
+				<br>
+				<div class="lo-12 _gg-24px" style="max-width: 400px;">
 					<div class="tb-field">
-						<label>Label</label>
-						<div class="tb-input">
-							<input type="text" placeholder="Placeholder">
+						<label for="input1">Username</label>
+						<div class="tb-input -has-icon-right">
+							<input id="input1" placeholder="Enter text">
+							<div class="icon -is-right">
+								<i class="fas fa-search"></i>
+							</div>
 						</div>
-						<small>Description</small>
+						<small class="_cl-mute">คำอธิบาย 1234</small>
 					</div>
-					<div class="tb-field -negative">
-						<label>Label</label>
-						<div class="tb-input">
-							<input type="text" placeholder="Placeholder">
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -positive">
-						<label>Label</label>
-						<div class="tb-input">
-							<input type="text" placeholder="Placeholder">
-						</div>
-						<small>Description</small>
-					</div>
-				</div>
-				<br>
-				<h4>Disabled</h4>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
 					<div class="tb-field -disabled">
 						<div class="tb-input">
-							<input type="text" placeholder="Placeholder" disabled>
+							<input placeholder="Disabled" disabled>
 						</div>
 					</div>
-				</div>
-				<br>
-				<h4>Size</h4>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="tb-field -small">
+					<div class="tb-field -negative">
 						<div class="tb-input">
-							<input type="text" placeholder="Placeholder">
+							<input placeholder="Negative" value="Error">
 						</div>
 					</div>
-				</div>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
+					<div class="tb-field -positive">
+						<div class="tb-input">
+							<input placeholder="Positive" value="Look good">
+						</div>
+					</div>
 					<div class="tb-field -big">
 						<div class="tb-input">
-							<input type="text" placeholder="Placeholder">
+							<input placeholder="Big!!">
+						</div>
+					</div>
+					<div class="tb-field -small">
+						<div class="tb-input">
+							<input placeholder="Small">
 						</div>
 					</div>
 				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-input')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
+				<pre><code class="language-html">&lt;div class="tb-field">
+	&lt;label for="input-normal">Username&lt;/label>
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Enter text">
+	&lt;/div>
+	&lt;small class="_cl-mute">คำอธิบาย 1234&lt;/small>
+&lt;/div>
+
+&lt;div class="tb-field -disabled">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Disabled" disabled>
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -negative">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Negative" value="Error">
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -positive">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Positive" value="Look good">
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -big">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Big!!">
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -small">
+	&lt;div class="tb-input">
+		&lt;input id="input-normal" placeholder="Small">
+	&lt;/div>
+&lt;/div></code></pre>
+			<br>
+			<h4>Textarea</h4>
+			<br>
+			<div class="lo-12 _gg-24px" style="max-width: 400px;">
+				<div class="tb-field">
+					<label for="textarea1">Your detail</label>
+					<div class="tb-textarea">
+						<textarea id="textarea1" rows="4" placeholder="Enter detail..."></textarea>
 					</div>
 				</div>
-				<div id="src-input" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/cf24b0efcce86022f013e29e86bcee0d.js"></script>
+				<div class="tb-field -disabled">
+					<div class="tb-textarea">
+						<textarea id="textarea1" rows="4" placeholder="Disabled textarea..." disabled></textarea>
+					</div>
 				</div>
+			</div>
+			<pre><code class="language-html">&lt;div class="tb-field">
+	&lt;label for="textarea1">Your detail&lt;/label>
+	&lt;div class="tb-textarea">
+		&lt;textarea id="textarea1" rows="4" placeholder="Enter detail...">&lt;/textarea>
+	&lt;/div>
+&lt;/div>
+&lt;div class="tb-field -disabled">
+	&lt;div class="tb-textarea">
+		&lt;textarea id="textarea1" rows="4" placeholder="Disabled textarea..." disabled>&lt;/textarea>
+	&lt;/div>
+&lt;/div></code></pre>
+<br>
+			<h4>Radio</h4>
+			<br>
+			<div class="lo-12 _gg-24px" style="max-width: 400px;">
+				<div class="tb-field">
+					<div class="tb-radio">
+						<input type="radio" name="rg1" id="r1">
+						<label for="r1">Radio 1</label>
+					</div>
+					<div class="tb-radio">
+						<input type="radio" name="rg1" id="r2">
+						<label for="r2">Radio 2</label>
+					</div>
+					<div class="tb-radio">
+						<input type="radio" name="rg1" id="r3">
+						<label for="r3">Radio 3</label>
+					</div>
+				</div>
+
+				<div class="tb-field -disabled">
+					<div class="tb-radio">
+						<input type="radio" name="rg1" id="r4" disabled>
+						<label for="r4">Radio 1</label>
+					</div>
+					<div class="tb-radio">
+						<input type="radio" name="rg1" id="r5" disabled>
+						<label for="r5">Radio 2</label>
+					</div>
+				</div>
+			</div>
+			<pre><code class="language-html">&lt;div class="tb-field">
+	&lt;div class="tb-radio">
+		&lt;input type="radio" name="rg1" id="r1">
+		&lt;label for="r1">Radio 1&lt;/label>
+	&lt;/div>
+	&lt;div class="tb-radio">
+		&lt;input type="radio" name="rg1" id="r2">
+		&lt;label for="r2">Radio 2&lt;/label>
+	&lt;/div>
+	&lt;div class="tb-radio">
+		&lt;input type="radio" name="rg1" id="r3">
+		&lt;label for="r3">Radio 3&lt;/label>
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -disabled">
+	&lt;div class="tb-radio">
+		&lt;input type="radio" name="rg1" id="r4" disabled>
+		&lt;label for="r4">Radio 1&lt;/label>
+	&lt;/div>
+	&lt;div class="tb-radio">
+		&lt;input type="radio" name="rg1" id="r5" disabled>
+		&lt;label for="r5">Radio 2&lt;/label>
+	&lt;/div>
+&lt;/div></code></pre>
+
+			<h4>Checkbox</h4>
+			<br>
+			<div class="lo-12 _gg-24px" style="max-width: 400px;">
+				<div class="tb-field">
+					<div class="tb-checkbox">
+						<input type="checkbox" name="rg1" id="c1">
+						<label for="c1">Checkbox 1</label>
+					</div>
+					<div class="tb-checkbox">
+						<input type="checkbox" name="rg1" id="c2">
+						<label for="c2">Checkbox 2</label>
+					</div>
+					<div class="tb-checkbox">
+						<input type="checkbox" name="rg1" id="c3">
+						<label for="c3">Checkbox 3</label>
+					</div>
+				</div>
+
+				<div class="tb-field -disabled">
+					<div class="tb-checkbox">
+						<input type="checkbox" name="rg1" id="c4" disabled>
+						<label for="c4">Checkbox 1</label>
+					</div>
+					<div class="tb-checkbox">
+						<input type="checkbox" name="rg1" id="c5" disabled>
+						<label for="c5">Checkbox 2</label>
+					</div>
+				</div>
+			</div>
+			<pre><code class="language-html">&lt;div class="tb-field">
+	&lt;div class="tb-checkbox">
+		&lt;input type="checkbox" name="rg1" id="c1">
+		&lt;label for="c1">Checkbox 1&lt;/label>
+	&lt;/div>
+	&lt;div class="tb-checkbox">
+		&lt;input type="checkbox" name="rg1" id="c2">
+		&lt;label for="c2">Checkbox 2&lt;/label>
+	&lt;/div>
+	&lt;div class="tb-checkbox">
+		&lt;input type="checkbox" name="rg1" id="c3">
+		&lt;label for="c3">Checkbox 3&lt;/label>
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="tb-field -disabled">
+	&lt;div class="tb-checkbox">
+		&lt;input type="checkbox" name="rg1" id="c4" disabled>
+		&lt;label for="c4">Checkbox 1&lt;/label>
+	&lt;/div>
+	&lt;div class="tb-checkbox">
+		&lt;input type="checkbox" name="rg1" id="c5" disabled>
+		&lt;label for="c5">Checkbox 2&lt;/label>
+	&lt;/div>
+&lt;/div></code></pre>
 			</section>
 
-			<section id="link">
+			<section id="component-label">
+				<h3>Label</h3>
+				<br>
+				<div class="_dp-g _gatf-cl _alit-ct _jtfct-st _gg-12px">
+					<span class="tb-label -dark-cerulean">Dark cerulean</span>
+					<span class="tb-label -bittersweet">Bittersweet</span>
+					<span class="tb-label -positive">Positive</span>
+					<span class="tb-label -negative">Negative</span>
+					<span class="tb-label -golden-poppy">Goldenpoppy</span>
+				</div>
+
+				<pre><code class="language-html">&lt;span class="tb-label -dark-cerulean">Dark cerulean&lt;/span>
+&lt;span class="tb-label -bittersweet">Bittersweet&lt;/span>
+&lt;span class="tb-label -positive">Positive&lt;/span>
+&lt;span class="tb-label -negative">Negative&lt;/span>
+&lt;span class="tb-label -golden-poppy">Goldenpoppy&lt;/span>
+</code></pre>
+			</section>
+
+			<section id="component-link">
 				<h3>Link</h3>
 				<br>
-				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
-					<a href="#" class="tb-link">Normal link</a>
-					<br>
-					<a href="#" class="tb-link -primary">Primary link</a>
-					<br>
-					<a href="#" class="tb-link -positive">Positive link</a>
-					<br>
-					<a href="#" class="tb-link -negative">Negative link</a>
+				<div class="lo-12 _gg-12px _jtfit-st">
+					<a href="#" class="tb-link">This is a link</a>
+					<a href="#" class="tb-link -primary">This is a link</a>
+					<a href="#" class="tb-link -primary -fancy">This is a link</a>
 				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-link')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-link" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/97d65cef2fde2b322d7acc50f59b9dd3.js"></script>
-				</div>
+
+				<pre><code class="language-html">&lt;a href="#" class="tb-link">This is a link&lt;/a>
+&lt;a href="#" class="tb-link -primary">This is a link&lt;/a>
+&lt;a href="#" class="tb-link -primary -fancy">This is a link&lt;/a>
+</code></pre>
 			</section>
 
-			<section id="select">
-				<h3>Select</h3>
-				<br>
-				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
-					<div class="tb-field">
-						<label>Label</label>
-						<div class="tb-select">
-							<select>
-								<option value="">This is Option 1</option>
-								<option value="">This is Option 2</option>
-								<option value="">This is Option 3</option>
-							</select>
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -negative">
-						<label>Label</label>
-						<div class="tb-select">
-							<select>
-								<option value="">This is Option 1</option>
-								<option value="">This is Option 2</option>
-								<option value="">This is Option 3</option>
-							</select>
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -positive">
-						<label>Label</label>
-						<div class="tb-select">
-							<select>
-								<option value="">This is Option 1</option>
-								<option value="">This is Option 2</option>
-								<option value="">This is Option 3</option>
-							</select>
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -disabled">
-						<label>Label</label>
-						<div class="tb-select">
-							<select disabled>
-								<option value="">This is Option 1</option>
-								<option value="">This is Option 2</option>
-								<option value="">This is Option 3</option>
-							</select>
-						</div>
-						<small>Description</small>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-select')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-select" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/0194207a317bc21ae5dd318d81b13a9b.js"></script>
-				</div>
-			</section>
-
-			<!-- <section id="checkbox">
-				<h3>Checkbox [WIP]</h3>
-				<br>
-				<div class="_dp-g _gg-12px _gatf-cl _jtfct-st _alit-ct">
-						<input type="checkbox">
-					<div class="tb-field">
-						<div class="tb-checkbox">
-							<input type="checkbox">
-						</div>
-						<label>Checkbox</label>
-					</div>
-				</div>
-				<br>
-				<script src="https://gist.github.com/BioMaRu/0194207a317bc21ae5dd318d81b13a9b.js"></script>
-			</section> -->
-
-			<section id="textarea">
-				<h3>Textarea</h3>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="tb-field">
-						<label>Label</label>
-						<div class="tb-textarea">
-							<textarea placeholder="Placeholder" rows="4"></textarea>
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -negative">
-						<label>Label</label>
-						<div class="tb-textarea">
-							<textarea placeholder="Placeholder" rows="4"></textarea>
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -positive">
-						<label>Label</label>
-						<div class="tb-textarea">
-							<textarea placeholder="Placeholder" rows="4"></textarea>
-						</div>
-						<small>Description</small>
-					</div>
-					<div class="tb-field -disabled">
-						<label>Label</label>
-						<div class="tb-textarea">
-							<textarea placeholder="Placeholder" rows="4" disabled></textarea>
-						</div>
-						<small>Description</small>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-textarea')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-textarea" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/52ec3ec3feab7f15d049060dd63a0a5c.js"></script>
-				</div>
-			</section>
-
-			<section id="notification-badge">
-				<h3>Notification Badge</h3>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<span class="tb-notification-badge">1</span>
-					<span class="tb-notification-badge -negative">12</span>
-					<span class="tb-notification-badge -negative">99+</span>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-notification-badge')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-notification-badge" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/bf78601c77244e4c1d0b70aaebebc1e0.js"></script>
-				</div>
-			</section>
-
-			<section id="divider">
-				<h3>Divider</h3>
-				<br>
-				<div class="tb-divider"></div>
-				<br>
-				<br>
-				<div class="tb-divider">OR</div>
-				<br>
-				<br>
-				<div class="tb-divider">Hello this is a very long text</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-divider')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-divider" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/aa34866581c89d1d38b68d9aa2d60536.js"></script>
-				</div>
-			</section>
-
-			<section id="status-badge">
-				<h3>Status Badge</h3>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="tb-status-badge">รอรีวิว</div>
-					<div class="tb-status-badge -positive">ทำงาน</div>
-					<div class="tb-status-badge -negative">ยกเลิก</div>
-					<div class="tb-status-badge -gray">สำเร็จ</div>
-					<div class="tb-status-badge -warning">รอชำระ</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-status-badge')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-status-badge" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/7e2b8bbff29ea678db869748cbfc94e3.js"></script>
-				</div>
-			</section>
-
-			<!--
-				Components
-			===================================-->
-
-			<section id="bubble-text">
-				<h3>Bubble text</h3>
-				<br>
-				<div class="lo-12 _gg-12px">
-					<div class="tb-bubble -counterpath">
-						<small class="tb-bubble-timestemp">12:30</small>
-						<div class="tb-bubble-text">Hello</div>
-					</div>
-					<div class="tb-bubble -self">
-						<small class="tb-bubble-timestemp">12:30</small>
-						<div class="tb-bubble-text">Umn.. Hello ?</div>
-					</div>
-					<div class="tb-bubble -counterpath">
-						<small class="tb-bubble-timestemp">12:30</small>
-						<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" class="tb-avatar -small">
-						<div class="tb-bubble-text">Hello ...</div>
-					</div>
-					<div class="tb-bubble -self">
-						<div class="tb-bubble-text">Excuse me.., Hello ?</div>
-					</div>
-					<div class="tb-bubble -counterpath">
-						<div class="tb-corner-badge-wrapper">
-							<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" class="tb-avatar -small">
-						</div>
-						<div class="tb-bubble-text">Hello from the other side 🎵
-I must've called a thousand times
-
-To tell you I'm sorry, for everything that I've done ♪♪
-
-But when I call you never seem to be home ♪♪</div>
-					</div>
-					<div class="tb-bubble -self -error">
-						<small class="tb-bubble-timestemp">12:30</small>
-						<div class="tb-bubble-text">Hello, world</div>
-						<span class="tb-bubble-icon">
-							<i class="fal fa-redo"></i>
-						</span>
-					</div>
-					<div class="tb-bubble -self -error">
-						<small class="tb-bubble-timestemp">12:30</small>
-						<div class="tb-bubble-text">It's Hamtaro time!
-
-Whee! Yippie! Yeah!
-Kushi-Kushi Ticky-Ticky
-Hamtaro!
-						</div>
-						<span class="tb-bubble-icon u-animation-spin-2">
-							<i class="fal fa-redo"></i>
-						</span>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-bubble-text')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-bubble-text" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/9f89626510a8971a413756eb0fb4a574.js"></script>
-				</div>
-			</section>
-
-			<section id="card-blank" style="background-color: hsl(250, 27%, 96%);">
-				<h3>Card blank</h3>
-				<br>
-				<div style="width: 380px">
-					<div class="tb-card-blank">
-						ยังไม่มี
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-card-blank')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-card-blank" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/5a8c5f83bb9d0762ff962fa8c2c9bf73.js"></script>
-				</div>
-			</section>
-
-			<section id="card-deliverable" style="background-color: hsl(250, 27%, 96%);">
-				<h3>Card deliverable</h3>
-				<br>
-				<div style="width: 380px">
-					<div class="tb-card-deliverable">
-						<h6 class="header">ไฟล์งาน Final</h6>
-						<span class="timestamp">22 Oct 2018, 22:00</span>
-						<ul class="file-list">
-							<li>
-								<span><a href="#" class="tb-link -primary"><i class="far fa-file"></i></a></span>
-								<span><a href="#" class="tb-link">ไฟล์งานขั้นสุดท...แก้ไข.psd</a></span>
-								<span>100MB</span>
-								<span><a href="#" class="tb-link -primary"><i class="far fa-arrow-circle-down"></i></a></span>
-							</li>
-							<li>
-								<span><a href="#" class="tb-link -primary"><i class="far fa-file"></i></a></span>
-								<span><a href="#" class="tb-link">ไฟล์งานขั้นสุดท...แก้ไข.psd</a></span>
-								<span>100MB</span>
-								<span><a href="#" class="tb-link -primary"><i class="far fa-arrow-circle-down"></i></a></span>
-							</li>
-							<li>
-								<span><a href="#" class="tb-link -primary"><i class="far fa-file"></i></a></span>
-								<span><a href="#" class="tb-link">ไฟล์งานขั้นสุดท...แก้ไข.psd</a></span>
-								<span>100MB</span>
-								<span><a href="#" class="tb-link -primary"><i class="far fa-arrow-circle-down"></i></a></span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-card-deliverable')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-card-deliverable" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/15d85137eb8b5cc9663488434240ce15.js"></script>
-				</div>
-			</section>
-
-			<section id="card-document" style="background-color: hsl(250, 27%, 96%);">
-				<h3>Card document</h3>
-				<br>
-				<div style="width: 380px">
-					<div class="tb-card-document">
-						<h6 class="header">ใบเสนอราคา</h6>
-						<h6 class="header-right">$ 70,000</h6>
-						<p class="detail">
-							รับเขียนสคริป(script) ดึงข้อมุลจำนวนมาก จากเว็บไซด์ที่ต้องการ พร้อมจัดรูปแบบให้เป็นไปตามความต้องการ
-						</p>
-						<div class="action-list">
-							<div class="tb-link -primary">Menu 1</div>
-							<div class="tb-link -primary">Menu 2 &nbsp;&nbsp;<i class="far fa-arrow-circle-down"></i></div>
-						</div>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-card-document')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-card-document" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/2b3619b4e0acbcd810e49dd71b80c172.js"></script>
-				</div>
-			</section>
-
-			<section id="card-file" style="background-color: hsl(250, 27%, 96%);">
-				<h3>Card file [WIP]</h3>
-				<br>
-				<div style="width: 380px">
-					<div class="tb-card-file">
-						<i class="far fa-file"></i>
-						<div class="info">
-							<strong>ชื่อไฟล์งาน Jap...ไปบวช.jpg</strong>
-							<span><small>100.4MB</small></span>
-						</div>
-						<i class="far fa-arrow-circle-down"></i>
-					</div>
-				</div>
-				<br>
-				<!-- <script src="https://gist.github.com/BioMaRu/2b3619b4e0acbcd810e49dd71b80c172.js"></script> -->
-			</section>
-
-			<section id="contact-list-item" style="background-color: hsl(250, 27%, 96%);">
-				<h3>Contact list item</h3>
-				<br>
-				<div style="width: 380px">
-					<div class="tb-contact-list-item">
-						<div class="avatar">
-							<div class="tb-corner-badge-wrapper" data-text="19m">
-								<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-							</div>
-						</div>
-						<div class="name">biomaru</div>
-						<div class="message">ฉันต้องการทำงานร่วมกับคุณ ขอทราบรายละเอียดงาน</div>
-						<div class="product-name">รับออกแบบโลโก้สไตล์โมเดิ้นน</div>
-						<div class="timestamp">12 Nov</div>
-						<div class="notification">
-							<span class="tb-notification-badge -negative">
-								99+
-							</span>
-						</div>
-						<div class="status">
-							<div class="tb-status-badge -positive">
-								สำเร็จ
-							</div>
-						</div>
-						<div class="badge">
-							<div class="tb-badge -negative">
-								<i class="fal fa-clock"></i> อีก 3 วันส่งงาน 12/03/19
-							</div>
-						</div>
-					</div>
-					<div class="tb-contact-list-item -active">
-						<div class="avatar">
-							<div class="tb-corner-badge-wrapper" data-text="19m">
-								<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-							</div>
-						</div>
-						<div class="name">biomaru</div>
-						<div class="message">ฉันต้องการทำงานร่วมกับคุณ ขอทราบรายละเอียดงาน</div>
-						<div class="product-name">รับออกแบบโลโก้สไตล์โมเดิ้นน</div>
-						<div class="timestamp">12 Nov</div>
-						<div class="notification">
-							<span class="tb-notification-badge -negative">
-								99+
-							</span>
-						</div>
-						<div class="status">
-							<div class="tb-status-badge -positive">
-								สำเร็จ
-							</div>
-						</div>
-						<div class="badge">
-							<div class="tb-badge -warning">
-								<i class="fal fa-clock"></i> อีก 3 วันส่งงาน 12/03/19
-							</div>
-						</div>
-					</div>
-					<div class="tb-contact-list-item -selected">
-						<div class="avatar">
-							<div class="tb-corner-badge-wrapper" data-text="19m">
-								<img src="https://picturepan2.github.io/spectre/img/avatar-2.png" alt="Avatar" class="tb-avatar">
-							</div>
-						</div>
-						<div class="name">biomaru</div>
-						<div class="message">ฉันต้องการทำงานร่วมกับคุณ ขอทราบรายละเอียดงาน</div>
-						<div class="product-name">รับออกแบบโลโก้สไตล์โมเดิ้นน</div>
-						<div class="timestamp">12 Nov</div>
-						<div class="notification">
-							<span class="tb-notification-badge -negative">
-								99+
-							</span>
-						</div>
-						<div class="status">
-							<div class="tb-status-badge -positive">
-								สำเร็จ
-							</div>
-						</div>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-contact-list-item')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-contact-list-item" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/99341657add84e3f60c79a6acec17b04.js"></script>
-				</div>
-			</section>
-
-			<section id="message">
+			<section id="component-message">
 				<h3>Message</h3>
 				<br>
-				<div class="lo-6 _alit-st _gg-16px">
-					<div class="tb-message -positive">
-						<div class="icon"><i class="far fa-sync-alt"></i></div>
-						<p class="content">
-							Use our CDN to to deliver
-							a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
-						</p>
-					</div>
-					<div class="tb-message -positive">
-						<p class="content">
-							Use our CDN to to deliver
-							a cached version of Font Awesome to your project without managingfiles.
-						</p>
+				<div class="lo-12 _gg-12px">
+					<div class="tb-message">
+						Hello. this is message content
 					</div>
 					<div class="tb-message -negative">
-						<div class="icon"><i class="far fa-sync-alt"></i></div>
-						<p class="content">
-							Use our CDN to to deliver
-							a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
-						</p>
+						<strong>ERROR</strong> – Something gone wrong
+					</div>
+					<div class="tb-message -positive">
+						<strong>Success</strong> – You did good!
 					</div>
 					<div class="tb-message -warning">
-						<div class="icon"><i class="far fa-sync-alt"></i></div>
-						<p class="content">
-							Use our CDN to to deliver
-							a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
-						</p>
+						<strong>Warning</strong> – Don't touch it
+					</div>
+					<div class="tb-message -info">
+						<strong>Info</strong> – This is a good information
 					</div>
 				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-message')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-message" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/391fcf81936ce4e48de83072f683e01e.js"></script>
-				</div>
-			</section>
 
-			<section id="modal">
-				<h3>Modal</h3>
-				<br>
-				<div id="js-modal" onclick="closeModal()" class="tb-modal">
-					<div class="tb-modal-panel" onclick="event.stopPropagation();">
-						<div class="close u-align-middle _w-32px _h-32px">
-							<i class="fal fa-times _fs-4" onclick="closeModal()"></i>
-						</div>
-						<h6 class="header">Modal title</h6>
-						<div class="description">Modal description</div>
-						<div class="content">
-							<p class="_tal-ct">
-								Hello, Howdy! <br>
-							</p>
-							<br>
-							<button class="tb-button -fluid">
-								Action
-							</button>
-						</div>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center">
-					<button onclick="openModal()" class="tb-button">Open Modal</button>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-modal')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-modal" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/e93bc5aabe511fbed255e1bc8b22a75b.js"></script>
-				</div>
-			</section>
-
-			<section id="progress-step">
-				<h3>Progress step</h3>
-				<ul class="tb-progress-step _mgt-32px">
-					<li class="active">
-						<span>ราคา</span>
-					</li>
-					<li class="active">
-						<span>รายละเอียด</span>
-					</li>
-					<li>
-						<span>การส่งงาน</span>
-					</li>
-					<li>
-						<span>รีวิว</span>
-					</li>
-					<li>
-						<span>ส่ง</span>
-					</li>
-				</ul>
-				<br>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-progress-step')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-progress-step" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/702f104a5a8ad9d2d20e0f19ed5c5bd4.js"></script>
-				</div>
-			</section>
-
-			<section id="quick-action-list">
-				<h3>Quick action list</h3>
-				<br>
-				<div class="tb-quick-action-list">
-					<div><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-				</div>
-				<br>
-				<br>
-				<div class="tb-quick-action-list">
-					<a href="#quick-action-list"><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;I am link</a>
-				</div>
-				<br>
-				<br>
-				<div class="tb-quick-action-list">
-					<div><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-					<div><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-				</div>
-				<br>
-				<br>
-				<div class="tb-quick-action-list">
-					<div><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;I am link</div>
-					<div class="negative"><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-					<div class="positive"><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-					<div class="info"><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-					<div class="warning"><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-					<div class="disabled"><i class="fal fa-atom-alt"></i>&nbsp;&nbsp;ชำระเงิน</div>
-				</div>
-				<br>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-quick-action')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-quick-action" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/6a6919dfef786b590de43c4ed5f6d0e2.js"></script>
-				</div>
-			</section>
-
-			<section id="timeline">
-				<h3>Timeline</h3>
-				<br>
-				<ul class="tb-timeline">
-					<li>
-						<h6>ออร์เดอร์ถูกสร้าง</h6>
-						<ul>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-						</ul>
-					</li>
-					<li class="active">
-						<h6>ใบเสนอราคา</h6>
-						<ul>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-						</ul>
-					</li>
-					<li class="disabled">
-						<h6>ทำงาน</h6>
-					</li>
-					<li class="disabled">
-						<h6>ชำระเงิน</h6>
-						<ul>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-						</ul>
-					</li>
-					<li class="positive">
-						<h6>เสร็จ</h6>
-						<ul>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-						</ul>
-					</li>
-					<li class="negative">
-						<h6>ยกเลิก</h6>
-						<ul>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-							<li>22 Oct 2018 เริ่มการสนทนา</li>
-						</ul>
-					</li>
-				</ul>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-timeline')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-timeline" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/77ff8aaff62bdaa1da9eb83aa5cdca8f.js"></script>
-				</div>
-			</section>
-
-			<section id="toast">
-				<h3>Toast</h3>
-				<br>
-				<div class="lo-12 _gg-12px">
-					<div class="tb-toast">
-						<div class="tb-toast-message">
-							TOAST MESSAGE
-						</div>
-					</div>
-					<div class="tb-toast">
-						<div class="tb-toast-icon">
-							<i class="fal fa-code"></i>
-						</div>
-						<div class="tb-toast-message">
-							TOAST MESSAGE
-						</div>
-						<div class="tb-toast-close">
-							<i class="fal fa-times"></i>
-						</div>
-					</div>
-					<div class="tb-toast">
-						<div class="tb-toast-icon">
-							<i class="fal fa-code"></i>
-						</div>
-						<div class="tb-toast-message">
-							Use our CDN to to deliver a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
-						</div>
-						<div class="tb-toast-close">
-							<i class="fal fa-times"></i>
-						</div>
-					</div>
-					<div class="tb-toast -positive">
-						<div class="tb-toast-icon">
-							<i class="fal fa-code"></i>
-						</div>
-						<div class="tb-toast-message">
-							Use our CDN to to deliver a cached version of Font Awesome to your project without managingfiles. Make quick work of upgrades and get to using icons faster.
-						</div>
-						<div class="tb-toast-close">
-							<i class="fal fa-times"></i>
-						</div>
-					</div>
-					<div class="tb-toast -negative">
-						<div class="tb-toast-icon">
-							<i class="fal fa-code"></i>
-						</div>
-						<div class="tb-toast-message">
-							Toast message
-						</div>
-						<div class="tb-toast-close">
-							<i class="fal fa-times"></i>
-						</div>
-					</div>
-					<div class="tb-toast -warning">
-						<div class="tb-toast-icon">
-							<i class="fal fa-code"></i>
-						</div>
-						<div class="tb-toast-message">
-							Toast message
-						</div>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-toast')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-toast" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/ee18414e722f1fb4be470a221ab3d07a.js"></script>
-				</div>
-			</section>
-
-			<!--
-				Utilities
-			===================================-->
-
-			<section id="corner-badge-wrapper">
-				<h3>Corner badge wrapper</h3>
-				<br>
-				<div class="_dp-g _gatf-cl _gg-12px _jtfct-st">
-					<div class="tb-corner-badge-wrapper">
-						<div class="blank"></div>
-					</div>
-					<div class="tb-corner-badge-wrapper" data-text="">
-						<div class="blank"></div>
-					</div>
-					<div class="tb-corner-badge-wrapper" data-text="19m">
-						<div class="blank"></div>
-					</div>
-					<div class="tb-corner-badge-wrapper" data-text="" data-position="top">
-						<div class="blank"></div>
-					</div>
-					<div class="tb-corner-badge-wrapper" data-text="19m" data-position="top">
-						<div class="blank"></div>
-					</div>
-				</div>
-				<br>
-				<div class="u-halign-center _mgt-16px _cs-pt">
-					<div onclick="toggleSource('src-corner-badge-wrapper')" class="bio-button -flat">
-						<i class="fal fa-code"></i>&nbsp;&nbsp;View Source
-					</div>
-				</div>
-				<div id="src-corner-badge-wrapper" class="source _ovf-hd _mgt-12px">
-					<script src="https://gist.github.com/BioMaRu/87ae4c0cf85e35513c64262ca1e33e89.js"></script>
-				</div>
+				<pre><code class="language-html">&lt;div class="tb-message">
+	Hello. this is message content
+&lt;/div>
+&lt;div class="tb-message -negative">
+	&lt;strong>ERROR&lt;/strong> – Something gone wrong
+&lt;/div>
+&lt;div class="tb-message -positive">
+	&lt;strong>Success&lt;/strong> – You did good!
+&lt;/div>
+&lt;div class="tb-message -warning">
+	&lt;strong>Warning&lt;/strong> – Don't touch it
+&lt;/div>
+&lt;div class="tb-message -info">
+	&lt;strong>Info&lt;/strong> – This is a good information
+&lt;/div></code></pre>
 			</section>
 		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
 	</body>
-
-	<script>
-		function toggleSource (id) {
-			document.getElementById(id).classList.toggle('show-source')
-		}
-
-		function openModal () {
-			document.getElementById('js-modal').classList.add('-show')
-			document.body.style.overflowY = 'hidden'
-			document.getElementById('js-modal').scrollTo(0, 0)
-		}
-
-		function closeModal () {
-			document.getElementById('js-modal').classList.remove('-show')
-			document.body.style.overflowY = 'unset'
-		}
-	</script>
 </html>

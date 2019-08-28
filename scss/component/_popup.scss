@@ -1,0 +1,17 @@
+.#{$component-prefix}popup {
+	position: absolute;
+	opacity: 0;
+
+	transition: all var(--timing-faster) ease;
+
+	transform: scale(0);
+	transform-origin: top right;
+
+	pointer-events: none;
+
+	&.-active {
+		opacity: 1;
+		transform: scale(1);
+		pointer-events: all;
+	}
+}

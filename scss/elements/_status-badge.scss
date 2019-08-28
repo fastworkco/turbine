@@ -20,7 +20,7 @@ $components-colors: (
 	'gray'    : $color-gray-300,
 );
 
-.#{$prefix}status-badge {
+.#{$component-prefix}status-badge {
 	@include make-status-badge();
 
 	@each $key, $value in $components-colors {

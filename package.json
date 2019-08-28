@@ -1,15 +1,15 @@
 {
 	"name": "@fastwork/turbine",
-	"version": "0.1.20",
+	"version": "2.3.3",
 	"description": "Turbine UI",
 	"main": "scss/main.scss",
-	"unpkg": "dist/turbine.css",
-	"style": "dist/turbine.css",
+	"unpkg": "dist/all.css",
+	"style": "dist/all.css",
 	"directories": {
 		"src": "src"
 	},
 	"scripts": {
-		"build": "gulp"
+		"build": "yarn gulp"
 	},
 	"keywords": [
 		"css"
@@ -19,9 +19,7 @@
 		"gulp": "^3.9.1",
 		"gulp-autoprefixer": "^4.0.0",
 		"gulp-rename": "^1.2.2",
-		"gulp-sass": "^3.1.0"
-	},
-	"dependencies": {
+		"gulp-sass": "^3.1.0",
 		"sass-loader": "^7.1.0"
 	}
 }

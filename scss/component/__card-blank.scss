@@ -1,0 +1,16 @@
+.#{$component-prefix}card-blank {
+	@include make-card();
+	@include make-card-padding();
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	font-weight: $font-weight-normal;
+	text-align: center;
+
+	color: $color-text-secondary;
+}

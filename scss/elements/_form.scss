@@ -34,7 +34,7 @@ $components-colors: (
 	'info'    : $color-info,
 );
 
-.#{$prefix}field {
+.#{$component-prefix}field {
 	label {
 		font-weight: $font-weight-bold;
 		display: inline-block;
@@ -49,9 +49,9 @@ $components-colors: (
 	// color
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			.#{$prefix}input > input,
-			.#{$prefix}textarea > textarea,
-			.#{$prefix}select > select {
+			.#{$component-prefix}input > input,
+			.#{$component-prefix}textarea > textarea,
+			.#{$component-prefix}select > select {
 				border-color: $value;
 
 				&:focus, :active {
@@ -67,24 +67,24 @@ $components-colors: (
 
 	// size
 	&.-big {
-		.#{$prefix}input,
-		.#{$prefix}select:not(.-multiple) {
+		.#{$component-prefix}input,
+		.#{$component-prefix}select:not(.-multiple) {
 			height: 3rem;
 		}
-		.#{$prefix}input > input,
-		.#{$prefix}select:not(.-multiple) > select {
+		.#{$component-prefix}input > input,
+		.#{$component-prefix}select:not(.-multiple) > select {
 			font-size: 1.25rem;
 			height: 100%;
 		}
 	}
 
 	&.-small {
-		.#{$prefix}input,
-		.#{$prefix}select:not(.-multiple) {
+		.#{$component-prefix}input,
+		.#{$component-prefix}select:not(.-multiple) {
 			height: 1.875em;
 		}
-		.#{$prefix}input > input,
-		.#{$prefix}select:not(.-multiple) > select {
+		.#{$component-prefix}input > input,
+		.#{$component-prefix}select:not(.-multiple) > select {
 			font-size: 0.75rem;
 			height: 100%;
 		}
@@ -94,9 +94,9 @@ $components-colors: (
 	&.-disabled,
 	.disabled,
 	[disabled] {
-		.#{$prefix}input > input,
-		.#{$prefix}textarea > textarea,
-		.#{$prefix}select > select {
+		.#{$component-prefix}input > input,
+		.#{$component-prefix}textarea > textarea,
+		.#{$component-prefix}select > select {
 			cursor: not-allowed;
 			background-color: $color-disable-input;
 			border-color: $color-border-input;
@@ -108,19 +108,19 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}input,
-.#{$prefix}textarea,
-.#{$prefix}select {
+.#{$component-prefix}input,
+.#{$component-prefix}textarea,
+.#{$component-prefix}select {
 	border-radius: 4px;
 }
 
-.#{$prefix}input > input,
-.#{$prefix}textarea > textarea,
-.#{$prefix}select > select {
+.#{$component-prefix}input > input,
+.#{$component-prefix}textarea > textarea,
+.#{$component-prefix}select > select {
 	@extend %base-input;
 }
 
-.#{$prefix}select {
+.#{$component-prefix}select {
 	position: relative;
 
 	> select {
@@ -143,20 +143,20 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}textarea > textarea {
+.#{$component-prefix}textarea > textarea {
 	padding: 8px 12px;
 	line-height: 1.25;
 }
 
-.#{$prefix}input,
-.#{$prefix}select {
+.#{$component-prefix}input,
+.#{$component-prefix}select {
 	height: 2.5rem;
 }
 
 // input icon
-.#{$prefix}input.-has-icon-left,
-.#{$prefix}select.-has-icon-left,
-.#{$prefix}input.-has-icon-right {
+.#{$component-prefix}input.-has-icon-left,
+.#{$component-prefix}select.-has-icon-left,
+.#{$component-prefix}input.-has-icon-right {
 	position: relative;
 
 	> .icon {
@@ -176,7 +176,7 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}input.-has-icon-left {
+.#{$component-prefix}input.-has-icon-left {
 	> input {
 		padding-left: 2.625rem;
 	}
@@ -186,7 +186,7 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}select.-has-icon-left {
+.#{$component-prefix}select.-has-icon-left {
 	> select {
 		padding-left: 2.625rem;
 	}
@@ -196,7 +196,7 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}input.-has-icon-right {
+.#{$component-prefix}input.-has-icon-right {
 	> input {
 		padding-right: 2.625rem;
 	}
@@ -206,8 +206,8 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}field.-small {
-	.#{$prefix}input.-has-icon-left {
+.#{$component-prefix}field.-small {
+	.#{$component-prefix}input.-has-icon-left {
 		> input {
 			padding-left: 2rem;
 		}
@@ -220,7 +220,7 @@ $components-colors: (
 			font-size: .875rem;
 		}
 	}
-	.#{$prefix}select.-has-icon-left {
+	.#{$component-prefix}select.-has-icon-left {
 		> select {
 			padding-left: 2rem;
 		}
@@ -233,7 +233,7 @@ $components-colors: (
 			font-size: .875rem;
 		}
 	}
-	.#{$prefix}input.-has-icon-right {
+	.#{$component-prefix}input.-has-icon-right {
 		> input {
 			padding-right: 2rem;
 		}
@@ -248,8 +248,8 @@ $components-colors: (
 	}
 }
 
-.#{$prefix}field.-big {
-	.#{$prefix}input.-has-icon-left {
+.#{$component-prefix}field.-big {
+	.#{$component-prefix}input.-has-icon-left {
 		> input {
 			padding-left: 3rem;
 		}
@@ -262,7 +262,7 @@ $components-colors: (
 			font-size: 1.33333rem;
 		}
 	}
-	.#{$prefix}select.-has-icon-left {
+	.#{$component-prefix}select.-has-icon-left {
 		> select {
 			padding-left: 3rem;
 		}
@@ -275,7 +275,7 @@ $components-colors: (
 			font-size: 1.33333rem;
 		}
 	}
-	.#{$prefix}input.-has-icon-right {
+	.#{$component-prefix}input.-has-icon-right {
 		> input {
 			padding-right: 3rem;
 		}

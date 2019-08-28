@@ -70,13 +70,13 @@ export default {
 		left: 0;
 		top: 0;
 
-		width: $height-navbar;
-		height: $height-navbar;
+		width: var(--height-navbar);;
+		height: var(--height-navbar);;
 
 		cursor: pointer;
 
 		&:hover {
-			background: lighten($color-primary, 42%);
+			background: var(--color-primary-100);
 		}
 	}
 
@@ -88,7 +88,7 @@ export default {
 		right: 0;
 
 		width: 100%;
-		height: $height-navbar;
+		height: var(--height-navbar);;
 	}
 
 	.navbar-container {
@@ -98,7 +98,7 @@ export default {
 		align-items: center;
 		justify-content: space-between;
 
-		color: $color-dark;
+		color: var(--color-text-dark);
 	}
 
 	.side-menu {
@@ -118,7 +118,7 @@ export default {
 			height: 100vh;
 
 			background-color: $color-panel;
-			color: $color-white;
+			color: var(--color-text-white);
 
 			transition: all 0.16s ease;
 			transform: translate3d(-$width-side-menu-panel, 0, 0);
