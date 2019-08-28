@@ -1,5 +1,5 @@
 dev:
 	cd doc && yarn run dev
 
-build:
+build-style:
 	yarn build
