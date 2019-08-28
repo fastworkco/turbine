@@ -16,10 +16,10 @@
 	],
 	"author": "BioMaRu <Bio.Color.Palette@gmail.com>",
 	"devDependencies": {
-		"gulp": "^3.9.1",
-		"gulp-autoprefixer": "^4.0.0",
-		"gulp-rename": "^1.2.2",
-		"gulp-sass": "^3.1.0",
-		"sass-loader": "^7.1.0"
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"sass-loader": "^7.3.1"
 	}
 }
