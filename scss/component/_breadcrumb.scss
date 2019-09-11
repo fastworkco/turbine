@@ -1,0 +1,30 @@
+.#{$component-prefix}breadcrumb {
+	font-family: var(--font-family-secondary);
+	display: inline-flex;
+
+	> * {
+		&:not(:last-child) {
+			margin-right: .875rem;
+		}
+
+		&:not(:last-child):after {
+			content: '';
+			display: inline-block;
+
+			width: .425rem;
+			height: .425rem;
+
+			margin-left: .5rem;
+			margin-bottom: 1px;
+
+			border-right: 1px solid var(--color-gray-400);
+			border-bottom: 1px solid var(--color-gray-400);
+
+			transform: rotate(-45deg);
+		}
+
+		> * {
+			display: inline-block;
+		}
+	}
+}
