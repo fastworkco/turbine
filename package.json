@@ -9,7 +9,7 @@
 		"src": "src"
 	},
 	"scripts": {
-		"build-style": "yarn gulp",
+		"build-scss": "yarn gulp",
 		"build-tokens": "yarn style-dictionary build --config ./tokens/config.json"
 	},
 	"keywords": [
@@ -21,6 +21,7 @@
 		"gulp-autoprefixer": "^7.0.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.2",
+		"gulp-sync": "^0.1.4",
 		"sass-loader": "^7.3.1",
 		"style-dictionary": "^2.8.1"
 	}

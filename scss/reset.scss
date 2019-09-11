@@ -19,9 +19,10 @@ html, body {
 }
 
 p {
-	line-height: var(--line-height-paragraph);
 	margin: 0;
 	padding: 0;
+	font-family: var(--font-family-primary);
+	line-height: var(--line-height-paragraph);
 }
 
 body, h1, h2, h3, h4, h4, h5, h6 {
@@ -169,7 +170,9 @@ progress {
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
 	height: auto;
+	margin: 0;
 }
 
 [type="search"] {

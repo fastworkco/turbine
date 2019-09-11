@@ -2,55 +2,41 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const rename = require('gulp-rename')
+const sync = require('gulp-sync')(gulp).sync
 
-gulp.task('default', function() {
-  const outputConfigs = {
-    src: './scss/main.scss',
-    basename: 'turbine'
-  }
+const sassOption = {
+	outputStyle: 'compressed',
+	includePaths: 'node_modules'
+}
 
-  generateCSS({
-    src: './scss/component.scss',
-    basename: 'component'
-  })
+gulp.task('default', gulp.series(atomic, turbine))
 
-  generateCSS({
-    src: './scss/theme.scss',
-    basename: 'theme'
-  })
+function atomic () {
+	return gulp
+		.src('./scss/atomic.scss')
+		.pipe(sass(sassOption).on('error', sass.logError))
+		.pipe(autoprefixer({overrideBrowserslist: ['last 2 versions']}))
+		.pipe(
+			rename({
+				basename: 'atomic',
+				suffix: '',
+				extname: '.css'
+			})
+		)
+		.pipe(gulp.dest('./dist/'))
+}
 
-  generateCSS({
-    src: './scss/layout.scss',
-    basename: 'layout'
-  })
-
-  generateCSS({
-    src: './scss/reset.scss',
-    basename: 'reset'
-  })
-
-  generateCSS({
-    src: './scss/utility.scss',
-    basename: 'utility'
-  })
-
-  generateCSS({
-    src: './scss/all.scss',
-    basename: 'all'
-  })
-})
-
-function generateCSS({ src = '', basename = '' }) {
-  gulp
-    .src(src)
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(autoprefixer({browsers: ['last 2 versions']}))
-    .pipe(
-      rename({
-        basename,
-        suffix: '',
-        extname: '.css'
-      })
-    )
-    .pipe(gulp.dest('./dist/'))
+function turbine () {
+	return gulp
+		.src('./scss/turbine.scss')
+		.pipe(sass(sassOption).on('error', sass.logError))
+		.pipe(autoprefixer({overrideBrowserslist: ['last 2 versions']}))
+		.pipe(
+			rename({
+				basename: 'turbine',
+				suffix: '',
+				extname: '.css'
+			})
+		)
+		.pipe(gulp.dest('./dist/'))
 }
