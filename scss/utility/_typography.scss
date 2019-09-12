@@ -26,7 +26,7 @@ h1,
 }
 
 h2,
-.u-heading-1 {
+.u-heading-2 {
 	font-size: var(--font-size-1000);
 
 	@media (min-width: 768px) {
@@ -96,4 +96,10 @@ p,
 	margin: 0px;
 
 	line-height: var(--line-height-paragraph);
+}
+
+.u-ellipsis-container {
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
