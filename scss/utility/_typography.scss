@@ -10,23 +10,6 @@ h6, .u-heading-6 {
 
 h1,
 .u-heading-1 {
-	font-size: var(--font-size-1100);
-
-	@media (min-width: 768px) {
-		font-size: var(--font-size-1100)
-	}
-
-	@media (min-width: 1024px) {
-		font-size: var(--font-size-1200);
-	}
-
-	@media (min-width: 1280px) {
-		font-size: var(--font-size-1200);
-	}
-}
-
-h2,
-.u-heading-2 {
 	font-size: var(--font-size-1000);
 
 	@media (min-width: 768px) {
@@ -42,8 +25,8 @@ h2,
 	}
 }
 
-h3,
-.u-heading-3 {
+h2,
+.u-heading-2 {
 	font-size: var(--font-size-900);
 
 	@media (min-width: 768px) {
@@ -59,19 +42,36 @@ h3,
 	}
 }
 
-h4,
-.u-heading-4{
+h3,
+.u-heading-3 {
 	font-size: var(--font-size-800);
+
+	@media (min-width: 768px) {
+		font-size: var(--font-size-800)
+	}
+
+	@media (min-width: 1024px) {
+		font-size: var(--font-size-900);
+	}
+
+	@media (min-width: 1280px) {
+		font-size: var(--font-size-900);
+	}
+}
+
+h4,
+.u-heading-4 {
+	font-size: var(--font-size-700);
 }
 
 h5,
 .u-heading-5 {
-	font-size: var(--font-size-700);
+	font-size: var(--font-size-600);
 }
 
 h6,
 .u-heading-6 {
-	font-size: var(--font-size-600);
+	font-size: var(--font-size-500);
 }
 
 
