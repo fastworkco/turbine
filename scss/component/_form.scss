@@ -151,7 +151,7 @@ $components-colors: (
 		}
 
 		small {
-			color: var(--color-dark);
+			color: var(--color-dark-primary);
 		}
 	}
 
@@ -365,12 +365,12 @@ $components-colors: (
 
 				&:before {
 					opacity: .5;
-					border-color: var(--color-dark);
+					border-color: var(--color-dark-primary);
 				}
 
 				&:after {
 					opacity: .5;
-					border-color: var(--color-dark);
+					border-color: var(--color-dark-primary);
 				}
 			}
 		}

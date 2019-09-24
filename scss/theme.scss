@@ -62,9 +62,10 @@
 	--color-warning-800: hsl(48, 90%, 30%);
 	--color-warning-900: hsl(48, 90%, 27%);
 
-	--color-light: hsla(0, 0%, 100%, .95);
-	--color-dark: hsla(216, 15%, 28%, 0.96);
-	--color-mute: hsla(209, 14%, 45%, .95);
+	--color-light-primary: hsla(0, 0%, 100%, .95);
+	--color-light-secondary: rgba(226, 226, 226, 0.95);
+	--color-dark-primary: hsla(215, 15%, 28%, 0.96);
+	--color-dark-secondary: hsla(220, 10%, 47%, 0.95);
 
 	// Secondary Palette
 	--color-golden-poppy: hsl(47, 99%, 50%);   // NOTE: star
@@ -72,7 +73,7 @@
 	--color-bittersweet: hsl(4, 96%, 67%);     // NOTE: hot
 	--color-facebook: hsl(217, 51%, 45%);
 
-	--color-shader: rgba(0, 0, 0 , 0.12);// NOTE: facebook
+	--color-shader: rgba(0, 0, 0 , 0.12);
 }
 
 /*
