@@ -43,7 +43,7 @@
 
 		.content-heading {
 			text-align: center;
-			color: var(--color-light);
+			color: var(--color-light-primary);
 		}
 
 		.content-panel {

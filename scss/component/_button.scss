@@ -71,7 +71,7 @@ $components-colors: (
 .#{$component-prefix}button {
 	@extend %base-button;
 
-	color: var(--color-light);
+	color: var(--color-light-primary);
 	background-color: var(--color-primary-500);
 
 	&:focus {
@@ -86,14 +86,14 @@ $components-colors: (
 		color: transparent;
 
 		&:after {
-			border-right-color: var(--color-light);
-			border-top-color: var(--color-light);
+			border-right-color: var(--color-light-primary);
+			border-top-color: var(--color-light-primary);
 		}
 	}
 
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			color: var(--color-light);
+			color: var(--color-light-primary);
 			background-color: var(--color-#{$key}-500);
 
 			&:focus {
@@ -108,8 +108,8 @@ $components-colors: (
 				color: transparent;
 
 				&:after {
-					border-right-color: var(--color-light);
-					border-top-color: var(--color-light);
+					border-right-color: var(--color-light-primary);
+					border-top-color: var(--color-light-primary);
 				}
 			}
 
