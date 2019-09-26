@@ -10,7 +10,7 @@
 	pointer-events: none;
 	backface-visibility: hidden;
 
-	&.-slide-down  {
+	&.-is-slide-down  {
 		transform: scaleY(0);
 		transform-origin: top center;
 
