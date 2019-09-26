@@ -1,6 +1,6 @@
 {
 	"name": "@fastwork/turbine",
-	"version": "2.4.5",
+	"version": "2.4.6",
 	"description": "Turbine UI",
 	"main": "scss/main.scss",
 	"unpkg": "dist/all.css",

@@ -295,6 +295,11 @@ $components-colors: (
 
 
 // Checkbox
+
+label:hover + .#{$component-prefix}checkbox > label:before {
+	border: 1px solid var(--color-gray-400);
+}
+
 .#{$component-prefix}checkbox {
 	> input[type='checkbox'] {
 		opacity: 0;
@@ -302,6 +307,11 @@ $components-colors: (
 		pointer-events: none;
 
 		&:checked {
+			+ label:before {
+				background: var(--color-primary-500);
+				border: 1px solid var(--color-primary-500);
+			}
+
 			+ label:after {
 				content: '';
 			}
@@ -333,8 +343,8 @@ $components-colors: (
 			height: 20px;
 			left: 0px;
 			background-color:var(--color-light-primary);
-			border: 2px solid var(--color-primary-500);
-			border-radius: 2px;
+			border: 1px solid var(--color-gray-300);
+			border-radius: 4px;
 			box-sizing: border-box;
 		}
 
@@ -348,11 +358,16 @@ $components-colors: (
 			border-bottom-width: 2px;
 			border-left-style: solid;
 			border-bottom-style: solid;
-			border-color: var(--color-primary-500);
+			border-color: var(--color-light-primary);
 			transform: rotate(-45deg);
+		}
+
+		&:hover:before {
+			border: 1px solid var(--color-gray-400);
 		}
 	}
 }
+
 
 .#{$component-prefix}field {
 	&.-disabled {
