@@ -326,7 +326,10 @@ label:hover + .#{$component-prefix}checkbox > label:before {
 
 	> label {
 		position: relative;
+
 		display: inline-block;
+		height: 100%;
+
 		padding-left: 28px;
 		margin-left: -19px;
 		line-height: 19px;
