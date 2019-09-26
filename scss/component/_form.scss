@@ -324,7 +324,7 @@ label:hover + .#{$component-prefix}checkbox > label:before {
 		}
 	}
 
-	> label {
+	> label:first-child {
 		position: relative;
 
 		display: inline-block;
