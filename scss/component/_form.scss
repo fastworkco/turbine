@@ -405,6 +405,10 @@ $components-colors: (
 
 		user-select: none;
 		cursor: pointer;
+
+		&:hover {
+			background: var(--color-gray-100);
+		}
 	}
 
 	> input[type='radio']:checked + label,
