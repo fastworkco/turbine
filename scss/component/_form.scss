@@ -425,6 +425,54 @@ $components-colors: (
 	}
 }
 
+// Switch
+.#{$component-prefix}switch {
+	display: inline-flex;
+	align-items: center;
+
+	> input[type="checkbox"],
+	> input[type="radio"] {
+		appearance: none;
+
+		position: relative;
+		background-color: hsl(0, 0%, 93%);
+
+		width: 2.75rem;
+		height: 26px;
+		border-radius: 999px;
+
+		transition: all var(--timing-normal) ease-in-out;
+		cursor: pointer;
+		outline: none;
+
+		&:checked {
+			background-color: var(--color-primary-500);
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			border-radius: 50%;
+			background-color: white;
+			height: 2rem;
+			width: 2rem;
+			left: -2px;
+			top: -3px;
+			box-shadow: 0 0 7px rgba(0,0,0,.5);
+			transform: scale(.64);
+			transition: all var(--timing-faster) ease-in-out;
+		}
+
+		&:checked:after {
+			left: calc(100% - 30px);
+		}
+	}
+
+	> label {
+		margin-left: 8px;
+	}
+}
+
 .#{$component-prefix}field {
 	&.-disabled {
 		.#{$component-prefix}checkbox {
