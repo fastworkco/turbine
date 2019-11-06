@@ -2,15 +2,15 @@
  * Color
  *********************************************/
  :root {
-	--color-primary-100: hsl(207, 85%, 94%);
-	--color-primary-200: hsl(207, 85%, 90%);
-	--color-primary-300: hsl(207, 85%, 86%);
-	--color-primary-400: hsl(207, 100%, 48%);
-	--color-primary-500: hsl(207, 100%, 43%);
-	--color-primary-600: hsl(207, 100%, 38%);
-	--color-primary-700: hsl(207, 95%, 29%);
-	--color-primary-800: hsl(207, 95%, 24%);
-	--color-primary-900: hsl(207, 95%, 20%);
+	--color-primary-100: hsl(217, 85%, 95%);
+	--color-primary-200: hsl(217, 85%, 92%);
+	--color-primary-300: hsl(217, 85%, 87%);
+	--color-primary-400: hsl(217, 77%, 61%);
+	--color-primary-500: hsl(217, 77%, 56%);
+	--color-primary-600: hsl(217, 77%, 51%);
+	--color-primary-700: hsl(217, 67%, 36%);
+	--color-primary-800: hsl(217, 67%, 30%);
+	--color-primary-900: hsl(217, 67%, 25%);
 
 	--color-gray-100: hsl(216, 15%, 97%);
 	--color-gray-200: hsl(216, 15%, 92%);
@@ -22,45 +22,45 @@
 	--color-gray-800: hsl(216, 15%, 26%);
 	--color-gray-900: hsl(216, 15%, 20%);
 
-	--color-positive-100: hsl(163, 75%, 95%);
-	--color-positive-200: hsl(163, 75%, 90%);
-	--color-positive-300: hsl(163, 75%, 83%);
-	--color-positive-400: hsl(163, 100%, 34%);
-	--color-positive-500: hsl(163, 100%, 31%);
-	--color-positive-600: hsl(163, 100%, 27%);
-	--color-positive-700: hsl(163, 80%, 19%);
-	--color-positive-800: hsl(163, 80%, 16%);
-	--color-positive-900: hsl(163, 80%, 13%);
+	--color-positive-100: hsl(168, 75%, 95%);
+	--color-positive-200: hsl(168, 75%, 90%);
+	--color-positive-300: hsl(168, 75%, 83%);
+	--color-positive-400: hsl(168, 76%, 48%);
+	--color-positive-500: hsl(168, 76%, 45%);
+	--color-positive-600: hsl(168, 76%, 41%);
+	--color-positive-700: hsl(168, 66%, 25%);
+	--color-positive-800: hsl(168, 66%, 20%);
+	--color-positive-900: hsl(163, 80%, 15%);
 
-	--color-negative-100: hsl(5, 85%, 97%);
-	--color-negative-200: hsl(5, 85%, 93%);
-	--color-negative-300: hsl(5, 85%, 89%);
-	--color-negative-400: hsl(5, 80%, 61%);
-	--color-negative-500: hsl(5, 80%, 55%);
-	--color-negative-600: hsl(5, 80%, 49%);
-	--color-negative-700: hsl(5, 75%, 38%);
-	--color-negative-800: hsl(5, 75%, 34%);
-	--color-negative-900: hsl(5, 75%, 30%);
+	--color-negative-100: hsl(8, 85%, 97%);
+	--color-negative-200: hsl(8, 85%, 93%);
+	--color-negative-300: hsl(8, 85%, 89%);
+	--color-negative-400: hsl(8, 78%, 67%);
+	--color-negative-500: hsl(8, 78%, 61%);
+	--color-negative-600: hsl(8, 78%, 55%);
+	--color-negative-700: hsl(8, 68%, 38%);
+	--color-negative-800: hsl(8, 68%, 34%);
+	--color-negative-900: hsl(8, 68%, 30%);
 
-	--color-info-100: hsl(200, 90%, 94%);
-	--color-info-200: hsl(200, 90%, 89%);
-	--color-info-300: hsl(200, 90%, 84%);
-	--color-info-400: hsl(200, 83%, 60%);
-	--color-info-500: hsl(200, 83%, 50%);
-	--color-info-600: hsl(200, 83%, 45%);
-	--color-info-700: hsl(200, 75%, 30%);
-	--color-info-800: hsl(200, 75%, 26%);
-	--color-info-900: hsl(200, 75%, 22%);
+	--color-info-100: hsl(283, 90%, 96%);
+	--color-info-283: hsl(283, 90%, 92%);
+	--color-info-300: hsl(283, 90%, 88%);
+	--color-info-400: hsl(283, 40%, 55%);
+	--color-info-500: hsl(283, 40%, 50%);
+	--color-info-600: hsl(283, 40%, 45%);
+	--color-info-700: hsl(283, 66%, 28%);
+	--color-info-800: hsl(283, 66%, 25%);
+	--color-info-900: hsl(283, 66%, 22%);
 
-	--color-warning-100: hsl(48, 80%, 95%);
-	--color-warning-200: hsl(48, 80%, 89%);
-	--color-warning-300: hsl(48, 80%, 85%);
-	--color-warning-400: hsl(48, 70%, 55%);
-	--color-warning-500: hsl(48, 70%, 48%);
-	--color-warning-600: hsl(48, 70%, 45%);
-	--color-warning-700: hsl(48, 90%, 33%);
-	--color-warning-800: hsl(48, 90%, 30%);
-	--color-warning-900: hsl(48, 90%, 27%);
+	--color-warning-100: hsl(45, 80%, 95%);
+	--color-warning-200: hsl(45, 80%, 90%);
+	--color-warning-300: hsl(45, 80%, 85%);
+	--color-warning-400: hsl(45, 90%, 55%);
+	--color-warning-500: hsl(45, 90%, 48%);
+	--color-warning-600: hsl(45, 90%, 45%);
+	--color-warning-700: hsl(45, 90%, 31%);
+	--color-warning-800: hsl(45, 90%, 27%);
+	--color-warning-900: hsl(45, 90%, 27%);
 
 	--color-light-primary: hsla(0, 0%, 100%, .95);
 	--color-light-secondary: rgba(226, 226, 226, 0.95);

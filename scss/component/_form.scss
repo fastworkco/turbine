@@ -100,6 +100,11 @@ $components-colors: (
 				}
 			}
 
+			.fieldset,
+			fieldset {
+				border-color: var(--color-negative-500);
+			}
+
 			small, i {
 				color: var(--color-#{$key}-500);
 			}
@@ -155,6 +160,12 @@ $components-colors: (
 		}
 	}
 
+	.fieldset,
+	fieldset {
+		padding: 1rem;
+		border: 1px solid var(--color-gray-200);
+		border-radius: .25rem;
+	}
 
 	input:not(:placeholder-shown):invalid,
 	textarea:not(:placeholder-shown):invalid,
@@ -167,8 +178,20 @@ $components-colors: (
 		}
 	}
 
-	.required {
-		color: var(--color-negative-500);
+	.-required {
+		label {
+			position: relative;
+
+			&:after {
+				content: '*';
+				display: block;
+				position: absolute;
+				right: -.5rem;
+				top: 0;
+
+				color: var(--color-negative-500);
+			}
+		}
 	}
 }
 
