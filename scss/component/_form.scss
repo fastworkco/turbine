@@ -17,8 +17,8 @@
 
 	width: 100%;
 	height: 100%;
-	padding-left: .75rem;
-	padding-right: .75rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
 
 	background-color: white;
 
@@ -59,19 +59,15 @@
 		border-color: hsl(216, 15%, 65%);
 	}
 
-	&:focus, :active {
+	&:focus,
+	:active {
 		border-color: var(--color-primary-400);
 		border-width: 1px;
-		box-shadow: 0 0 0 .175rem var(--color-primary-300);
+		box-shadow: 0 0 0 0.175rem var(--color-primary-300);
 	}
 }
 
-$components-colors: (
-	'positive',
-	'negative',
-	'warning',
-	'info',
-);
+$components-colors: ("positive", "negative", "warning", "info");
 
 .#{$component-prefix}field {
 	label {
@@ -95,8 +91,9 @@ $components-colors: (
 				color: var(--color-#{$key}-700);
 				border-color: var(--color-#{$key}-400);
 
-				&:focus, :active {
-					box-shadow: 0 0 0 .175rem var(--color-#{$key}-300);
+				&:focus,
+				:active {
+					box-shadow: 0 0 0 0.175rem var(--color-#{$key}-300);
 				}
 			}
 
@@ -105,11 +102,12 @@ $components-colors: (
 				border-color: var(--color-negative-500);
 			}
 
-			small, i {
+			small,
+			i {
 				color: var(--color-#{$key}-500);
 			}
 		}
-	};
+	}
 
 	// size
 	&.-big {
@@ -133,7 +131,7 @@ $components-colors: (
 
 		.#{$component-prefix}input input,
 		.#{$component-prefix}select:not(.-multiple) select {
-			font-size: .75rem;
+			font-size: 0.75rem;
 			height: 100%;
 		}
 	}
@@ -164,7 +162,7 @@ $components-colors: (
 	fieldset {
 		padding: 1rem;
 		border: 1px solid var(--color-gray-200);
-		border-radius: .25rem;
+		border-radius: 0.25rem;
 	}
 
 	input:not(:placeholder-shown):invalid,
@@ -173,8 +171,9 @@ $components-colors: (
 		color: var(--color-negative-700);
 		border-color: var(--color-negative-400);
 
-		&:focus, :active {
-			box-shadow: 0 0 0 .175rem var(--color-negative-300);
+		&:focus,
+		:active {
+			box-shadow: 0 0 0 0.175rem var(--color-negative-300);
 		}
 	}
 
@@ -183,10 +182,10 @@ $components-colors: (
 			position: relative;
 
 			&:after {
-				content: '*';
+				content: "*";
 				display: block;
 				position: absolute;
-				right: -.5rem;
+				right: -0.5rem;
 				top: 0;
 
 				color: var(--color-negative-500);
@@ -216,7 +215,7 @@ $components-colors: (
 	}
 
 	&:after {
-		content: '';
+		content: "";
 		border-left: 2px solid var(--color-gray-400);
 		border-bottom: 2px solid var(--color-gray-400);
 		height: 0.5rem;
@@ -231,7 +230,7 @@ $components-colors: (
 }
 
 .#{$component-prefix}textarea textarea {
-	padding: 8px .75rem;
+	padding: 8px 0.75rem;
 	line-height: 1.25;
 }
 
@@ -241,7 +240,7 @@ $components-colors: (
 }
 
 .#{$component-prefix}radio {
-	> input[type='radio'] {
+	> input[type="radio"] {
 		position: absolute;
 		z-index: -1;
 
@@ -250,12 +249,12 @@ $components-colors: (
 		pointer-events: none;
 
 		&:checked + label:after {
-			content: '';
+			content: "";
 		}
 
 		&:focus {
 			+ label:before {
-				box-shadow: 0 0 0 .175rem var(--color-primary-200);
+				box-shadow: 0 0 0 0.175rem var(--color-primary-200);
 			}
 		}
 	}
@@ -268,8 +267,9 @@ $components-colors: (
 		cursor: pointer;
 		user-select: none;
 
-		&:before, &:after {
-			content: '';
+		&:before,
+		&:after {
+			content: "";
 			position: absolute;
 			display: inline-block;
 		}
@@ -286,8 +286,8 @@ $components-colors: (
 
 		&:after {
 			content: none;
-			height: .75rem;
-			width: .75rem;
+			height: 0.75rem;
+			width: 0.75rem;
 			top: 5px;
 			left: 5px;
 			background-color: var(--color-primary-500);
@@ -316,7 +316,7 @@ $components-colors: (
 }
 
 .#{$component-prefix}checkbox {
-	> input[type='checkbox'] {
+	> input[type="checkbox"] {
 		position: absolute;
 		opacity: 0;
 
@@ -330,18 +330,18 @@ $components-colors: (
 			}
 
 			+ label:after {
-				content: '';
+				content: "";
 			}
 		}
 
 		&:focus {
 			+ label:before {
-				box-shadow: 0 0 0 .175rem var(--color-primary-200);
+				box-shadow: 0 0 0 0.175rem var(--color-primary-200);
 			}
 		}
 	}
 
-	> input[type='checkbox'] + label {
+	> input[type="checkbox"] + label {
 		position: relative;
 
 		display: inline-block;
@@ -352,8 +352,9 @@ $components-colors: (
 		line-height: 19px;
 		cursor: pointer;
 
-		&:before, &:after {
-			content: '';
+		&:before,
+		&:after {
+			content: "";
 			position: absolute;
 			display: inline-block;
 		}
@@ -362,7 +363,7 @@ $components-colors: (
 			width: 20px;
 			height: 20px;
 			left: 0px;
-			background-color:var(--color-light-primary);
+			background-color: var(--color-light-primary);
 			border: 1px solid var(--color-gray-300);
 			border-radius: 4px;
 			box-sizing: border-box;
@@ -371,7 +372,7 @@ $components-colors: (
 		&:after {
 			content: none;
 			height: 7px;
-			width: .75rem;
+			width: 0.75rem;
 			top: 5px;
 			left: 4px;
 			border-left-width: 2px;
@@ -388,10 +389,9 @@ $components-colors: (
 	}
 }
 
-
 .#{$component-prefix}toggle-tag {
-	> input[type='radio'],
-	> input[type='checkbox'] {
+	> input[type="radio"],
+	> input[type="checkbox"] {
 		position: absolute;
 		z-index: -1;
 
@@ -400,23 +400,23 @@ $components-colors: (
 		pointer-events: none;
 
 		&:checked + label:after {
-			content: '';
+			content: "";
 		}
 
 		&:focus {
 			+ label:before {
-				box-shadow: 0 0 0 .175rem var(--color-primary-200);
+				box-shadow: 0 0 0 0.175rem var(--color-primary-200);
 			}
 		}
 	}
 
-	> input[type='radio'] + label,
-	> input[type='checkbox'] + label {
+	> input[type="radio"] + label,
+	> input[type="checkbox"] + label {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
-		padding: .375rem 1rem;
+		padding: 0.375rem 1rem;
 
 		color: var(--color-dark-secondary);
 		background: white;
@@ -434,8 +434,8 @@ $components-colors: (
 		}
 	}
 
-	> input[type='radio']:checked + label,
-	> input[type='checkbox']:checked + label {
+	> input[type="radio"]:checked + label,
+	> input[type="checkbox"]:checked + label {
 		color: var(--color-primary-500);
 		background: var(--color-primary-100);
 
@@ -455,6 +455,8 @@ $components-colors: (
 
 	> input[type="checkbox"],
 	> input[type="radio"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
 		appearance: none;
 
 		position: relative;
@@ -473,7 +475,7 @@ $components-colors: (
 		}
 
 		&:after {
-			content: '';
+			content: "";
 			position: absolute;
 			border-radius: 50%;
 			background-color: white;
@@ -481,8 +483,8 @@ $components-colors: (
 			width: 2rem;
 			left: -2px;
 			top: -3px;
-			box-shadow: 0 0 7px rgba(0,0,0,.5);
-			transform: scale(.64);
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+			transform: scale(0.64);
 			transition: all var(--timing-faster) ease-in-out;
 		}
 
@@ -499,19 +501,19 @@ $components-colors: (
 .#{$component-prefix}field {
 	&.-disabled {
 		.#{$component-prefix}checkbox {
-			opacity: .5;
+			opacity: 0.5;
 
-			> input[type='checkbox'],
+			> input[type="checkbox"],
 			> label {
 				cursor: not-allowed;
 
 				&:before {
-					opacity: .5;
+					opacity: 0.5;
 					border-color: var(--color-dark-primary);
 				}
 
 				&:after {
-					opacity: .5;
+					opacity: 0.5;
 					border-color: var(--color-dark-primary);
 				}
 			}
@@ -572,7 +574,6 @@ $components-colors: (
 	}
 }
 
-
 .#{$component-prefix}field.-small {
 	.#{$component-prefix}input.-has-icon-left {
 		> input {
@@ -584,7 +585,7 @@ $components-colors: (
 
 			width: 2rem;
 
-			font-size: .875rem;
+			font-size: 0.875rem;
 		}
 	}
 	.#{$component-prefix}select.-has-icon-left {
@@ -597,7 +598,7 @@ $components-colors: (
 
 			width: 2rem;
 
-			font-size: .875rem;
+			font-size: 0.875rem;
 		}
 	}
 	.#{$component-prefix}input.-has-icon-right {
@@ -610,7 +611,7 @@ $components-colors: (
 
 			width: 2rem;
 
-			font-size: .875rem;
+			font-size: 0.875rem;
 		}
 	}
 }
