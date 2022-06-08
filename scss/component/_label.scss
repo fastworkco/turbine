@@ -5,16 +5,13 @@
 	font-weight: 700;
 	border-radius: 4px;
 
-	color: var(--color-light-primary);
+	color: var(--color-text-invert-100);
 	background-color: var(--color-primary-500);
 }
 
 $components-colors: (
-	'positive': 'positive-500',
-	'negative': 'negative-500',
-	'dark-cerulean': 'dark-cerulean',
-	'bittersweet': 'bittersweet',
-	'golden-poppy': 'golden-poppy'
+	'positive': 'positive-200',
+	'negative': 'negative-200',
 );
 
 .#{$component-prefix}label {

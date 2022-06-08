@@ -9,7 +9,7 @@ const sassOption = {
 	includePaths: 'node_modules'
 }
 
-gulp.task('default', gulp.series(atomic, turbine))
+gulp.task('default', gulp.series(atomic, turbine, component))
 
 function atomic () {
 	return gulp
@@ -34,6 +34,21 @@ function turbine () {
 		.pipe(
 			rename({
 				basename: 'turbine',
+				suffix: '',
+				extname: '.css'
+			})
+		)
+		.pipe(gulp.dest('./dist/'))
+}
+
+function component () {
+	return gulp
+		.src('./scss/component.scss')
+		.pipe(sass(sassOption).on('error', sass.logError))
+		.pipe(autoprefixer({overrideBrowserslist: ['last 2 versions']}))
+		.pipe(
+			rename({
+				basename: 'component',
 				suffix: '',
 				extname: '.css'
 			})

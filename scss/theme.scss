@@ -62,16 +62,10 @@
 	--color-warning-800: hsl(45, 90%, 27%);
 	--color-warning-900: hsl(45, 90%, 27%);
 
-	--color-light-primary: hsla(0, 0%, 100%, .95);
-	--color-light-secondary: rgba(226, 226, 226, 0.95);
-	--color-dark-primary: hsla(215, 15%, 28%, 0.96);
-	--color-dark-secondary: hsla(220, 10%, 47%, 0.95);
-
-	// Secondary Palette
-	--color-golden-poppy: hsl(47, 99%, 50%);   // NOTE: star
-	--color-dark-cerulean: hsl(210, 96%, 28%); // NOTE: pro
-	--color-bittersweet: hsl(4, 96%, 67%);     // NOTE: hot
-	--color-facebook: hsl(217, 51%, 45%);
+	--color-text-light-primary: hsla(0, 0%, 100%, .95);
+	--color-text-light-secondary: rgba(226, 226, 226, 0.95);
+	--color-text-dark-primary: hsla(215, 15%, 28%, 0.96);
+	--color-text-dark-secondary: hsla(220, 10%, 47%, 0.95);
 
 	--color-shader: rgba(0, 0, 0 , 0.12);
 }
@@ -100,40 +94,4 @@
 	--font-size-300: 0.875rem; // 14px
 	--font-size-200: 0.75rem;  // 12px
 	--font-size-100: 0.6875rem; // 11px
-}
-
-/*
- * Line height
- *********************************************/
- :root {
-	--line-height-ui: 1;
-	--line-height-default: 1.25;
-	--line-height-paragraph: 1.5;
-}
-
-/*
- * Font weight
- *********************************************/
-:root {
-	--font-weight-default: 400;
-	--font-weight-bold: 600;
-	--font-weight-bolder: 700;
-}
-
-/*
- * Timing
- *********************************************/
-:root {
-	--timing-normal: 320ms;
-	--timing-faster: 160ms;
-	--timing-fastest: 80ms;
-}
-
-/*
- * Breakpoint
- *********************************************/
-:root {
-	--breakpoint-sm: 768px;
-	--breakpoint-md: 1024px;
-	--breakpoint-lg: 1280px;
 }

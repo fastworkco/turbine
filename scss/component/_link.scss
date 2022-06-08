@@ -7,7 +7,7 @@ $components-colors: (
 .#{$component-prefix}link {
 	position: relative;
 
-	color: var(--color-gray-800);
+	color: var(--color-neutral-800);
 
 	text-decoration: none;
 
@@ -17,7 +17,7 @@ $components-colors: (
 
 	svg, path {
 		transition: fill 160ms ease-in-out;
-		fill: var(--color-gray-800);
+		fill: var(--color-neutral-800);
 	}
 
 	&:before, &:after {
@@ -69,17 +69,17 @@ $components-colors: (
 
 	@each $key in $components-colors {
 		&.-#{$key} {
-			color: var(--color-#{$key}-500);
+			color: var(--color-#{$key}-200);
 
 			svg, path {
-				fill: var(--color-#{$key}-500);
+				fill: var(--color-#{$key}-200);
 			}
 
 			&:hover, &:focus, &.-active {
-				color: var(--color-#{$key}-600);
+				color: var(--color-#{$key}-300);
 
 				svg, path {
-					fill: var(--color-#{$key}-600);
+					fill: var(--color-#{$key}-300);
 				}
 			}
 		}

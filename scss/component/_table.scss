@@ -28,7 +28,7 @@
 
 	thead {
 		font-size: 15px;
-		color: var(--color-gray-500);
+		color: var(--color-neutral-500);
 	}
 
 	td, th {
@@ -45,7 +45,7 @@
 
 	&.-ruled {
 		tbody tr {
-			border-bottom: 1px solid var(--color-gray-300);
+			border-bottom: 1px solid var(--color-neutral-300);
 		}
 
 		thead tr {
@@ -55,14 +55,14 @@
 
 		&:not(.-no-top-rule) {
 			thead tr {
-				border-bottom: 2px solid var(--color-gray-300);
+				border-bottom: 2px solid var(--color-neutral-300);
 			}
 		}
 	}
 
 	&.-striped {
 		tbody tr:nth-child(even) {
-			background-color: var(--color-gray-100);
+			background-color: var(--color-neutral-100);
 		}
 	}
 

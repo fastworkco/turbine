@@ -71,7 +71,7 @@ $components-colors: (
 .#{$component-prefix}button {
 	@extend %base-button;
 
-	color: var(--color-light-primary);
+	color: var(--color-text-invert-100);
 	background-color: var(--color-primary-500);
 
 	&:focus {
@@ -86,67 +86,30 @@ $components-colors: (
 		color: transparent;
 
 		&:after {
-			border-right-color: var(--color-light-primary);
-			border-top-color: var(--color-light-primary);
+			border-right-color: var(--color-text-invert-100);
+			border-top-color: var(--color-text-invert-100);
 		}
 	}
 
 	@each $key, $value in $components-colors {
 		&.-#{$key} {
-			color: var(--color-light-primary);
-			background-color: var(--color-#{$key}-500);
+			color: var(--color-text-invert-100);
+			background-color: var(--color-#{$key}-200);
 
 			&:focus {
-				box-shadow: 0 0 0 .175rem var(--color-#{$key}-200);
+				box-shadow: 0 0 0 .175rem var(--color-#{$key}-100);
 			}
 
 			&:hover {
-				background-color: var(--color-#{$key}-600);
+				background-color: var(--color-#{$key}-300);
 			}
 
 			&.-loading {
 				color: transparent;
 
 				&:after {
-					border-right-color: var(--color-light-primary);
-					border-top-color: var(--color-light-primary);
-				}
-			}
-
-			&.-secondary {
-				color: var(--color-#{$key}-600);
-				background: transparent;
-
-				&:hover {
-					background-color: var(--color-#{$key}-100);
-				}
-
-				&.-loading {
-					color: transparent;
-
-					&:after {
-						border-right-color: var(--color-#{$key}-600);
-						border-top-color: var(--color-#{$key}-600);
-					}
-				}
-			}
-
-			&.-tertiary {
-				color: var(--color-#{$key}-600);
-				border: none;
-				background: transparent;
-
-				&:hover {
-					background-color: var(--color-#{$key}-100);
-				}
-
-				&.-loading {
-					color: transparent;
-
-					&:after {
-						border-right-color: var(--color-#{$key}-600);
-						border-top-color: var(--color-#{$key}-600);
-					}
+					border-right-color: var(--color-text-invert-100);
+					border-top-color: var(--color-text-invert-100);
 				}
 			}
 		}
@@ -160,7 +123,7 @@ $components-colors: (
 			}
 
 			&:hover {
-				background-color: var(--color-gray-100);
+				background-color: var(--color-neutral-100);
 			}
 
 			&.-loading {
@@ -201,7 +164,7 @@ $components-colors: (
 				background: transparent;
 
 				&:hover {
-					background-color: var(--color-gray-100);
+					background-color: var(--color-neutral-100);
 				}
 
 				&.-loading {
@@ -218,16 +181,16 @@ $components-colors: (
 
 	&.-secondary {
 		color: var(--color-primary-500);
-		border: 1px solid var(--color-gray-300);
+		border: 1px solid var(--color-neutral-300);
 		background: transparent;
 
 		&:hover {
-			background-color: var(--color-gray-100);
+			background-color: var(--color-neutral-100);
 		}
 
 		&.-disabled {
-			color: var(--color-gray-400);
-			border: 1px solid var(--color-gray-300);
+			color: var(--color-neutral-400);
+			border: 1px solid var(--color-neutral-300);
 			background-color: transparent;
 
 			&:hover {
@@ -247,30 +210,30 @@ $components-colors: (
 		&.-disabled {
 			&.-loading {
 				&:after {
-					border-right-color: var(--color-gray-500);
-					border-top-color: var(--color-gray-500);
+					border-right-color: var(--color-neutral-500);
+					border-top-color: var(--color-neutral-500);
 				}
 			}
 		}
 	}
 
 	&.-disabled {
-		background-color: var(--color-gray-200);
+		background-color: var(--color-neutral-200);
 		cursor: not-allowed;
 
 		&:not(.-loading) {
-			color: var(--color-gray-500);
+			color: var(--color-neutral-500);
 		}
 
 		&.-loading {
 			&:after {
-				border-right-color: var(--color-gray-500);
-				border-top-color: var(--color-gray-500);
+				border-right-color: var(--color-neutral-500);
+				border-top-color: var(--color-neutral-500);
 			}
 		}
 
 		&:hover {
-			background-color: var(--color-gray-300);
+			background-color: var(--color-neutral-300);
 		}
 	}
 }
