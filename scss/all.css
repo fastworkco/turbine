@@ -724,7 +724,6 @@ p,
 }
 .tb-card-product > .slot-seller-name {
   grid-area: seller-name;
-  margin-top: 0.125rem;
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
